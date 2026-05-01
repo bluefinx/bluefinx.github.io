@@ -1,3 +1,3 @@
-# IT & Cybersecurity -- Portfolio
+# IT & Cybersecurity - Portfolio
 
 Portfolio available [here](https://bluefinx.github.io).
