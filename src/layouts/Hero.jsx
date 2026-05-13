@@ -22,11 +22,11 @@ export default function Hero() {
     /* Builds the About body */
     function createAboutBody() {
         return (
-            <Stack direction="column" spacing={1} sx={{ pt: 2, p: 2 }}>
-                <Typography variant="subtitle1">
+            <Stack direction="column" spacing={1} sx={{ pt: 2, p: 2, pr: 6 }}>
+                <Typography variant="body1" sx={{whiteSpace: 'pre-line'}}>
                     {hero?.values?.about?.body}
                 </Typography>
-                <Typography variant="subtitle1" sx={{ fontStyle: "italic", pt: 2 }}>
+                <Typography variant="body1" sx={{ fontStyle: "italic", pt: 2 }}>
                     {hero?.values?.about?.remark}
                 </Typography>
             </Stack>
@@ -50,38 +50,84 @@ export default function Hero() {
         return (
             <Stack direction="row" spacing={1} sx={{ alignItems: "stretch", justifyContent: "center", width: "100%" }}>
                 {hero?.values?.languages?.map((language, index) => (
-                    <Button disabled variant="contained" key={index} sx={{
-                        fontSize: '1rem', textTransform: 'none', flex: 1, px: 0,
-                        backgroundColor: "background.button", color: "text.default", '&.Mui-disabled': {
-                            backgroundColor: "background.button",
-                            color: "text.default",
-                            opacity: 1,
-                        }
-                    }}>{language}</Button>
+                    <Button disabled variant="contained" key={index} 
+                    sx={{
+        flex: 1,
+
+        fontSize: "1rem",
+        textTransform: "none",
+
+        px: 1.5,
+        py: 0.75,
+
+        minHeight: 48,
+
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+
+        textAlign: "center",
+        lineHeight: 1.2,
+
+        whiteSpace: "normal",
+        wordBreak: "break-word",
+
+        backgroundColor: "background.button",
+        color: "text.default",
+
+        "&.Mui-disabled": {
+            backgroundColor: "background.button",
+            color: "text.default",
+            opacity: 1,
+        },
+    }}
+                    >{language}</Button>
                 ))}
             </Stack>
         );
     }
+
+    const contactButtons = {
+    flex: 1,
+
+    fontSize: "1rem",
+    textTransform: "none",
+
+    backgroundColor: "background.button",
+    color: "text.default",
+
+    px: 1.5,
+    py: 0.75,
+
+    minHeight: 48,
+
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+
+    textAlign: "center",
+    lineHeight: 1.2,
+
+    whiteSpace: "normal",
+    wordBreak: "break-word",
+};
 
     /* Builds the Contact body */
     function createContactBody() {
         return (
             <Stack direction="row" spacing={1} sx={{ alignItems: "stretch", justifyContent: "center", width: "100%" }}>
                 {/* Email */}
-                <Button onClick={handleCopy} variant="contained" sx={{
-                    fontSize: '1rem', textTransform: 'none', flex: 1,
-                    backgroundColor: "background.button", color: "text.default"
-                }}>
+                <Button onClick={handleCopy} variant="contained" sx={contactButtons}>
                     {emailCopied ? `✅ ${hero?.keys?.contact?.emailCopied}` : `📧 ${hero?.keys?.contact?.email}`}
                 </Button>
                 {/* LinkedIn */}
                 <Button variant="contained" href={hero?.values?.contact?.linkedin} target="_blank" rel="noopener"
-                    sx={{ fontSize: '1rem', textTransform: 'none', flex: 1, backgroundColor: "background.button", color: "text.default" }}>
+                    sx={contactButtons}>
                     🔗 {hero?.keys?.contact?.linkedin}
                 </Button>
                 {/* GitHub */}
                 <Button variant="contained" href={hero?.values?.contact?.github} target="_blank" rel="noopener"
-                    sx={{ fontSize: '1rem', textTransform: 'none', flex: 1, backgroundColor: "background.button", color: "text.default" }}>
+                    sx={contactButtons}>
                     🐙 {hero?.keys?.contact?.github}
                 </Button>
             </Stack>
@@ -108,24 +154,75 @@ export default function Hero() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} sx={{ alignItems: "stretch" }}>
-                {/* Logo */}
-                <Grid size={{ xs: 12, md: 3, }} sx={{ display: "flex" }}>
-                    <HeroPaper body={createLogoBody()} />
-                </Grid>
-                {/* About */}
-                <Grid size={{ xs: 12, md: 9 }} sx={{ display: "flex" }}>
-                    <HeroPaper title={hero?.keys?.about?.title} body={createAboutBody()} />
-                </Grid>
-                {/* Contact */}
-                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex" }}>
-                    <HeroPaper body={createContactBody()} />
-                </Grid>
-                {/* Languages */}
-                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex" }}>
-                    <HeroPaper body={createLanguagesBody()} />
-                </Grid>
+            <Grid
+    container
+    spacing={2}
+    sx={{
+        alignItems: "stretch",
+    }}
+>
+    {/* LEFT COLUMN */}
+    <Grid
+        size={{ xs: 12, md: 6 }}
+        sx={{
+            display: "flex",
+        }}
+    >
+        <HeroPaper
+            title={hero?.keys?.about?.title}
+            body={createAboutBody()}
+            sx={{ flex: 1 }}
+        />
+    </Grid>
+
+    {/* RIGHT COLUMN */}
+    <Grid
+        size={{ xs: 12, md: 6 }}
+        sx={{
+            display: "flex",
+        }}
+    >
+        <Grid
+            container
+            direction="column"
+            spacing={2}
+            sx={{
+                flex: 1,
+            }}
+        >
+            {/* LOGO TAKES REMAINING HEIGHT */}
+            <Grid
+                sx={{
+                    display: "flex",
+                    flexGrow: 1,
+                }}
+            >
+                <HeroPaper
+                    body={createLogoBody()}
+                    sx={{ flex: 1 }}
+                />
             </Grid>
+
+            {/* CONTACT AUTO HEIGHT */}
+            <Grid
+                sx={{
+                    display: "flex",
+                }}
+            >
+                <HeroPaper body={createContactBody()} />
+            </Grid>
+
+            {/* LANGUAGES AUTO HEIGHT */}
+            <Grid
+                sx={{
+                    display: "flex",
+                }}
+            >
+                <HeroPaper body={createLanguagesBody()} />
+            </Grid>
+        </Grid>
+    </Grid>
+</Grid>
         </Box>
     );
 }

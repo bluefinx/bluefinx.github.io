@@ -43,7 +43,7 @@ export default function App() {
 
                 {/* Header */}
                 <Box component="header" sx={{ height: 150, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 40 }}>
+                    <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 38 }}>
                         {header}
                     </Typography>
                 </Box>

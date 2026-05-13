@@ -24,7 +24,7 @@ export default function FocusAreas() {
                 {Object.entries(focusAreas?.values).map(([key, area]) => (
                     <Accordion key={key} sx={{ borderRadius: 2, overflow: 'hidden' }}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ backgroundColor: area?.colour }}>
-                            <Typography variant="h6" sx={{ fontSize: '1.1rem' }}>
+                            <Typography variant="h6" sx={{ fontSize: '1.0rem' }}>
                                 {area?.title}
                             </Typography>
                         </AccordionSummary>
