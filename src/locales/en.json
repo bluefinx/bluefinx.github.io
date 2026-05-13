@@ -1,0 +1,1142 @@
+{
+  "header": "Blue Finjan Butscher",
+  "footer": "© 2026 - Blue Finjan Butscher",
+  "show-less": "Show less",
+  "show-more": "Show more",
+  "licenses": "Open Source Licenses",
+  "licensesLink": "/licenses.txt",
+  "hero": {
+    "keys": {
+      "about": {
+        "title": "About"
+      },
+      "logo": {
+        "alt": "Blue shark fin with rose sun in background"
+      },
+      "contact": {
+        "title": "Get in touch",
+        "email": "Copy Email",
+        "emailCopied": "Email copied",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    },
+    "values": {
+      "about": {
+        "body": "Cybersecurity MSc graduate with a versatile skillset including Digital Forensics, Security Engineering and Secure Software Development. My background combines hands-on penetration testing and digital forensics investigations with the ability to architect secure, compliant systems from the ground up. From developing forensic automation tools in Python and refactoring legacy C# applications to conducting GDPR-compliant data flow analyses and securing Linux infrastructure, I bridge the gap between offensive security insights and defensive engineering. I approach every project in a structured and thorough way, making security and data privacy a core part of the process from the very beginning.",
+        "remark": "Currently available for freelance engagements and open to full-time opportunities."
+      },
+      "languages": [
+        "German (native)",
+        "English (fluent)",
+        "French (basic)",
+        "Russian (basic)"
+      ],
+      "contact": {
+        "email1": "bfb.business",
+        "email2": "tuta.io",
+        "linkedin": "https://linkedin.com/in/blue-butscher-08041b368/",
+        "github": "https://github.com/bluefinx"
+      }
+    }
+  },
+  "focus-areas": {
+    "keys": {
+      "title": "Focus Areas",
+      "services": "Skills include, but are not limited to:"
+    },
+    "values": {
+      "DF": {
+        "title": "Digital Forensics & Incident Response",
+        "colour": "primary.main",
+        "services": {
+          "service-1": {
+            "label": "Artifact Analysis & Timeline Reconstruction",
+            "skills": [
+              "File System & Registry",
+              "User Activity",
+              "Browser, Cloud & Mobile",
+              "Event Correlation",
+              "Recovered Data"
+            ]
+          },
+          "service-2": {
+            "label": "Workflow Automation & Tooling",
+            "skills": [
+              "Evidence Processing",
+              "Data Transformation & Correlation",
+              "Investigation Workflow Optimisation",
+              "Reporting Support",
+              "Forensic Pipeline Development"
+            ]
+          },
+          "service-3": {
+            "label": "Investigation Reporting & Documentation",
+            "skills": [
+              "Investigation & Case",
+              "Timeline & Activity",
+              "Evidence Inventory",
+              "Technical Findings",
+              "Investigation Workflow"
+            ]
+          },
+          "service-4": {
+            "label": "Forensic Readiness & Case Management",
+            "skills": [
+              "Evidence Handling & Integrity",
+              "Chain of Custody Processes",
+              "Forensic Readiness Planning",
+              "Investigation Workflow Management",
+              "Tooling & Frameworks"
+            ]
+          },
+          "service-5": {
+            "label": "Data Processing & Case Preparation",
+            "skills": [
+              "Forensic Data Organisation",
+              "Investigation Data Preparation",
+              "Data Normalisation & Reduction",
+              "Artifact Classification & Categorisation",
+              "Evidence Inventory Management"
+            ]
+          }
+        }
+      },
+      "SE": {
+        "title": "Security Engineering",
+        "colour": "secondary.main",
+        "services": {
+          "service-1": {
+            "label": "Infrastructure & System Hardening",
+            "skills": [
+              "Linux Systems",
+              "Windows Systems",
+              "Firewall Setup",
+              "System Configuration",
+              "System Maintenance",
+              "Security Best Practices"
+            ]
+          },
+          "service-2": {
+            "label": "Identity & Access Security",
+            "skills": [
+              "User Management",
+              "Account Security",
+              "Authentication Setup",
+              "Credential Handling",
+              "Remote Access"
+            ]
+          },
+          "service-3": {
+            "label": "Security Reviews & Threat Analysis",
+            "skills": [
+              "Configuration Review",
+              "Insecure Workflows",
+              "Trust Boundaries",
+              "Access Risks",
+              "Operational Risks"
+            ]
+          },
+          "service-4": {
+            "label": "Secure System Design",
+            "skills": [
+              "System Workflows",
+              "Role Structures",
+              "Audit Trails",
+              "Service Separation",
+              "Integrity Controls"
+            ]
+          }
+        }
+      },
+      "SD": {
+        "title": "Software Development",
+        "colour": "tertiary.main",
+        "services": {
+          "service-1": {
+            "label": "Full-Stack Application Development",
+            "skills": [
+              "Web Applications",
+              "Desktop Applications",
+              "Mobile Applications",
+              "Frontend & Backend Development",
+              "REST APIs",
+              "Database Integration"
+            ]
+          },
+          "service-2": {
+            "label": "Programming & Automation",
+            "skills": [
+              "Python",
+              "Java",
+              "C#",
+              "Bash",
+              "PowerShell",
+              "CLI Tools",
+              "Automation Scripts"
+            ]
+          },
+          "service-3": {
+            "label": "Backend & System Architecture",
+            "skills": [
+              "API Design",
+              "Microservices",
+              "Database Design",
+              "System Architecture",
+              "Legacy Refactoring",
+              "Docker",
+              "FastAPI",
+              ".NET"
+            ]
+          },
+          "service-4": {
+            "label": "Secure Software Development",
+            "skills": [
+              "Secure Coding",
+              "Security-by-Design",
+              "Authentication & Authorisation",
+              "Role-Based Access Control",
+              "Audit Logging",
+              "Data Integrity",
+              "Security Best Practices"
+            ]
+          },
+          "service-5": {
+            "label": "Technical Documentation & Software Planning",
+            "skills": [
+              "Technical Documentation",
+              "Requirements Analysis",
+              "Workflow Design",
+              "Software Planning",
+              "User Requirements",
+              "UI/UX Considerations",
+              "Testing & Usability"
+            ]
+          }
+        }
+      },
+      "PT": {
+        "title": "Pentesting",
+        "colour": "quaternary.main",
+        "services": {
+          "service-1": {
+            "label": "Vulnerability Assessment & Findings Validation",
+            "skills": [
+              "Vulnerability Scanning",
+              "Findings Validation",
+              "Risk Assessment",
+              "Security Misconfiguration"
+            ]
+          },
+          "service-2": {
+            "label": "Web Application Security",
+            "skills": [
+              "Business Logic",
+              "Authentication Testing",
+              "Session Management",
+              "Input Validation",
+              "Workflow Security",
+              "Threat Modelling"
+            ]
+          },
+          "service-3": {
+            "label": "Active Directory Security",
+            "skills": [
+              "Active Directory Enumeration",
+              "Privilege Escalation",
+              "Credential Exposure",
+              "Authentication Review",
+              "Service Misconfiguration"
+            ]
+          },
+          "service-4": {
+            "label": "Attack Surface Mapping",
+            "skills": [
+              "Port Scanning",
+              "Service Enumeration",
+              "External Exposure",
+              "Asset Mapping",
+              "Infrastructure Documentation"
+            ]
+          },
+          "service-5": {
+            "label": "Structured Reporting & Remediation",
+            "skills": [
+              "Technical Reporting",
+              "Risk Prioritisation",
+              "Remediation Planning",
+              "Security Documentation",
+              "Finding Reproduction"
+            ]
+          }
+        }
+      },
+      "IT": {
+        "title": "General IT",
+        "colour": "quinary.main",
+        "services": {
+          "service-1": {
+            "label": "Server Administration",
+            "skills": [
+              "Server Setup",
+              "System Maintenance",
+              "SSH Access",
+              "Firewall Hardening",
+              "CLI Administration"
+            ]
+          },
+          "service-2": {
+            "label": "Self-Hosted Service Deployment",
+            "skills": [
+              "Nextcloud",
+              "SMB File Sharing",
+              "RaspberryPi",
+              "VPN Setup",
+              "Service Configuration"
+            ]
+          },
+          "service-3": {
+            "label": "Network Configuration & Troubleshooting",
+            "skills": [
+              "IP Configuration",
+              "Subnetting",
+              "Routing & Switching",
+              "VLANs",
+              "Cisco CLI"
+            ]
+          },
+          "service-4": {
+            "label": "System Troubleshooting & Diagnostics",
+            "skills": [
+              "Log Analysis",
+              "Connectivity Diagnostics",
+              "Service Debugging",
+              "Process Inspection",
+              "Network Troubleshooting"
+            ]
+          },
+          "service-5": {
+            "label": "Technical Documentation",
+            "skills": [
+              "Setup Documentation",
+              "Infrastructure Documentation",
+              "Configuration Guides",
+              "Reproducibility",
+              "Maintenance Procedures"
+            ]
+          }
+        }
+      },
+      "DP": {
+        "title": "Data Privacy & Compliance",
+        "colour": "senary.main",
+        "services": {
+          "service-1": {
+            "label": "GDPR Documentation & Data Mapping",
+            "skills": [
+              "RoPA",
+              "Data Flow Mapping",
+              "PII Workflow Analysis",
+              "Processing Activity Documentation",
+              "Privacy Gap Identification"
+            ]
+          },
+          "service-2": {
+            "label": "Security Governance & Risk Assessment",
+            "skills": [
+              "Asset Inventory",
+              "Risk Assessment Support",
+              "Risk Register",
+              "Threat Identification"
+            ]
+          },
+          "service-3": {
+            "label": "Security & Privacy Policy Drafting",
+            "skills": [
+              "Access Control Policies",
+              "Password Policies",
+              "Remote Work Guidelines",
+              "Data Handling Procedures"
+            ]
+          },
+          "service-4": {
+            "label": "Contingency Planning Support",
+            "skills": [
+              "Data Breach Planning",
+              "Escalation Procedures",
+              "Recovery Prioritisation",
+              "Backup & Recovery Documentation"
+            ]
+          },
+          "service-5": {
+            "label": "Awareness & Compliance Training Material",
+            "skills": [
+              "Security Awareness",
+              "GDPR Awareness",
+              "Phishing & Password Security Guidance",
+              "Internal Security Checklists"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "tabs": {
+    "keys": {
+      "title": "Professional Profile"
+    },
+    "values": [
+      "Projects",
+      "Experience",
+      "Skills",
+      "Education",
+      "Certificates"
+    ]
+  },
+  "tags": {
+    "DF": {
+      "label": "Digital Forensics",
+      "colour": "primary.main"
+    },
+    "IR": {
+      "label": "Incident Response",
+      "colour": "primary.main"
+    },
+    "SE": {
+      "label": "Security Engineering",
+      "colour": "secondary.main"
+    },
+    "SD": {
+      "label": "Software Development",
+      "colour": "tertiary.main"
+    },
+    "PT": {
+      "label": "Pentesting",
+      "colour": "quaternary.main"
+    },
+    "IT": {
+      "label": "General IT",
+      "colour": "quinary.main"
+    },
+    "DP": {
+      "label": "Data Privacy",
+      "colour": "senary.main"
+    },
+    "CP": {
+      "label": "Compliance",
+      "colour": "senary.main"
+    }
+  },
+  "projects": {
+    "keys": {
+      "general-title": "What I did",
+      "specific-labels": {
+        "DF": "Digital Forensics Learnings",
+        "IR": "Incident Response Learnings",
+        "DR": "DFIR Learnings",
+        "SE": "Security Engineering Learnings",
+        "SD": "Software Development Learnings",
+        "PT": "Pentesting Learnings",
+        "IT": "IT Learnings",
+        "DP": "Data Privacy Learnings"
+      }
+    },
+    "values": {
+      "project-1": {
+        "title": "Mobile & Computer Forensics Case Studies (Academic Lab)",
+        "summary": "Conducted two structured digital forensic investigations involving large-scale mobile device datasets (~60 extracted images including cloud and social media data) and a separate disk image analysis. Performed evidence triage, artifact analysis, timeline reconstruction and cross-source correlation under time constraints, with findings documented in detailed forensic reports.",
+        "general": [
+          "Analysed large-scale mobile device datasets and a separate disk image using forensic investigation methodologies",
+          "Performed artifact extraction, keyword searches, file system analysis and registry/system artifact examination",
+          "Correlated findings across multiple evidence sources to reconstruct user activity and event timelines",
+          "Applied a hypothesis-driven and evidence-based investigation approach with clear separation of facts and interpretation",
+          "Produced structured forensic reports including evidence inventories, examination procedures, timeline reconstructions and substantiated findings"
+        ],
+        "specific": [
+          [
+            "Conducted structured forensic investigations across mobile, cloud/social media and disk image data",
+            "Performed artifact identification, file system and registry analysis, keyword searching and timeline reconstruction",
+            "Documented forensic findings in clear, structured and evidence-based reports"
+          ],
+          [
+            "Triaged and prioritised relevant evidence under time constraints",
+            "Analysed and correlated forensic findings to support investigative and response decision-making",
+            "Supported post-incident analysis, containment and remediation planning through forensic investigations"
+          ]
+        ]
+      },
+      "project-2": {
+        "title": "Digital Forensics Case Management Framework & Tool Prototype (Master Thesis)",
+        "summary": "Researched digital forensics case management practices and developed a requirements framework for forensic case management systems. Based on this framework and a gap analysis of existing tools, designed and prototyped a secure, forensically sound digital forensics case management system with a focus on evidence integrity, chain of custody, security-by-design and investigator workflows.",
+        "remark": "Currently being written up as a paper.",
+        "general": [
+          "Conducted academic research on digital forensics case management and derived a structured requirements framework",
+          "Compared existing forensic case management tools against the framework to identify capability and workflow gaps",
+          "Designed a comprehensive DF case management system focused on forensic soundness, secure evidence handling, usability and structured workflows",
+          "Defined system architecture with microservices, trust boundaries, role-based access control, audit logging and integrity protection mechanisms",
+          "Implemented a proof-of-concept prototype using FastAPI, Python, React, PostgreSQL, Docker Compose and Keycloak"
+        ],
+        "specific": [
+          [
+            "Gained strong understanding of forensic case management workflows, chain of custody requirements and evidence integrity principles",
+            "Translated forensic best practices and investigative requirements into structured workflows and system design decisions",
+            "Gained understanding of how secure case management and evidence handling support efficient DFIR investigations and triage processes"
+          ],
+          [
+            "Designed and partially built a full-stack microservices prototype using FastAPI, React, PostgreSQL, Docker and Keycloak",
+            "Applied security-by-design principles including trust zones, access control, audit logging and cryptographic integrity protections",
+            "Translated complex research and domain requirements into scalable system architecture and prototype implementations"
+          ]
+        ]
+      },
+      "project-3": {
+        "title": "Forensic Artifact Processing Automation Tool (Open Source)",
+        "summary": "Designed and developed a platform-independent CLI tool in Python to automate forensic artifact processing workflows. The Docker-based application parses Foremost outputs, extracts and normalises metadata using ExifTool, detects duplicate files, stores results in a database and generates structured JSON reports to support efficient forensic analysis and triage.",
+        "remark": "Open-source beta release available on GitHub.",
+        "link": "https://github.com/bluefinx/foremost-parser",
+        "linkText": "GitHub",
+        "general": [
+          "Developed a platform-independent CLI application in Python for forensic artifact processing and reporting",
+          "Parsed Foremost file carving outputs and extracted structured artifact information",
+          "Integrated ExifTool to collect and normalise metadata from recovered files and implemented duplicate detection",
+          "Stored processed artifact data in a PostgreSQL database and generated structured JSON reports",
+          "Built a Docker-based cross-platform solution with Bash and PowerShell startup scripts, input validation and error handling"
+        ],
+        "specific": [
+          [
+            "Worked with file carving outputs, forensic artifacts and metadata analysis workflows",
+            "Gained understanding of how automation supports efficient forensic triage and evidence review processes",
+            "Structured forensic data and reports to support investigation and analysis workflows"
+          ],
+          [
+            "Built containerised Python CLI application using Docker and PostgreSQL",
+            "Designed data processing pipeline including parsing, metadata extraction, deduplication and reporting",
+            "Applied software engineering practices including modular design, error handling, input validation and cross-platform scripting with Bash and PowerShell"
+          ]
+        ]
+      },
+      "project-4": {
+        "title": "Manual Open-Source Web Application Security Assessment (Real-World)",
+        "summary": "Conducted a full manual security assessment of a zero-knowledge open-source web application in a local VM environment. Performed a manual security assessment of a zero-knowledge open-source web application in a local VM environment. Identified security flaws, business logic issues and social engineering risks through code review, traffic analysis and browser-based testing.",
+        "general": [
+          "Set up and tested a zero-knowledge open-source web application in a local VM environment",
+          "Performed basic code review and analysed application behaviour through browser/UI testing",
+          "Used Burp Suite for network traffic analysis, request manipulation and attack validation",
+          "Tested for XSS, CSRF, business logic flaws, validation weaknesses and client-side bypasses",
+          "Identified security bugs and social engineering/phishing possibilities, then documented and disclosed findings responsibly"
+        ],
+        "specific": [
+          [
+            "Improved manual web application testing skills beyond automated vulnerability scanning",
+            "Gained hands-on experience with Burp Suite, browser analysis, request manipulation and exploit validation",
+            "Learned how business logic flaws and social engineering opportunities can create realistic attack paths"
+          ],
+          [
+            "Developed a stronger understanding of secure validation, trust boundaries and client–server security design",
+            "Learned how weak input validation and client-side controls can lead to exploitable security gaps",
+            "Improved vulnerability classification, reporting and communication with developers during responsible disclosure processes"
+          ]
+        ]
+      },
+      "project-5": {
+        "title": "Windows Domain Security Assessment (Academic Lab)",
+        "summary": "Performed a hands-on penetration test against a Windows Active Directory lab environment simulating common enterprise weaknesses. Identified and exploited misconfigurations leading to credential compromise, privilege escalation and system-level access.",
+        "general": [
+          "Performed network and service enumeration with Nmap across SMB, DNS, SMTP, FTP, RDP and SSH",
+          "Used Nessus and manual validation to identify vulnerabilities and exposed services",
+          "Analysed Active Directory users, authentication mechanisms, password policies and service configurations",
+          "Exploited misconfigurations for credential harvesting, password cracking, privilege escalation and admin account compromise",
+          "Gained system-level access on a target server and documented attack paths and remediation recommendations"
+        ],
+        "specific": [
+          [
+            "Improved practical Active Directory pentesting skills from enumeration to full system compromise",
+            "Gained hands-on experience with Nmap, Nessus, credential attacks and privilege escalation techniques",
+            "Learned how multiple small weaknesses can be chained into realistic enterprise attack paths"
+          ],
+          [
+            "Developed a stronger understanding of common Windows AD misconfigurations and hardening practices",
+            "Learned how weak authentication, permissions and exposed services increase enterprise attack surface",
+            "Improved technical reporting, root cause analysis and remediation recommendation skills"
+          ]
+        ]
+      },
+      "project-6": {
+        "title": "OWASP-based Web Application Pentest (Academic Lab)",
+        "summary": "Performed a methodology-driven web application penetration test based on the OWASP Testing Guide, combining automated scanning with manual validation and exploitation. Identified and demonstrated vulnerabilities including SQL injection, XSS, broken authentication, session hijacking and business logic flaws in a realistic attack scenario.",
+        "general": [
+          "Conducted reconnaissance and attack surface mapping against the target web application",
+          "Tested authentication, authorisation, session management, input validation and business logic",
+          "Used OWASP ZAP, Wapiti, and Nessus to identify vulnerabilities and manually validate findings",
+          "Exploited SQL injection for database access using manual techniques and sqlmap, leveraged XSS with BeEF hook for client-side control, used Weevely for post-exploitation activities and demonstrated admin session replay attacks",
+          "Documented confirmed findings, exploitation evidence, attack paths and mitigation recommendations in a structured report"
+        ],
+        "specific": [
+          "Improved practical web application pentesting skills using the OWASP Testing Guide as a structured methodology",
+          "Gained hands-on experience exploiting SQLi, XSS, broken authentication, session hijacking and business logic vulnerabilities",
+          "Learned how to validate automated scan results manually and chain vulnerabilities into realistic attack scenarios"
+        ]
+      },
+      "project-7": {
+        "title": "Linux Home Server",
+        "summary": "Deployed and maintained a self-hosted Linux server on a Raspberry Pi providing Nextcloud, SMB file sharing and VPN access. Secured and administered the system entirely via CLI using Linux hardening practices, firewall configuration, system monitoring and OpenVPN integration.",
+        "general": [
+          "Deployed and configured Nextcloud for remote file access and SMB for local network file sharing and backups",
+          "Secured the system using firewall configuration and Linux hardening practices",
+          "Performed ongoing maintenance including system updates, log analysis, process inspection and basic network traffic review",
+          "Reconfigured the Raspberry Pi into a media system while maintaining system hardening and adding OpenVPN for access protection",
+          "Managed the entire environment through CLI/Bash administration and documented all setup and configuration steps for reproducibility"
+        ],
+        "specific": [
+          [
+            "Gained practical experience hardening Linux systems and reducing attack surface on a self-hosted environment",
+            "Learned secure access configuration and VPN deployment with OpenVPN",
+            "Improved operational security skills through continuous maintenance, monitoring, troubleshooting and log analysis"
+          ],
+          [
+            "Strengthened Linux system administration and command-line workflow skills through daily hands-on use",
+            "Gained experience deploying, configuring and maintaining self-hosted infrastructure and network services",
+            "Developed structured troubleshooting and technical documentation practices for reproducible system setups"
+          ]
+        ]
+      },
+      "project-8": {
+        "title": "Cryptanalysis of DiCal-IDEA implementation (Bachelor Thesis)",
+        "summary": "Conducted a structured analysis of the DiCal-IDEA encryption used in the POCSAG protocol for BOS paging systems. Analysed 236 ciphertext samples, protocol metadata and public resources to identify likely message structures, encryption methods and IV handling through ciphertext-only and hypothesis-driven analysis, followed by threat modelling of potential weaknesses and attack vectors.",
+        "general": [
+          "Researched existing cryptanalysis and technical documentation related to the IDEA cipher and DiCal-IDEA implementations",
+          "Analysed encrypted POCSAG message datasets and correlated ciphertext patterns with protocol metadata and timestamps",
+          "Developed and tested multiple hypotheses regarding message structure, cipher mode operation, IV usage and nonce construction",
+          "Applied exclusion-based analytical methods to identify technically plausible encryption implementations",
+          "Produced a threat modelling assessment of the identified and hypothesised cryptographic design choices"
+        ],
+        "specific": [
+          [
+            "Analysed proprietary cryptographic implementations with limited technical information",
+            "Identified potential attack vectors and weaknesses through threat modelling and protocol analysis",
+            "Improved hypothesis-driven security analysis and technical validation methodologies"
+          ],
+          [
+            "Conducted structured investigations on encrypted communication datasets",
+            "Performed metadata correlation, protocol artifact analysis and timeline-based investigation methods",
+            "Documented technical findings in clear, structured and evidence-based analytical reports"
+          ]
+        ]
+      }
+    }
+  },
+  "experiences": {
+    "keys": {
+      "general-title": "What I did",
+      "specific-labels": {
+        "DF": "Digital Forensics Skills",
+        "IR": "Incident Response Skills",
+        "DR": "DFIR Skills",
+        "SE": "Security Engineering Skills",
+        "SD": "Software Development Skills",
+        "PT": "Pentesting Skills",
+        "IT": "IT Skills",
+        "DP": "Data Privacy Skills"
+      }
+    },
+    "values": {
+      "experience-1": {
+        "title": "Cybersecurity Student Assistant (Part-Time)",
+        "summary": "Designed and secured a structured penetration testing training environment with hands-on attack labs and realistic security scenarios. Built clear exercise documentation, assessment procedures and operational security controls to support safe and repeatable training.",
+        "company": "Hochschule Ravensburg-Weingarten",
+        "time": "May 2022 - February 2023",
+        "location": "Weingarten, GER",
+        "general": [
+          "Designed a penetration testing lab with realistic attack scenarios and hands-on exercises",
+          "Created structured training documentation and methodology-based exercise materials",
+          "Secured the lab environment with access controls, firewall rules and restricted permissions",
+          "Established a responsible disclosure workflow and defined operational boundaries"
+        ],
+        "specific": [
+          [
+            "Improved practical understanding of penetration testing methodologies and attack workflows",
+            "Learned how to design realistic offensive security scenarios for hands-on training environments",
+            "Gained experience defining responsible disclosure processes and engagement boundaries"
+          ],
+          [
+            "Applied infrastructure hardening through firewall configuration and access control management",
+            "Learned how to secure isolated training environments while maintaining usability",
+            "Improved understanding of trust boundaries, permission scoping and operational security controls"
+          ]
+        ]
+      },
+      "experience-2": {
+        "title": "Data Privacy & Security Intern (Full-time)",
+        "summary": "Completed a data protection and security internship focused on GDPR compliance, European data privacy law research and web application security assessments. Analysed PII processing risks, performed scoped vulnerability testing and worked with administrators to improve security and compliance.",
+        "company": "Hochschule Ravensburg-Weingarten",
+        "time": "September 2021 - January 2022",
+        "location": "Weingarten, GER",
+        "general": [
+          "Conducted detailed research on European data privacy laws, GDPR requirements and fundamental legal case analysis",
+          "Analysed university data flows and data protection requirements in a GDPR context",
+          "Created RoPA documentation and supported compliance-related processes",
+          "Assessed university web applications to identify PII processing points and related risks",
+          "Performed scoped vulnerability assessments with structured triage and prioritisation while collaborating with administrators on mitigation efforts"
+        ],
+        "specific": [
+          [
+            "Developed a practical understanding of GDPR requirements, RoPA creation and PII classification in institutional environments",
+            "Learned how to analyse data processing activities using structured legal reasoning and statutory element analysis",
+            "Improved understanding of how data privacy regulations apply to real technical systems and workflows"
+          ],
+          [
+            "Gained experience performing scoped web application vulnerability assessments and structured finding triage",
+            "Learned how privacy risks and technical security vulnerabilities overlap in web applications handling sensitive data",
+            "Improved communication and remediation coordination skills by working directly with system administrators and stakeholders"
+          ]
+        ]
+      },
+      "experience-3": {
+        "title": "Software Developer - Forensic Lab Equipment (Part-time)",
+        "summary": "Independently refactored and extended a legacy C# desktop application used for forensic lab equipment log processing. Improved code structure, redesigned GUI-based data visualisation and rebuilt documentation while collaborating with hardware and sales stakeholders.",
+        "company": "Attestor Forensics GmbH ",
+        "time": "May 2021 - August 2021",
+        "location": "Bad Wurzach, GER",
+        "general": [
+          "Independently refactored and extended a legacy C# Windows desktop application used for forensic log processing",
+          "Restructured existing code and applied design patterns to improve maintainability, readability and data handling",
+          "Redesigned the GUI-based log visualisation to make data easier to analyse and report",
+          "Rebuilt technical documentation to reflect the updated system architecture and workflows",
+          "Collaborated with hardware and sales stakeholders to ensure accurate data representation and user-friendly output while managing version control with SVN"
+        ],
+        "specific": [
+          "Gained hands-on experience working with and improving a legacy C# codebase independently",
+          "Strengthened understanding of refactoring, software architecture and design patterns in a real production environment",
+          "Improved communication skills by translating technical requirements into practical features and clear user-facing functionality"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "keys": {
+      "topSkills": "Top Skills",
+      "technical": "Technical Skills",
+      "transferable": "Transferable Skills",
+      "tools": "Tools & Platforms",
+      "languages": "Languages & Scripting"
+    },
+    "values": {
+      "DF": {
+        "topSkills": [
+          "Timeline Reconstruction",
+          "Cross-Source Correlation",
+          "Evidence Triage",
+          "Forensic Workflow Design",
+          "Investigation Reporting"
+        ],
+        "allSkills": {
+          "technical": [
+            "Disk Image Analysis",
+            "Mobile Device Data Analysis",
+            "Cryptographic Protocol Analysis",
+            "File System Analysis",
+            "Registry Artifact Analysis",
+            "Keyword Search",
+            "File Carving",
+            "Evidence Triage",
+            "Timeline Reconstruction",
+            "Artifact Correlation",
+            "Metadata Extraction",
+            "Chain of Custody",
+            "Forensic Workflow Design",
+            "Forensic Case Management",
+            "Investigation Reporting"
+          ],
+          "transferable": [
+            "Hypothesis-Driven Investigation",
+            "Cross-Source Correlation",
+            "Evidence-Based Reasoning",
+            "Pattern Recognition",
+            "Workflow Coordination",
+            "Information Organisation",
+            "Technical Requirement Analysis",
+            "Priority Management",
+            "Investigation Planning",
+            "Decision Support"
+          ],
+          "tools": [
+            "Autopsy",
+            "Plaso",
+            "Foremost",
+            "TestDisk",
+            "ExifTool"
+          ]
+        }
+      },
+      "SE": {
+        "topSkills": [
+          "Identity & Access Management",
+          "Secure System Architecture",
+          "Linux Server Hardening",
+          "Windows Security Configuration",
+          "Attack Surface Reduction"
+        ],
+        "allSkills": {
+          "technical": [
+            "Linux Server Hardening",
+            "Windows Security Configuration",
+            "Identity & Access Management",
+            "Authentication Configuration",
+            "Active Directory Hardening",
+            "Remote Access Configuration",
+            "Firewall Configuration",
+            "Security Baseline Implementation",
+            "Audit Trail & Security Logging Design",
+            "Secure System Architecture",
+            "Attack Surface Reduction"
+          ],
+          "transferable": [
+            "Security Risk Analysis",
+            "Root Cause Analysis",
+            "Technical Communication",
+            "Security Documentation",
+            "Stakeholder Collaboration",
+            "Security-Focused Problem Solving",
+            "Security Workflow Design"
+          ],
+          "tools": [
+            "Wireshark",
+            "Netcat",
+            "VMware"
+          ]
+        }
+      },
+      "SD": {
+        "topSkills": [
+          "Secure Software Development",
+          "Full-Stack Application Development",
+          "Microservices Architecture",
+          "API Design & Integration",
+          "Database Design & Data Modelling"
+        ],
+        "allSkills": {
+          "technical": [
+            "Full-Stack Application Development",
+            "API Design & Integration",
+            "Microservices Architecture",
+            "Database Design & Data Modelling",
+            "Secure Software Development",
+            "Legacy System Refactoring",
+            "Modular Architecture Design",
+            "GUI Development",
+            "Design & Architecture Patterns",
+            "Audit Logging & Traceability",
+            "Data Integrity & Validation",
+            "CLI Tool Development",
+            "Structured Data Processing"
+          ],
+          "transferable": [
+            "Requirements Analysis",
+            "Technical Research",
+            "Usability & User-Centred Thinking",
+            "Independent Project Ownership",
+            "Analytical Thinking",
+            "Cross-Functional Collaboration",
+            "Problem Solving",
+            "Workflow Design"
+          ],
+          "tools": [
+            "Git",
+            "Docker",
+            "Docker Compose",
+            "FastAPI",
+            "React",
+            "Vue",
+            "PostgreSQL",
+            "MariaDB",
+            "SQLAlchemy",
+            "Keycloak"
+          ],
+          "languages": [
+            "Python",
+            "C#",
+            "Java",
+            "POSIX C",
+            "SQL",
+            "Bash",
+            "PowerShell"
+          ]
+        }
+      },
+      "PT": {
+        "topSkills": [
+          "Vulnerability Assessment",
+          "Business Logic Analysis",
+          "Information Gathering",
+          "Active Directory Enumeration",
+          "Structured Reporting"
+        ],
+        "allSkills": {
+          "technical": [
+            "OWASP Testing",
+            "Vulnerability Assessment",
+            "Findings Validation",
+            "Business Logic Analysis",
+            "Authentication & Authorisation Review",
+            "Session Management Security",
+            "Input Validation Testing",
+            "Information Gathering",
+            "Service Enumeration",
+            "Active Directory Enumeration",
+            "Privilege Escalation",
+            "Credential Harvesting",
+            "Security Misconfiguration Analysis",
+            "Structured Reporting"
+          ],
+          "transferable": [
+            "Analytical Thinking",
+            "Attention to Detail",
+            "Methodical Testing Approach",
+            "Responsible Disclosure Practices",
+            "Communication of Technical Findings",
+            "Critical Evaluation",
+            "Scenario Planning",
+            "Independent Research"
+          ],
+          "tools": [
+            "Burp Suite",
+            "OWASP ZAP",
+            "Wapiti",
+            "Metasploit",
+            "BeEF",
+            "Kali Linux",
+            "Nmap",
+            "Nessus",
+            "sqlmap",
+            "Weevely"
+          ]
+        }
+      },
+      "IT": {
+        "topSkills": [
+          "Server Administration",
+          "Service Deployment",
+          "Network Configuration",
+          "Network Troubleshooting",
+          "Command Line Administration"
+        ],
+        "allSkills": {
+          "technical": [
+            "Server Administration",
+            "System Maintenance",
+            "Network Configuration",
+            "Network Troubleshooting",
+            "Routing & Switching",
+            "Subnetting",
+            "VLAN Configuration",
+            "VPN Configuration",
+            "Service Deployment",
+            "Connectivity Diagnostics",
+            "System Monitoring",
+            "Infrastructure Documentation",
+            "Log Review",
+            "Command Line Administration",
+            "VM Setup & Management"
+          ],
+          "transferable": [
+            "Systematic Troubleshooting",
+            "Reproducible Configuration Documentation",
+            "Self-Directed Problem Solving",
+            "Infrastructure Planning",
+            "Process Organisation",
+            "Technical Problem Analysis",
+            "Workflow Documentation"
+          ],
+          "tools": [
+            "Cisco CLI",
+            "Packet Tracer"
+          ]
+        }
+      },
+      "DP": {
+        "topSkills": [
+          "GDPR Compliance",
+          "Data Flow Mapping",
+          "Risk Assessment",
+          "Threat Modelling",
+          "Privacy-by-Design Thinking"
+        ],
+        "allSkills": {
+          "technical": [
+            "GDPR Compliance",
+            "RoPA Documentation",
+            "Data Flow Mapping",
+            "PII Classification",
+            "PII Risk Analysis",
+            "Privacy Gap Identification",
+            "Processing Activity Documentation",
+            "Asset Inventory",
+            "Risk Assessment",
+            "Threat Modelling",
+            "Compliance & Security Awareness"
+          ],
+          "transferable": [
+            "Analytical Thinking",
+            "Statutory & Legal Reasoning",
+            "Privacy-by-Design Thinking",
+            "Research & Information Analysis",
+            "Risk-Based Decision Making",
+            "Cross-Functional Collaboration",
+            "Stakeholder Communication",
+            "Organisational & Planning Skills",
+            "Prioritisation & Process Coordination"
+          ]
+        }
+      }
+    }
+  },
+  "education": {
+    "keys": {},
+    "values": {
+      "education-1": {
+        "title": "Master of Science in Ethical Hacking & Cybersecurity",
+        "institution": "Abertay University",
+        "time": "September 2024 - August 2025",
+        "location": "Dundee, UK",
+        "grades": "Graduated with Distinction (avg: 4.07/4.5)",
+        "prize": "NCR Atleos Prize for Best Student of the Programme",
+        "summary": "Completed a Master's degree covering advanced cybersecurity topics including digital forensics, penetration testing, network security, basic malware analysis and incident response, basic information security governance and data privacy law.",
+        "thesis": "The master's thesis focused on designing a Digital Forensics Case Management Framework and Tool Prototype, optimising workflows, evidence handling and usability.",
+        "modules": {
+          "DF": [
+            "Computer Forensics Case Study",
+            "Malware Analysis (basic)",
+            "Incident Response & Risk Management (basic)"
+          ],
+          "SE": [
+            "Network Security & System Hardening",
+            "Secure & Resilient Development & Systems"
+          ],
+          "SD": [
+            "Python Scripting"
+          ],
+          "PT": [
+            "System & Web Application Penetration Testing"
+          ],
+          "IT": [
+            "Introductory Machine Learning"
+          ],
+          "DP": [
+            "UK Data Privacy & Computer Law",
+            "Information Security (Theoretical Foundations)"
+          ]
+        }
+      },
+      "education-2": {
+        "title": "Bachelor of Science in Applied Computer Science",
+        "institution": "Hochschule Ravensburg-Weingarten",
+        "time": "October 2017 - August 2023",
+        "location": "Weingarten, GER",
+        "grades": "Graduated 1.7 | Equivalent to UK Upper Second Class Honours (2:1)",
+        "summary": "Completed a Bachelor's degree building a broad foundation across software development, networking, system administration, databases, with lectures on AI, mobile forensics and European data privacy law.",
+        "thesis": "The bachelor's thesis involved a cryptographic analysis of a proprietary IDEA implementation.",
+        "modules": {
+          "DF": [
+            "Mobile Forensics Case Study"
+          ],
+          "SE": [
+            "Data & System Security"
+          ],
+          "SD": [
+            "System Programming (Java, C)",
+            "App & Web Development",
+            "UI Design & Development",
+            "Software Engineering"
+          ],
+          "PT": [
+            "Manual Open-Source Web Application Security Assessment"
+          ],
+          "IT": [
+            "Networking & Internet",
+            "OS & System Administration",
+            "Artificial Intelligence"
+          ],
+          "DP": [
+            "European Data Privacy Law & Ethics"
+          ]
+        }
+      }
+    }
+  },
+  "certificates": {
+    "keys": {
+      "general-title": "What I did",
+      "specific-labels": {
+        "IT": "IT Skills"
+      }
+    },
+    "values": {
+      "certificate-1": {
+        "title": "CCNA Routing and Switching: Introduction to Networks",
+        "awarder": "Cisco Networking Academy",
+        "institution": "Hochschule Ravensburg-Weingarten",
+        "date": "September 2020",
+        "location": "Weingarten, GER",
+        "summary": "Completed the Cisco CCNA Routing & Switching: Introduction to Networks course with hands-on networking labs using Cisco hardware and Packet Tracer. Learned core networking fundamentals including TCP/IP, subnetting, switching, routing, VLANs and WAN concepts while configuring and troubleshooting real network setups.",
+        "general": [
+          "Studied core networking concepts including TCP/IP, the OSI model, subnetting, VLANs, switching and routing fundamentals",
+          "Configured Cisco routers and switches through the command line, including IP addressing, device setup and basic network management",
+          "Built and troubleshot small-to-medium network topologies using physical hardware, incl. Windows PCs, and Cisco Packet Tracer",
+          "Worked with routing concepts, WAN connectivity, wireless networking and hardware-level data transmission",
+          "Practiced identifying and resolving network connectivity issues in structured lab environments"
+        ],
+        "specific": [
+          "Built a strong understanding of how computer networks function across infrastructure, devices, and internet communication",
+          "Gained practical experience configuring and troubleshooting Cisco networking equipment in hands-on lab environments",
+          "Learned to analyse network problems systematically using subnetting, routing logic and connectivity testing"
+        ]
+      }
+    }
+  },
+  "references": {
+    "keys": {
+      "title": "References"
+    },
+    "values": {
+      "reference-1": {
+        "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus.",
+        "remark": {
+          "name": "Max Mustermann",
+          "role": "Professor an Uni Universität"
+        }
+      },
+      "reference-2": {
+        "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus.",
+        "remark": {
+          "name": "Max Mustermann",
+          "role": "Professor an Uni Universität"
+        }
+      },
+      "reference-3": {
+        "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus.",
+        "remark": {
+          "name": "Max Mustermann",
+          "role": "Professor an Uni Universität"
+        }
+      }
+    }
+  },
+  "privacy": {
+    "keys": {
+      "link": "/privacy.html",
+      "title": "Privacy Statement",
+      "website": "Website",
+      "hosting": "Hosting",
+      "international": "International Data Transfers"
+    },
+    "values": {
+      "subtitle": "This page explains if, how and by whom personal data is processed.",
+      "website": "This website does not collect, store or process any personal data of visitors. This website does not use cookies or any form of tracking (incl. Google Analytics).\n\nThis website may contain links to third-party services such as LinkedIn or GitHub. When visiting those external websites, personal data and technical information, such as IP addresses, browser information or request data, may be automatically processed by the respective providers.\n\nPlease refer to their respective privacy policies for more details.",
+      "hosting": "This website is hosted through GitHub Pages by\n\nGitHub Inc.\n88 Colin P Kelly Jr St\nSan Francisco, CA 94107\nUnited States.\n\nAs part of the hosting service, GitHub may process technical information such as IP addresses, browser type, request information and access times in server log files. This processing is necessary to ensure the availability, security and integrity of the website and is based on legitimate interests under Article 6(1)(f) UK GDPR.\n\nMore information, including your rights and how to exercise them, can be found in the",
+      "link": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "description": "GitHub Privacy Statement",
+      "international": "Data may be transferred to servers located in the United States. According to GitHub, such transfers are based on the European Commission’s Standard Contractual Clauses (SCCs) and GitHub’s certification under the EU-U.S. Data Privacy Framework (including the UK Extension).",
+      "updated": "Last updated: 13 May 2026"
+    }
+  }
+}
