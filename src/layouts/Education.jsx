@@ -26,14 +26,26 @@ export default function Education() {
         return (
             <Stack direction="column" spacing={1} sx={{ px: 2, mt: -1 }}>
                 <Paper sx={{ p: 1 }}>
-                    <Typography variant="body1" sx={{ fontSize: '1rem', fontStyle: 'italic', whiteSpace: 'pre-line' }}>
+                    <Typography variant="body1" sx={{
+                        fontSize: {
+                            xs: 14,
+                            sm: 15,
+                            md: 16,
+                        }, fontStyle: 'italic', whiteSpace: 'pre-line'
+                    }}>
                         <span style={{ fontStyle: 'normal' }}>🏫 </span>{` ${institution}\n`}
-                        <span style={{ fontStyle: 'normal' }}>⏳ </span>{` ${time} · `}
+                        <span style={{ fontStyle: 'normal' }}>⏳ </span>{` ${time}\n`}
                         <span style={{ fontStyle: 'normal' }}>🌍 </span>{` ${location}`}
                     </Typography>
                 </Paper>
                 <Paper sx={{ p: 1 }} >
-                    <Typography variant="body1" sx={{ fontSize: '1rem', fontStyle: 'italic', whiteSpace: 'pre-line' }}>
+                    <Typography variant="body1" sx={{
+                        fontSize: {
+                            xs: 14,
+                            sm: 15,
+                            md: 16,
+                        }, fontStyle: 'italic', whiteSpace: 'pre-line'
+                    }}>
                         <span style={{ fontStyle: 'normal' }}>🎓 </span>{` ${grades}\n`}
                         {prize && <span style={{ fontStyle: 'normal' }}>🏆 </span>}{prize && `${prize}`}
                     </Typography>

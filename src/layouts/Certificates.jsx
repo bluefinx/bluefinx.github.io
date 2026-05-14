@@ -63,10 +63,14 @@ export default function Certificates() {
         return (
             <Stack direction="column" spacing={1} sx={{ px: 2, mt: -1, mb: 2 }}>
                 <Paper sx={{ p: 1 }}>
-                    <Typography variant="body1" sx={{ fontSize: '1rem', fontStyle: 'italic', whiteSpace: 'pre-line' }}>
+                    <Typography variant="body1" sx={{ fontSize: {
+                            xs: 14,
+                            sm: 15,
+                            md: 16,
+                        }, fontStyle: 'italic', whiteSpace: 'pre-line' }}>
                         <span style={{ fontStyle: 'normal' }}>🏛️ </span>{` ${awarder}\n`}
                         <span style={{ fontStyle: 'normal' }}>🏫 </span>{`via ${institution}\n`}
-                        <span style={{ fontStyle: 'normal' }}>📅 </span>{` ${date} · `}
+                        <span style={{ fontStyle: 'normal' }}>📅 </span>{` ${date}\n`}
                         <span style={{ fontStyle: 'normal' }}>🌍 </span>{` ${location}`}
                     </Typography>
                 </Paper>

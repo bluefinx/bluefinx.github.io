@@ -36,11 +36,27 @@ export default function Hero() {
     /* Builds the Logo body */
     function createLogoBody() {
         return (
-            <Box sx={{ width: "100%", height: "100%", display: "flex", flexGrow: 1, justifyContent: "center", alignItems: "center" }}>
-                <Box component="img" src={Logo} alt={hero?.keys?.logo?.alt} sx={{
-                    maxWidth: "100%",
-                    maxHeight: "120px", objectFit: "contain"
-                }} />
+            <Box
+                sx={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    minHeight: "150px",
+                    padding: 2
+                }}
+            >
+                <Box
+                    component="img"
+                    src={Logo}
+                    alt={hero?.keys?.logo?.alt}
+                    sx={{
+                        maxWidth: "100%",
+                        maxHeight: "120px",
+                        height: "auto",
+                        objectFit: "contain"
+                    }}
+                />
             </Box>
         );
     }
@@ -48,66 +64,53 @@ export default function Hero() {
     /* Builds the Languages body */
     function createLanguagesBody() {
         return (
-            <Stack direction="row" spacing={1} sx={{ alignItems: "stretch", justifyContent: "center", width: "100%" }}>
+            <Grid container spacing={{ xs: 1, sm: 1 }} sx={{ justifyContent: "center", width: "100%" }}>
                 {hero?.values?.languages?.map((language, index) => (
-                    <Button disabled variant="contained" key={index}
-                        sx={{
-                            flex: 1,
-
-                            fontSize: "1rem",
-                            textTransform: "none",
-
-                            px: 1.5,
-                            py: 0.75,
-
-                            minHeight: 48,
-
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-
-                            textAlign: "center",
-
-                            backgroundColor: "background.button",
-                            color: "text.default",
-
-                            "&.Mui-disabled": {
+                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
+                        <Button disabled variant="contained"
+                            sx={{
+                                width: "100%",
+                                textTransform: "none",
                                 backgroundColor: "background.button",
                                 color: "text.default",
-                                opacity: 1,
-                            },
-                        }}
-                    >{language}</Button>
+                                fontSize: 16,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                textAlign: "center",
+
+                                "&.Mui-disabled": {
+                                    backgroundColor: "background.button",
+                                    color: "text.default",
+                                    opacity: 1,
+                                },
+                            }}
+                        >{language}</Button>
+                    </Grid>
                 ))}
-            </Stack>
+            </Grid>
         );
     }
 
     const contactButtons = {
-        flex: 1,
-
-        fontSize: "1rem",
         textTransform: "none",
-
         backgroundColor: "background.button",
         color: "text.default",
-
-        px: 1.5,
-        py: 0.75,
-
-        minHeight: 48,
-
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-
-        textAlign: "center"
+        textAlign: "center",
+        flex: 1,
+        minWidth: 0,
+        maxHeight: 48,
+        width: '100%',
+        fontSize: 16
     };
 
     /* Builds the Contact body */
     function createContactBody() {
         return (
-            <Stack direction="row" spacing={1} sx={{ alignItems: "stretch", justifyContent: "center", width: "100%" }}>
+            <Stack direction={{ xs: "column", sm: "row" }} spacing={{ xs: 1, sm: 1 }} sx={{ justifyContent: "center", alignItems: "center", width: "100%" }}>
                 {/* Email */}
                 <Button onClick={handleCopy} variant="contained" sx={contactButtons}>
                     {emailCopied ? `✅ ${hero?.keys?.contact?.emailCopied}` : `📧 ${hero?.keys?.contact?.email}`}
@@ -146,30 +149,26 @@ export default function Hero() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} sx={{ alignItems: "stretch"}}>
+            <Grid container spacing={2} sx={{ alignItems: "stretch" }}>
                 {/* Left Column */}
-                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex"}}>
-                    <HeroPaper title={hero?.keys?.about?.title} body={createAboutBody()} sx={{ flex: 1 }}/>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex" }}>
+                    <HeroPaper
+                        title={hero?.keys?.about?.title}
+                        body={createAboutBody()}
+                        sx={{ flex: 1, minWidth: 0 }}
+                    />
                 </Grid>
 
                 {/* Right Column */}
-                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex"}}>
-                    <Grid container direction="column" spacing={2} sx={{flex: 1}}>
-                        {/* Logo */}
-                        <Grid sx={{ display: "flex", flexGrow: 1}}>
-                            <HeroPaper body={createLogoBody()} sx={{ flex: 1 }}/>
-                        </Grid>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                    {/* Logo */}
+                    <HeroPaper body={createLogoBody()} sx={{ flex: 1, minWidth: 0 }} />
 
-                        {/* Contact */}
-                        <Grid sx={{ display: "flex"}}>
-                            <HeroPaper body={createContactBody()} />
-                        </Grid>
+                    {/* Contact */}
+                    <HeroPaper body={createContactBody()} sx={{ minWidth: 0 }} />
 
-                        {/* Languages */}
-                        <Grid sx={{ display: "flex"}}>
-                            <HeroPaper body={createLanguagesBody()} />
-                        </Grid>
-                    </Grid>
+                    {/* Languages */}
+                    <HeroPaper body={createLanguagesBody()} sx={{ minWidth: 0 }} />
                 </Grid>
             </Grid>
         </Box>

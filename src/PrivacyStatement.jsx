@@ -63,7 +63,13 @@ export default function PrivacyStatement() {
             <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', px: '10%' }}>
                 {/* Header */}
                 <Box component="header" sx={{ height: 150, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <Typography variant="h3" sx={{ fontWeight: 'bold', fontSize: 40 }}>
+                    <Typography variant="h3" sx={{
+                        fontWeight: 'bold', fontSize: {
+                            xs: 30,
+                            sm: 34,
+                            md: 38,
+                        }, whiteSpace: "nowrap",
+                    }}>
                         {privacy?.keys?.title}
                     </Typography>
                 </Box>

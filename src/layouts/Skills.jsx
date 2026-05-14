@@ -29,11 +29,23 @@ export default function Skills() {
                     <Typography variant="subtitle1" sx={{ fontSize: '1rem', fontWeight: "bold", pb: 0.5 }}>
                         <span style={{ fontStyle: 'normal' }}>🏆 </span>{` ${title}`}
                     </Typography>
-                    <Stack direction="row" sx={{ alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}>
-                        {topSkills?.map((skill, index) => (
-                            <Tag key={index} label={skill} colour={colour} textColour="text.default" />
-                        ))}
-                    </Stack>
+                    <Box sx={{
+                        overflowX: "auto", width: "100%", scrollbarWidth: "none",
+                        "&::-webkit-scrollbar": { display: "none" }
+                    }}>
+                        <Stack direction="row" sx={{ alignItems: "flex-start", flexWrap: "wrap", gap: 1, minWidth: "fit-content" }}>
+                            {topSkills?.map((skill, index) => (
+                                <Tag key={index} label={skill} colour={colour} textColour="text.default" sx={{
+                                    flexShrink: 0, width: "max-content",
+                                    "& .MuiChip-label": {
+                                        whiteSpace: "nowrap",
+                                        overflow: "visible",
+                                        textOverflow: "clip"
+                                    }
+                                }} />
+                            ))}
+                        </Stack>
+                    </Box>
                 </Stack>
             </Paper>
         );
@@ -96,7 +108,8 @@ export default function Skills() {
                         header={createHeader(skills?.keys?.topSkills, area?.topSkills, focusAreas?.values[key]?.colour)}
                         body={createBody(area?.allSkills, focusAreas?.values[key]?.colour)}
                         expanded={!!openSkill[key]}
-                        onClick={() => toggle(key)} />
+                        onClick={() => toggle(key)}
+                        headerAlways={true} />
                 </Box>
             ))}
         </Box>

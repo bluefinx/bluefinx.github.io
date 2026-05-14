@@ -1,4 +1,5 @@
 import { Box, Card, Collapse, Stack, Typography } from "@mui/material";
+import { useMediaQuery, useTheme } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
@@ -6,15 +7,20 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import Tag from "./Tag";
 
 /* Builds a generic extendable card layout with sections: title, tags, remarks, header, body */
-export default function ExtendableCard({ title, tags, remarks, header, body, expanded, onClick }) {
+export default function ExtendableCard({ title, tags, remarks, header, body, expanded, onClick, headerAlways }) {
 
     /* Allows access to i18next JSON objects */
     const { t } = useTranslation();
 
+    /* Allows access to the global theme */
+    const theme = useTheme();
+
+    /* Checks whether layout is mobile */
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
     return (
         <Card elevation={0} sx={{
-            display: "flex", flexDirection: "column", cursor: "pointer",
-            minHeight: 250, backgroundColor: 'background.default',
+            display: "flex", flexDirection: "column", cursor: "pointer", backgroundColor: 'background.default',
             border: '1px solid', borderRadius: 2, overflow: "hidden", transition: "all 0.2s ease",
             "&:hover": {
                 boxShadow: 3,
@@ -22,15 +28,20 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
                 borderColor: "primary.main"
             }
         }}>
-
             <Stack direction="column">
-                <Stack direction="column">
+                <Stack direction="column" sx={{ flex: 1 }}>
                     {/* Static Part */}
                     <Stack direction="column" spacing={0} width="100%" sx={{ flexGrow: 1, justifyContent: expanded ? "flex-start" : "center" }}>
 
                         {/* Title */}
                         <Box sx={{ p: 2 }}>
-                            <Typography variant="subtitle1" sx={{ fontSize: '1.2rem' }}>
+                            <Typography variant="subtitle1" sx={{
+                                fontSize: {
+                                    xs: 17,
+                                    sm: 17,
+                                    md: 20,
+                                }
+                            }}>
                                 {title}
                             </Typography>
                         </Box>
@@ -48,24 +59,46 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
                         )}
 
                         {/* Header */}
-                        {header && header}
+                        {headerAlways ? (
+                            <>
+                                {/* Always show header when headerAlways is set */}
+                                <Box>
+                                    {header}
+                                </Box>
+                            </>
+                        ) : (
+                            !isMobile && (
+                                <Box>
+                                    {/* Show header if not on mobile */}
+                                    {header}
+                                </Box>
+                            )
+                        )}
                     </Stack>
 
                     {/*Extendable Part*/}
                     <Collapse in={expanded} timeout={200}>
                         {/* Body */}
-                        {expanded && body}
+                        {expanded && (
+                            <>
+                                {/* Show header if on mobile */}
+                                {!headerAlways && isMobile && header}
+
+                                {/* Always show body */}
+                                {body}
+                            </>
+                        )}
                     </Collapse>
                 </Stack>
 
-                <Box onClick={onClick} sx={{ px: 2, pb: 1, display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 0.5, color: "text.faded" }}>
+                <Box onClick={onClick} sx={{ px: 2, pb: 1, pt: { xs: 2, sm: 2, md: 1 }, display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 0.5, color: "text.faded" }}>
                     <Typography variant="subtitle1" sx={{ fontSize: '0.9rem' }}>
                         {expanded ? `${t('show-less')}` : `${t('show-more')}`}
                     </Typography>
 
                     <KeyboardDoubleArrowDownIcon sx={{ fontSize: 18, transition: "transform 0.2s", transform: expanded ? "rotate(180deg)" : "rotate(0deg)" }} />
                 </Box>
-            </Stack>
-        </Card>
+            </Stack >
+        </Card >
     );
 }
