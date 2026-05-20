@@ -19,7 +19,7 @@ export default function References() {
             <Typography variant="h4" align="center" sx={{ pt: 4 }}>
                 {references?.keys?.title}
             </Typography>
-            <Stack direction="row" spacing={2} sx={{
+            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
                 overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
                 msOverflowStyle: 'none'
             }}>

@@ -11,7 +11,7 @@ import Hero from "./layouts/Hero.jsx";
 import FocusAreas from "./layouts/FocusAreas.jsx";
 import Skills from "./layouts/Skills.jsx";
 import Certificates from "./layouts/Certificates.jsx";
-//import References from "./layouts/References.jsx";
+import References from "./layouts/References.jsx";
 
 /* Builds the App main layout */
 export default function App() {
@@ -69,7 +69,7 @@ export default function App() {
                             {tabs?.keys?.title}
                         </Typography>
                         <Box>
-                            <Tabs variant="scrollable" crollButtons="auto" allowScrollButtonsMobile value={selectedTab} onChange={(e, v) => setSelectedTab(v)}>
+                            <Tabs variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile value={selectedTab} onChange={(e, v) => setSelectedTab(v)}>
                                 {tabs?.values?.map((tab, index) => (
                                     <Tab key={index} label={tab} />
                                 ))}
@@ -83,7 +83,7 @@ export default function App() {
                         </Box>
 
                         {/* References */}
-                        {/*<References/>*/}
+                        <References/>
                     </Stack>
                 </Box>
 
