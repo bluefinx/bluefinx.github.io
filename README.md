@@ -55,3 +55,6 @@ npx license-checker --production --json \
     )' > licenses.txt
 ```
 
+## Security
+
+This repository uses Dependabot to automatically check for security and version updates.
