@@ -12,7 +12,7 @@ on:
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -38,6 +38,26 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
+      - name: Update licenses.txt
+        run: |
+          npx license-checker --production --json \
+          | jq 'to_entries
+            | map(select(.value.licenses != "UNLICENSED"))
+            | map(
+                .key as $pkg |
+                {
+                  name: ($pkg | sub("@[^@]+$"; "")),
+                  version: ($pkg | capture("@(?<v>[^@]+)$").v),
+                  license: .value.licenses,
+                  repository: .value.repository
+                }
+              )' > public/licenses.txt
+      - name: Commit licenses.txt if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/licenses.txt
+          git diff --staged --quiet || (git commit -m "chore: update licenses.txt" && git push)
       - name: Build
         run: npm run build
       - name: Setup Pages
