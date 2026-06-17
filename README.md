@@ -26,7 +26,7 @@ This repository uses a two-branch workflow:
 - `source` branch contains the React/Vite source code
 - `main` branch is used for GitHub Pages deployment
 
-The production build is automatically generated and deployed via GitHub Actions in `.github/workflows/deploy.yml`.
+The production build is automatically generated and deployed via GitHub Actions in `.github/workflows/deploy.yml`. This process also updates the `licenses.txt` file if necessary.
 
 ## Development & Build
 
@@ -36,7 +36,7 @@ To start the development server, run `npm run dev`.
 
 To create the production build, run `npm run build`.
 
-To deploy to GitHub Pages, commit and push.
+To deploy to GitHub Pages (and update the `licenses.txt` file), commit and push.
 
 To create the `licenses.txt` file, run
 
