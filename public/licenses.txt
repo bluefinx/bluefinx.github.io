@@ -175,55 +175,55 @@
   },
   {
     "name": "@mui/core-downloads-tracker",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/icons-material",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/lab",
-    "version": "9.0.0-beta.2",
+    "version": "9.0.0-beta.5",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/material",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/private-theming",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/styled-engine",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/system",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/types",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/utils",
-    "version": "9.0.0",
+    "version": "9.1.1",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
@@ -253,7 +253,7 @@
   },
   {
     "name": "@types/react",
-    "version": "19.2.14",
+    "version": "19.2.17",
     "license": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
   },
@@ -355,7 +355,7 @@
   },
   {
     "name": "i18next",
-    "version": "26.0.8",
+    "version": "26.3.1",
     "license": "MIT",
     "repository": "https://github.com/i18next/i18next"
   },
@@ -457,13 +457,13 @@
   },
   {
     "name": "react-dom",
-    "version": "19.2.5",
+    "version": "19.2.7",
     "license": "MIT",
     "repository": "https://github.com/facebook/react"
   },
   {
     "name": "react-i18next",
-    "version": "17.0.6",
+    "version": "17.0.8",
     "license": "MIT",
     "repository": "https://github.com/i18next/react-i18next"
   },
@@ -475,7 +475,7 @@
   },
   {
     "name": "react-is",
-    "version": "19.2.5",
+    "version": "19.2.7",
     "license": "MIT",
     "repository": "https://github.com/facebook/react"
   },
@@ -487,7 +487,7 @@
   },
   {
     "name": "react",
-    "version": "19.2.5",
+    "version": "19.2.7",
     "license": "MIT",
     "repository": "https://github.com/facebook/react"
   },
