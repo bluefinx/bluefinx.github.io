@@ -1,43 +1,43 @@
 [
   {
     "name": "@babel/code-frame",
-    "version": "7.29.0",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/generator",
-    "version": "7.29.1",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/helper-globals",
-    "version": "7.28.0",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/helper-module-imports",
-    "version": "7.28.6",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/helper-string-parser",
-    "version": "7.27.1",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/helper-validator-identifier",
-    "version": "7.28.5",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/parser",
-    "version": "7.29.3",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
@@ -49,19 +49,19 @@
   },
   {
     "name": "@babel/template",
-    "version": "7.28.6",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/traverse",
-    "version": "7.29.0",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
   {
     "name": "@babel/types",
-    "version": "7.29.0",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
