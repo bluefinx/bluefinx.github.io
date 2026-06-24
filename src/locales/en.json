@@ -444,74 +444,74 @@
     "values": {
       "project-1": {
         "title": "Mobile & Computer Forensics Case Studies (Academic Lab)",
-        "summary": "Conducted two structured digital forensic investigations involving large-scale mobile device datasets (~60 extracted images including cloud and social media data) and a separate disk image analysis. Performed evidence triage, artifact analysis, timeline reconstruction and cross-source correlation under time constraints, with findings documented in detailed forensic reports.",
+        "summary": "Conducted two structured digital forensic investigations involving 56 mobile and cloud extraction files across multiple devices and online accounts, as well as a 5 GB disk image. Performed evidence triage, artifact analysis, event reconstruction and cross-source correlation to produce expert witness-style forensic reports containing evidence inventories, timeline visualisations and evidence-supported investigative findings.",
         "general": [
-          "Analysed large-scale mobile device datasets and a separate disk image using forensic investigation methodologies",
-          "Performed artifact extraction, keyword searches, file system analysis and registry/system artifact examination",
-          "Correlated findings across multiple evidence sources to reconstruct user activity and event timelines",
-          "Applied a hypothesis-driven and evidence-based investigation approach with clear separation of facts and interpretation",
-          "Produced structured forensic reports including evidence inventories, examination procedures, timeline reconstructions and substantiated findings"
+          "Conducted forensic examinations across 56 extraction files derived from mobile devices, SIM cards, tablets and cloud-based accounts, including social media, email and cloud storage data.",
+          "Performed artifact analysis across messaging applications, documents, images, browser activity, device configurations, system artifacts and user-generated content.",
+          "Analysed a 5 GB disk image through operating system auditing, deleted partition recovery, keyword searching, malware scanning and registry examination.",
+          "Correlated evidence from mobile, cloud and endpoint sources to reconstruct user activities, establish event sequences and resolve timestamp discrepancies across multiple time zones.",
+          "Produced expert witness-style forensic reports including evidence inventories, examination methodology, visualised timelines, event reconstruction and evidence-supported hypotheses."
         ],
         "specific": [
           [
-            "Conducted structured forensic investigations across mobile, cloud/social media and disk image data",
-            "Performed artifact identification, file system and registry analysis, keyword searching and timeline reconstruction",
-            "Documented forensic findings in clear, structured and evidence-based reports"
+            "Analysed evidence from 17 physical devices and 12 cloud/social media accounts (overall 56+ forensic extraction files), consolidating findings into a unified investigative assessment.",
+            "Reconstructed user activity and event timelines through correlation of messaging, browser, cloud, registry and file system artifacts across multiple evidence sources.",
+            "Delivered two comprehensive forensic reports containing evidence inventories, timeline visualisations, examination procedures and evidence-supported conclusions suitable for formal investigative review."
           ],
           [
-            "Triaged and prioritised relevant evidence under time constraints",
-            "Analysed and correlated forensic findings to support investigative and response decision-making",
-            "Supported post-incident analysis, containment and remediation planning through forensic investigations"
+            "Identified and prioritised high-value forensic artifacts from diverse evidence sources, enabling efficient investigation and response decision-making.",
+            "Supported incident scoping and post-incident analysis through event reconstruction, deleted data recovery, malware assessment and user activity analysis.",
+            "Provided actionable findings and evidence-based hypotheses that inform containment, remediation planning and follow-up investigative activities."
           ]
         ]
       },
       "project-2": {
         "title": "Digital Forensics Case Management Framework & Tool Prototype (Master Thesis)",
-        "summary": "Researched digital forensics case management practices and developed a requirements framework for forensic case management systems. Based on this framework and a gap analysis of existing tools, designed and prototyped a secure, forensically sound digital forensics case management system with a focus on evidence integrity, chain of custody, security-by-design and investigator workflows.",
+        "summary": "Researched digital forensics case management through an analysis of 20 academic papers and 5 additional industry sources, deriving an 8-module requirements framework for forensic case management systems. Based on a comparative assessment of 6 existing solutions, designed and prototyped a security-by-design digital forensics case management platform addressing 20 forensic and security properties, with a focus on evidence integrity, chain of custody, auditability and investigator workflows.",
         "remark": "Currently being written up as a paper.",
         "general": [
-          "Conducted academic research on digital forensics case management and derived a structured requirements framework",
-          "Compared existing forensic case management tools against the framework to identify capability and workflow gaps",
-          "Designed a comprehensive DF case management system focused on forensic soundness, secure evidence handling, usability and structured workflows",
-          "Defined system architecture with microservices, trust boundaries, role-based access control, audit logging and integrity protection mechanisms",
-          "Implemented a proof-of-concept prototype using FastAPI, Python, React, PostgreSQL, Docker Compose and Keycloak"
+          "Conducted a structured literature review of 20 academic publications and 5 industry sources to identify digital forensics case management requirements and best practices.",
+          "Developed an 8-module requirements framework covering forensic workflows, evidence management, chain of custody, security & risk controls and case lifecycle tracking.",
+          "Evaluated 6 forensic case management solutions against the framework and performed a gap analysis to identify usability, security and capability deficiencies.",
+          "Designed a microservices-based architecture consisting of 16 services with defined trust boundaries, RBAC, audit logging, integrity validation and security-by-design principles.",
+          "Developed a proof-of-concept implementation using FastAPI, React, PostgreSQL, Redis, Docker Compose and Keycloak to validate architecture and usability."
         ],
         "specific": [
           [
-            "Gained strong understanding of forensic case management workflows, chain of custody requirements and evidence integrity principles",
-            "Translated forensic best practices and investigative requirements into structured workflows and system design decisions",
-            "Gained understanding of how secure case management and evidence handling support efficient DFIR investigations and triage processes"
+            "Established an 8-module forensic case management framework derived from 25 research and industry sources, translating forensic best practices into actionable system requirements.",
+            "Identified capability, workflow and security gaps across 6 existing forensic case management solutions and incorporated findings into the target architecture.",
+            "Designed a system addressing 20 forensic and security properties, including evidence integrity, chain of custody, auditability, access control and investigation traceability."
           ],
           [
-            "Designed and partially built a full-stack microservices prototype using FastAPI, React, PostgreSQL, Docker and Keycloak",
-            "Applied security-by-design principles including trust zones, access control, audit logging and cryptographic integrity protections",
-            "Translated complex research and domain requirements into scalable system architecture and prototype implementations"
+            "Designed a 16-microservice architecture and implemented a proof-of-concept consisting of 5 partially implemented services, including an API Gateway, Keycloak integration and supporting backend services with Redis integration.",
+            "Developed a React/MUI frontend comprising 12 pages and 25 reusable components, supported by 2 REST APIs and WebSocket integration.",
+            "Implemented a PostgreSQL data layer with 5 database models, SQLAlchemy ORM mappings and Pydantic schemas, fully containerised using Docker Compose."
           ]
         ]
       },
       "project-3": {
         "title": "Forensic Artifact Processing Automation Tool (Open Source)",
-        "summary": "Designed and developed a platform-independent CLI tool in Python to automate forensic artifact processing workflows. The Docker-based application parses Foremost outputs, extracts and normalises metadata using ExifTool, detects duplicate files, stores results in a database and generates structured JSON reports to support efficient forensic analysis and triage.",
+        "summary": "Designed and developed a cross-platform forensic artifact processing and reporting tool in Python that partially automates the analysis of recovered files. The Docker-based solution parses Foremost file carving outputs, extracts and normalises metadata using ExifTool, detects duplicate files, stores results in PostgreSQL and generates structured JSON reports, reducing manual triage effort and improving investigation efficiency.",
         "remark": "Open-source beta release available on GitHub.",
         "link": "https://github.com/bluefinx/foremost-parser",
         "linkText": "GitHub",
         "general": [
-          "Developed a platform-independent CLI application in Python for forensic artifact processing and reporting",
-          "Parsed Foremost file carving outputs and extracted structured artifact information",
-          "Integrated ExifTool to collect and normalise metadata from recovered files and implemented duplicate detection",
-          "Stored processed artifact data in a PostgreSQL database and generated structured JSON reports",
-          "Built a Docker-based cross-platform solution with Bash and PowerShell startup scripts, input validation and error handling"
-        ],
+          "Designed and developed a platform-independent Python CLI application for automated forensic artifact processing and reporting.",
+          "Implemented parsing functionality for Foremost file-carving outputs to transform recovered files into structured data.",
+          "Integrated ExifTool to extract and normalise 30+ metadata fields from disk images and individual recovered files.",
+          "Developed duplicate detection logic to identify redundant artifacts and improve evidence review efficiency.",
+          "Built a Docker-based solution with PostgreSQL storage, JSON report generation, input validation, error handling and cross-platform startup scripts using Bash and PowerShell."
+          ],
         "specific": [
           [
-            "Worked with file carving outputs, forensic artifacts and metadata analysis workflows",
-            "Gained understanding of how automation supports efficient forensic triage and evidence review processes",
-            "Structured forensic data and reports to support investigation and analysis workflows"
+            "Applied forensic file processing workflows including file carving analysis, metadata extraction and automated triage using a test dataset of nearly 10,000 files.",
+            "Developed practical understanding of how metadata normalisation and duplicate detection support evidence correlation, filtering and efficient forensic investigation workflows.",
+            "Built an automated DFIR processing pipeline that transforms raw forensic outputs into structured investigation data and reports, reducing repetitive manual analysis steps."
           ],
           [
-            "Built containerised Python CLI application using Docker and PostgreSQL",
-            "Designed data processing pipeline including parsing, metadata extraction, deduplication and reporting",
-            "Applied software engineering practices including modular design, error handling, input validation and cross-platform scripting with Bash and PowerShell"
+            "Applied the software development lifecycle by performing requirements analysis, solution design, implementation, testing and deployment for a forensic automation tool.",
+            "Designed and implemented a 7-stage processing pipeline covering ingestion, parsing, metadata extraction, duplicate detection, database storage, report generation and cleanup.",
+            "Developed a maintainable cross-platform application architecture using Python, Docker and PostgreSQL with 3 database models and automated execution through Bash and PowerShell startup scripts."
           ]
         ]
       },
@@ -579,24 +579,24 @@
       },
       "project-7": {
         "title": "Linux Home Server",
-        "summary": "Deployed and maintained a self-hosted Linux server on a Raspberry Pi providing Nextcloud, SMB file sharing and VPN access. Secured and administered the system entirely via CLI using Linux hardening practices, firewall configuration, system monitoring and OpenVPN integration.",
+        "summary": "Deployed and maintained a self-hosted Raspberry Pi Linux server for 3+ years, providing remote file access and backup services through Nextcloud, SMB and OpenVPN. Secured and administered the environment entirely through CLI-based Linux system administration, hardening and monitoring practices.",
         "general": [
-          "Deployed and configured Nextcloud for remote file access and SMB for local network file sharing and backups",
-          "Secured the system using firewall configuration and Linux hardening practices",
-          "Performed ongoing maintenance including system updates, log analysis, process inspection and basic network traffic review",
-          "Reconfigured the Raspberry Pi into a media system while maintaining system hardening and adding OpenVPN for access protection",
-          "Managed the entire environment through CLI/Bash administration and documented all setup and configuration steps for reproducibility"
+          "Deployed and configured Nextcloud, SMB and OpenVPN services on a Raspberry Pi-based Linux server.",
+          "Applied system hardening measures, such as iptables and fail2ban configurations, SSH security best practices and user management and least privilege access control.",
+          "Performed 30+ monthly maintenance cycles including updates and upgrades, troubleshooting, log review and basic network traffic review.",
+          "Managed the environment through CLI/Bash administration, including shell scripts for automatic updates and service monitoring.",
+          "Created comprehensive technical documentation of setup and configuration steps for reproducibility and faster issue resolution."
         ],
         "specific": [
           [
-            "Gained practical experience hardening Linux systems and reducing attack surface on a self-hosted environment",
-            "Learned secure access configuration and VPN deployment with OpenVPN",
-            "Improved operational security skills through continuous maintenance, monitoring, troubleshooting and log analysis"
+            "Gained hands-on experience hardening Linux systems across different system areas and reducing attack surface in a self-hosted environment.",
+            "Learned secure remote-access practices and VPN configuration with OpenVPN.",
+            "Improved operational security skills through continuous monitoring, troubleshooting and log analysis."
           ],
           [
-            "Strengthened Linux system administration and command-line workflow skills through daily hands-on use",
-            "Gained experience deploying, configuring and maintaining self-hosted infrastructure and network services",
-            "Developed structured troubleshooting and technical documentation practices for reproducible system setups"
+            "Strengthened Linux administration and command-line skills through 3+ years of hands-on system management.",
+            "Gained experience deploying and maintaining infrastructure services for file sharing, backups and remote access.",
+            "Developed structured troubleshooting and technical documentation practices for reliable system operation and reproducible setups."
           ]
         ]
       },
@@ -642,52 +642,53 @@
     "values": {
       "experience-1": {
         "title": "Cybersecurity Student Assistant (Part-Time)",
-        "summary": "Designed and secured a structured penetration testing training environment with hands-on attack labs and realistic security scenarios. Built clear exercise documentation, assessment procedures and operational security controls to support safe and repeatable training.",
+        "summary": "Designed and secured a penetration testing training environment featuring realistic attack scenarios, hands-on exercises and controlled responsible disclosure workflows. Developed supporting documentation, operational procedures and security controls to enable a structured and secure training platform.",
         "company": "Hochschule Ravensburg-Weingarten",
         "time": "May 2022 - February 2023",
         "location": "Weingarten, GER",
         "general": [
-          "Designed a penetration testing lab with realistic attack scenarios and hands-on exercises",
-          "Created structured training documentation and methodology-based exercise materials",
-          "Secured the lab environment with access controls, firewall rules and restricted permissions",
-          "Established a responsible disclosure workflow and defined operational boundaries"
+          "Designed a penetration testing lab architecture with realistic attack scenarios and offensive security exercises.",
+          "Developed structured training documentation and methodology-based exercise materials.",
+          "Defined security controls including firewall (iptables) rules, user management, access control restrictions and SSH security best practices for the training environment.",
+          "Designed a responsible disclosure process and documented disclosure policies for controlled security testing activities.",
+          "Created comprehensive technical documentation of the server setup to enable ongoing maintenance and expansion."
         ],
         "specific": [
           [
-            "Improved practical understanding of penetration testing methodologies and attack workflows",
-            "Learned how to design realistic offensive security scenarios for hands-on training environments",
-            "Gained experience defining responsible disclosure processes and engagement boundaries"
+            "Developed a structured framework for realistic penetration testing exercises and attack simulations.",
+            "Designed training scenarios aligned with common penetration testing methodologies and offensive security workflows.",
+            "Expanded understanding of attack path design, adversary simulation and practical training environment development."
           ],
           [
-            "Applied infrastructure hardening through firewall configuration and access control management",
-            "Learned how to secure isolated training environments while maintaining usability",
-            "Improved understanding of trust boundaries, permission scoping and operational security controls"
+            "Defined security architecture concepts including access control, system boundaries and permission management.",
+            "Applied security engineering principles to balance usability and risk reduction.",
+            "Strengthened knowledge of trust boundaries, operational security controls and secure environment design."
           ]
         ]
       },
       "experience-2": {
         "title": "Data Privacy & Security Intern (Full-time)",
-        "summary": "Completed a data protection and security internship focused on GDPR compliance, European data privacy law research and web application security assessments. Analysed PII processing risks, performed scoped vulnerability testing and worked with administrators to improve security and compliance.",
+        "summary": "Supported GDPR compliance and web application security initiatives within a university environment by analysing data processing activities, assessing PII-related risks, conducting scoped vulnerability assessments and collaborating with administrators to strengthen data protection controls and security posture.",
         "company": "Hochschule Ravensburg-Weingarten",
         "time": "September 2021 - January 2022",
         "location": "Weingarten, GER",
         "general": [
-          "Conducted detailed research on European data privacy laws, GDPR requirements and fundamental legal case analysis",
-          "Analysed university data flows and data protection requirements in a GDPR context",
-          "Created RoPA documentation and supported compliance-related processes",
-          "Assessed university web applications to identify PII processing points and related risks",
-          "Performed scoped vulnerability assessments with structured triage and prioritisation while collaborating with administrators on mitigation efforts"
+          "Conducted comprehensive research on GDPR requirements, European data privacy regulations and relevant legal case law to support compliance assessments.",
+          "Analysed institutional data flows and mapped personal data processing activities to identify compliance obligations and privacy risks.",
+          "Created and maintained Records of Processing Activities (RoPA) documentation and supported GDPR governance processes.",
+          "Assessed university web applications to identify PII collection, processing and storage points, evaluating associated privacy and security risks.",
+          "Performed scoped web application vulnerability assessments, triaged findings based on risk and impact, and collaborated with system administrators to support remediation efforts."
         ],
         "specific": [
           [
-            "Developed a practical understanding of GDPR requirements, RoPA creation and PII classification in institutional environments",
-            "Learned how to analyse data processing activities using structured legal reasoning and statutory element analysis",
-            "Improved understanding of how data privacy regulations apply to real technical systems and workflows"
+            "Assessed personal data processing activities across 11 functional areas of a university web application, identifying PII processing points and associated privacy risks.",
+            "Analysed institutional data flows and supported GDPR compliance efforts through the creation of RoPA documentation and data processing assessments.",
+            "Improved visibility into personal data handling practices by mapping data processing activities and evaluating compliance of GDPR principles."
           ],
           [
-            "Gained experience performing scoped web application vulnerability assessments and structured finding triage",
-            "Learned how privacy risks and technical security vulnerabilities overlap in web applications handling sensitive data",
-            "Improved communication and remediation coordination skills by working directly with system administrators and stakeholders"
+            "Conducted scoped security assessments across 2 university web applications, identifying vulnerabilities and security weaknesses affecting web-facing services.",
+            "Reported 5 validated security findings through a structured responsible disclosure process, enabling risk-based remediation by system administrators.",
+            "Performed vulnerability triage and impact assessment to prioritise remediation efforts and reduce exposure to identified application security risks."
           ]
         ]
       },
@@ -1077,18 +1078,18 @@
         "institution": "Hochschule Ravensburg-Weingarten",
         "date": "September 2020",
         "location": "Weingarten, GER",
-        "summary": "Completed the Cisco CCNA Routing & Switching: Introduction to Networks course with hands-on networking labs using Cisco hardware and Packet Tracer. Learned core networking fundamentals including TCP/IP, subnetting, switching, routing, VLANs and WAN concepts while configuring and troubleshooting real network setups.",
+        "summary": "Completed the Cisco CCNA Routing & Switching: Introduction to Networks course through hands-on networking labs using Cisco hardware and Packet Tracer. Configured, tested and troubleshot network environments while applying networking fundamentals including TCP/IP, subnetting, switching, routing, VLANs and WAN technologies.",
         "general": [
-          "Studied core networking concepts including TCP/IP, the OSI model, subnetting, VLANs, switching and routing fundamentals",
-          "Configured Cisco routers and switches through the command line, including IP addressing, device setup and basic network management",
-          "Built and troubleshot small-to-medium network topologies using physical hardware, incl. Windows PCs, and Cisco Packet Tracer",
-          "Worked with routing concepts, WAN connectivity, wireless networking and hardware-level data transmission",
-          "Practiced identifying and resolving network connectivity issues in structured lab environments"
+          "Applied TCP/IP, OSI model, subnetting, VLANs, switching and routing concepts to design and configure network environments.",
+          "Configured Cisco routers and switches via CLI, including IP addressing, device setup and basic network administration.",
+          "Built and validated small-to-medium network topologies using Cisco hardware, Windows endpoints and Packet Tracer simulations.",
+          "Implemented routing, WAN connectivity and wireless networking scenarios while analysing hardware-level data transmission.",
+          "Diagnosed and resolved network connectivity issues through structured troubleshooting and connectivity testing."
         ],
         "specific": [
-          "Built a strong understanding of how computer networks function across infrastructure, devices, and internet communication",
-          "Gained practical experience configuring and troubleshooting Cisco networking equipment in hands-on lab environments",
-          "Learned to analyse network problems systematically using subnetting, routing logic and connectivity testing"
+          "Successfully built and validated 10+ small-to-medium network topologies in lab and simulation environments.",
+          "Strengthened analytical problem-solving skills through systematic network fault identification and resolution.",
+          "Demonstrated networking proficiency by successfully deploying and resolving connectivity issues across multiple multi-subnet environments."
         ]
       }
     }
@@ -1103,6 +1104,10 @@
         "role": "Cybersecurity Lecturer (Abertay University)"
       },
       "reference-2": {
+        "body": "During his time as my student, he consistently demonstrated a strong work ethic, excellent attendance, and a genuine willingness to engage with both the course material and wider class discussions. He approached his studies with professionalism and maturity and contributed positively to the learning environment throughout. What particularly distinguished him from his peers was his attention to detail. He completed his work carefully and thoughtfully, often demonstrating a high level of precision. His commitment to producing sound work, combined with his enthusiasm for learning, made him a standout student.",
+        "role": "Cybersecurity Lecturer (Abertay University)"
+      },
+      "reference-3": {
         "body": "Blue consistently demonstrated reliability and professionalism. He was punctual, arrived prepared and ready to begin work. His self-directed approach meant he took initiative, managed tasks independently, and required minimal supervision. Blue also showed strong discipline and maintained steady progress on all assigned work. Overall, it was encouraging to see his commitment to producing quality work.",
         "role": "Cybersecurity Lecturer (Abertay University)"
       }
