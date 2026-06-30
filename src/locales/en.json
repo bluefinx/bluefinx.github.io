@@ -33,9 +33,9 @@
         "Russian (basic)"
       ],
       "contact": {
-        "email1": "bfb.business",
-        "email2": "tuta.io",
-        "linkedin": "https://linkedin.com/in/blue-butscher-08041b368/",
+        "email1": "blue.butscher",
+        "email2": "protonmail.com",
+        "linkedin": "https://linkedin.com/in/blue-butscher",
         "github": "https://github.com/bluefinx"
       }
     }
@@ -517,24 +517,24 @@
       },
       "project-4": {
         "title": "Manual Open-Source Web Application Security Assessment (Real-World)",
-        "summary": "Conducted a full manual security assessment of a zero-knowledge open-source web application in a local VM environment. Performed a manual security assessment of a zero-knowledge open-source web application in a local VM environment. Identified security flaws, business logic issues and social engineering risks through code review, traffic analysis and browser-based testing.",
+        "summary": "Conducted a 6-month manual security assessment of a zero-knowledge open-source web application as part of a university project. Set up a local VM environment, performed manual code review, browser-based testing and HTTP traffic analysis and identified 13+ validated security findings across 18 attack categories, including multiple high-severity vulnerabilities affecting authentication, session management, business logic and client trust.",
         "general": [
-          "Set up and tested a zero-knowledge open-source web application in a local VM environment",
-          "Performed basic code review and analysed application behaviour through browser/UI testing",
-          "Used Burp Suite for network traffic analysis, request manipulation and attack validation",
-          "Tested for XSS, CSRF, business logic flaws, validation weaknesses and client-side bypasses",
-          "Identified security bugs and social engineering/phishing possibilities, then documented and disclosed findings responsibly"
+          "Configured a local VM environment to deploy and assess a zero-knowledge open-source web application.",
+          "Performed manual code review and browser-based security testing to analyse application behaviour and identify vulnerabilities.",
+          "Used Burp Suite to intercept, manipulate and replay HTTP requests for vulnerability discovery and exploit validation.",
+          "Assessed 18 attack categories, including authentication, session management, XSS, CSRF, file handling, business logic flaws, access control and social engineering scenarios using manual penetration testing techniques.",
+          "Documented 13+ validated findings, assigned risk ratings and developed proof-of-concept exploits with remediation recommendations."
         ],
         "specific": [
           [
-            "Improved manual web application testing skills beyond automated vulnerability scanning",
-            "Gained hands-on experience with Burp Suite, browser analysis, request manipulation and exploit validation",
-            "Learned how business logic flaws and social engineering opportunities can create realistic attack paths"
+            "Identified 13+ validated vulnerabilities, including 6 high-severity, 5 medium-severity and 2 low-severity findings through entirely manual testing.",
+            "Discovered vulnerabilities affecting stored XSS, session management, file upload, business logic, access control, data integrity and client-side trust mechanisms.",
+            "Validated exploitability through manual proof-of-concept testing using Burp Suite, browser developer tools and HTTP request manipulation."
           ],
           [
-            "Developed a stronger understanding of secure validation, trust boundaries and client–server security design",
-            "Learned how weak input validation and client-side controls can lead to exploitable security gaps",
-            "Improved vulnerability classification, reporting and communication with developers during responsible disclosure processes"
+            "Analysed root causes across 18 security domains, including authentication, authorisation, input validation, session management and client-server trust boundaries.",
+            "Produced remediation recommendations for secure input validation, session handling, authorisation checks and client-side trust assumptions.",
+            "Applied secure design principles to classify vulnerabilities, assess risk and map findings to practical mitigation strategies."
           ]
         ]
       },
@@ -602,24 +602,24 @@
       },
       "project-8": {
         "title": "Cryptanalysis of DiCal-IDEA implementation (Bachelor Thesis)",
-        "summary": "Conducted a structured analysis of the DiCal-IDEA encryption used in the POCSAG protocol for BOS paging systems. Analysed 236 ciphertext samples, protocol metadata and public resources to identify likely message structures, encryption methods and IV handling through ciphertext-only and hypothesis-driven analysis, followed by threat modelling of potential weaknesses and attack vectors.",
+        "summary": "Conducted a structured cryptographic security assessment of the proprietary DiCal-IDEA encryption used in the POCSAG protocol for BOS paging systems. Evaluated 236 ciphertext samples with associated timestamp metadata using ciphertext-only analysis, protocol correlation and hypothesis-driven cryptanalysis to assess message structures, encryption mechanisms, IV handling and replay protection under limited implementation knowledge, followed by threat modelling of potential attack vectors.",
         "general": [
-          "Researched existing cryptanalysis and technical documentation related to the IDEA cipher and DiCal-IDEA implementations",
-          "Analysed encrypted POCSAG message datasets and correlated ciphertext patterns with protocol metadata and timestamps",
-          "Developed and tested multiple hypotheses regarding message structure, cipher mode operation, IV usage and nonce construction",
-          "Applied exclusion-based analytical methods to identify technically plausible encryption implementations",
-          "Produced a threat modelling assessment of the identified and hypothesised cryptographic design choices"
+          "Researched publicly available cryptographic literature, protocol specifications and existing analyses related to the IDEA cipher and proprietary DiCal-IDEA implementations.",
+          "Evaluated 236 ciphertext samples with associated timestamp metadata and conducted protocol correlation across multiple metadata sources to identify recurring protocol characteristics and transmission patterns.",
+          "Developed and validated 4 independent cryptographic hypotheses using exclusion-based cryptanalysis, covering message structure, cipher mode of operation, IV generation, timestamp integration and replay protection.",
+          "Applied ciphertext-only analysis and systematic elimination techniques to identify technically plausible implementation scenarios despite the absence of plaintext or full implementation documentation.",
+          "Performed threat modelling covering encryption implementation, IV handling and replay protection, assessing potential weaknesses and attack vectors."
         ],
         "specific": [
           [
-            "Analysed proprietary cryptographic implementations with limited technical information",
-            "Identified potential attack vectors and weaknesses through threat modelling and protocol analysis",
-            "Improved hypothesis-driven security analysis and technical validation methodologies"
+            "Identified multiple plausible attack vectors against proprietary cryptographic implementation through protocol analysis and threat modelling.",
+            "Evaluated exploitation feasibility under ciphertext-only conditions without access to source code, plaintext or implementation details.",
+            "Produced evidence-based security assessments supporting the evaluation of cryptographic robustness and potential exploitation scenarios."
           ],
           [
-            "Conducted structured investigations on encrypted communication datasets",
-            "Performed metadata correlation, protocol artifact analysis and timeline-based investigation methods",
-            "Documented technical findings in clear, structured and evidence-based analytical reports"
+            "Correlated encrypted communications using timestamps and protocol metadata to support structured analysis of encrypted traffic.",
+            "Produced evidence-based technical findings from encrypted datasets without plaintext availability using reproducible analytical methodologies.",
+            "Delivered structured technical reporting documenting protocol artifacts, analytical evidence and validated investigative findings."
           ]
         ]
       }
