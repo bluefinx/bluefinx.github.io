@@ -16,7 +16,7 @@
     "@mui/icons-material": "^9.1.1",
     "@mui/lab": "^9.0.0-beta.5",
     "@mui/material": "^9.1.2",
-    "i18next": "^26.3.4",
+    "i18next": "^26.3.6",
     "react": "^19.2.5",
     "react-dom": "^19.2.7",
     "react-i18next": "^17.0.8"
