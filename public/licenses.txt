@@ -463,7 +463,7 @@
   },
   {
     "name": "react-i18next",
-    "version": "17.0.8",
+    "version": "17.0.10",
     "license": "MIT",
     "repository": "https://github.com/i18next/react-i18next"
   },
