@@ -175,7 +175,7 @@
   },
   {
     "name": "@mui/core-downloads-tracker",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
@@ -193,37 +193,37 @@
   },
   {
     "name": "@mui/material",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/private-theming",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/styled-engine",
-    "version": "9.1.1",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/system",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/types",
-    "version": "9.1.1",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
   {
     "name": "@mui/utils",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
@@ -475,9 +475,9 @@
   },
   {
     "name": "react-is",
-    "version": "19.2.7",
+    "version": "19.2.8",
     "license": "MIT",
-    "repository": "https://github.com/facebook/react"
+    "repository": "https://github.com/react/react"
   },
   {
     "name": "react-transition-group",
