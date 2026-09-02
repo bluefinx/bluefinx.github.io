@@ -43,7 +43,7 @@
   },
   {
     "name": "@babel/runtime",
-    "version": "7.29.2",
+    "version": "7.29.7",
     "license": "MIT",
     "repository": "https://github.com/babel/babel"
   },
@@ -253,7 +253,7 @@
   },
   {
     "name": "@types/react",
-    "version": "19.2.17",
+    "version": "19.2.18",
     "license": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
   },
@@ -349,9 +349,9 @@
   },
   {
     "name": "html-parse-stringify",
-    "version": "3.0.1",
+    "version": "4.0.1",
     "license": "MIT",
-    "repository": "https://github.com/henrikjoreteg/html-parse-stringify"
+    "repository": "https://github.com/i18next/html-parse-stringify"
   },
   {
     "name": "i18next",
@@ -463,7 +463,7 @@
   },
   {
     "name": "react-i18next",
-    "version": "17.0.10",
+    "version": "17.0.12",
     "license": "MIT",
     "repository": "https://github.com/i18next/react-i18next"
   },
@@ -532,12 +532,6 @@
     "version": "1.6.0",
     "license": "MIT",
     "repository": "https://github.com/facebook/react"
-  },
-  {
-    "name": "void-elements",
-    "version": "3.1.0",
-    "license": "MIT",
-    "repository": "https://github.com/pugjs/void-elements"
   },
   {
     "name": "yaml",
