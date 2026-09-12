@@ -699,16 +699,16 @@
         "time": "May 2021 - August 2021",
         "location": "Bad Wurzach, GER",
         "general": [
-          "Independently refactored and extended a legacy C# Windows desktop application used for forensic log processing",
-          "Restructured existing code and applied design patterns to improve maintainability, readability and data handling",
-          "Redesigned the GUI-based log visualisation to make data easier to analyse and report",
-          "Rebuilt technical documentation to reflect the updated system architecture and workflows",
-          "Collaborated with hardware and sales stakeholders to ensure accurate data representation and user-friendly output while managing version control with SVN"
+          "Independently refactored and extended a legacy C# Windows desktop application used for forensic log processing.",
+          "Restructured existing code and applied design patterns to improve maintainability, readability and data handling.",
+          "Redesigned the GUI-based log visualisation to make data easier to analyse and report.",
+          "Rebuilt technical documentation to reflect the updated system architecture and workflows.",
+          "Collaborated with hardware and sales stakeholders to ensure accurate data representation and user-friendly output while managing version control with SVN."
         ],
         "specific": [
-          "Gained hands-on experience working with and improving a legacy C# codebase independently",
-          "Strengthened understanding of refactoring, software architecture and design patterns in a real production environment",
-          "Improved communication skills by translating technical requirements into practical features and clear user-facing functionality"
+          "Gained hands-on experience working with and improving a legacy C# codebase independently.",
+          "Strengthened understanding of refactoring, software architecture and design patterns in a real production environment.",
+          "Improved communication skills by translating technical requirements into practical features and clear user-facing functionality."
         ]
       }
     }
