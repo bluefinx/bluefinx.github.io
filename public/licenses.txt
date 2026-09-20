@@ -181,7 +181,7 @@
   },
   {
     "name": "@mui/icons-material",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
@@ -253,7 +253,7 @@
   },
   {
     "name": "@types/react",
-    "version": "19.2.18",
+    "version": "19.3.0",
     "license": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
   },
@@ -487,7 +487,7 @@
   },
   {
     "name": "react",
-    "version": "19.2.8",
+    "version": "19.3.0",
     "license": "MIT",
     "repository": "https://github.com/react/react"
   },
