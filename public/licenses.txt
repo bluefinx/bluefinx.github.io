@@ -181,7 +181,7 @@
   },
   {
     "name": "@mui/icons-material",
-    "version": "9.2.0",
+    "version": "9.4.0",
     "license": "MIT",
     "repository": "https://github.com/mui/material-ui"
   },
