@@ -8,17 +8,20 @@
   "hero": {
     "keys": {
       "about": {
-        "title": "About"
+        "title": "About Me"
       },
       "logo": {
         "alt": "Blue shark fin with rose sun in background"
       },
       "contact": {
         "title": "Get in touch",
-        "email": "Copy Email",
-        "emailCopied": "Email copied",
+        "email": "Copy email address",
+        "emailCopied": "Email address copied",
         "linkedin": "LinkedIn",
         "github": "GitHub"
+      },
+      "languages": {
+        "title": "Languages"
       }
     },
     "values": {
@@ -28,356 +31,30 @@
       },
       "languages": [
         "German (native)",
-        "English (fluent)",
-        "French (basic)",
-        "Russian (basic)"
+        "English (C2)",
+        "French (A2 - B1)",
+        "Russian (A1 - A2)",
+        "Dutch (A1)"
       ],
       "contact": {
         "email1": "blue.butscher",
-        "email2": "protonmail.com",
+        "email2": "proton.me",
         "linkedin": "https://linkedin.com/in/blue-butscher",
         "github": "https://github.com/bluefinx"
-      }
-    }
-  },
-  "focus-areas": {
-    "keys": {
-      "title": "Focus Areas",
-      "services": "Skills include, but are not limited to:"
-    },
-    "values": {
-      "DF": {
-        "title": "Digital Forensics & Incident Response",
-        "colour": "primary.main",
-        "services": {
-          "service-1": {
-            "label": "Artifact Analysis & Timeline Reconstruction",
-            "skills": [
-              "File System & Registry",
-              "User Activity",
-              "Browser, Cloud & Mobile",
-              "Event Correlation",
-              "Recovered Data"
-            ]
-          },
-          "service-2": {
-            "label": "Workflow Automation & Tooling",
-            "skills": [
-              "Evidence Processing",
-              "Data Transformation & Correlation",
-              "Investigation Workflow Optimisation",
-              "Reporting Support",
-              "Forensic Pipeline Development"
-            ]
-          },
-          "service-3": {
-            "label": "Investigation Reporting & Documentation",
-            "skills": [
-              "Investigation & Case",
-              "Timeline & Activity",
-              "Evidence Inventory",
-              "Technical Findings",
-              "Investigation Workflow"
-            ]
-          },
-          "service-4": {
-            "label": "Forensic Readiness & Case Management",
-            "skills": [
-              "Evidence Handling & Integrity",
-              "Chain of Custody Processes",
-              "Forensic Readiness Planning",
-              "Investigation Workflow Management",
-              "Tooling & Frameworks"
-            ]
-          },
-          "service-5": {
-            "label": "Data Processing & Case Preparation",
-            "skills": [
-              "Forensic Data Organisation",
-              "Investigation Data Preparation",
-              "Data Normalisation & Reduction",
-              "Artifact Classification & Categorisation",
-              "Evidence Inventory Management"
-            ]
-          }
-        }
       },
-      "SE": {
-        "title": "Security Engineering",
-        "colour": "secondary.main",
-        "services": {
-          "service-1": {
-            "label": "Infrastructure & System Hardening",
-            "skills": [
-              "Linux Systems",
-              "Windows Systems",
-              "Firewall Setup",
-              "System Configuration",
-              "System Maintenance",
-              "Security Best Practices"
-            ]
-          },
-          "service-2": {
-            "label": "Identity & Access Security",
-            "skills": [
-              "User Management",
-              "Account Security",
-              "Authentication Setup",
-              "Credential Handling",
-              "Remote Access"
-            ]
-          },
-          "service-3": {
-            "label": "Security Reviews & Threat Analysis",
-            "skills": [
-              "Configuration Review",
-              "Insecure Workflows",
-              "Trust Boundaries",
-              "Access Risks",
-              "Operational Risks"
-            ]
-          },
-          "service-4": {
-            "label": "Secure System Design",
-            "skills": [
-              "System Workflows",
-              "Role Structures",
-              "Audit Trails",
-              "Service Separation",
-              "Integrity Controls"
-            ]
-          }
-        }
-      },
-      "SD": {
-        "title": "Software Development",
-        "colour": "tertiary.main",
-        "services": {
-          "service-1": {
-            "label": "Full-Stack Application Development",
-            "skills": [
-              "Web Applications",
-              "Desktop Applications",
-              "Mobile Applications",
-              "Frontend & Backend Development",
-              "REST APIs",
-              "Database Integration"
-            ]
-          },
-          "service-2": {
-            "label": "Programming & Automation",
-            "skills": [
-              "Python",
-              "Java",
-              "C#",
-              "Bash",
-              "PowerShell",
-              "CLI Tools",
-              "Automation Scripts"
-            ]
-          },
-          "service-3": {
-            "label": "Backend & System Architecture",
-            "skills": [
-              "API Design",
-              "Microservices",
-              "Database Design",
-              "System Architecture",
-              "Legacy Refactoring",
-              "Docker",
-              "FastAPI",
-              ".NET"
-            ]
-          },
-          "service-4": {
-            "label": "Secure Software Development",
-            "skills": [
-              "Secure Coding",
-              "Security-by-Design",
-              "Authentication & Authorisation",
-              "Role-Based Access Control",
-              "Audit Logging",
-              "Data Integrity",
-              "Security Best Practices"
-            ]
-          },
-          "service-5": {
-            "label": "Technical Documentation & Software Planning",
-            "skills": [
-              "Technical Documentation",
-              "Requirements Analysis",
-              "Workflow Design",
-              "Software Planning",
-              "User Requirements",
-              "UI/UX Considerations",
-              "Testing & Usability"
-            ]
-          }
-        }
-      },
-      "PT": {
-        "title": "Pentesting",
-        "colour": "quaternary.main",
-        "services": {
-          "service-1": {
-            "label": "Vulnerability Assessment & Findings Validation",
-            "skills": [
-              "Vulnerability Scanning",
-              "Findings Validation",
-              "Risk Assessment",
-              "Security Misconfiguration"
-            ]
-          },
-          "service-2": {
-            "label": "Web Application Security",
-            "skills": [
-              "Business Logic",
-              "Authentication Testing",
-              "Session Management",
-              "Input Validation",
-              "Workflow Security",
-              "Threat Modelling"
-            ]
-          },
-          "service-3": {
-            "label": "Active Directory Security",
-            "skills": [
-              "Active Directory Enumeration",
-              "Privilege Escalation",
-              "Credential Exposure",
-              "Authentication Review",
-              "Service Misconfiguration"
-            ]
-          },
-          "service-4": {
-            "label": "Attack Surface Mapping",
-            "skills": [
-              "Port Scanning",
-              "Service Enumeration",
-              "External Exposure",
-              "Asset Mapping",
-              "Infrastructure Documentation"
-            ]
-          },
-          "service-5": {
-            "label": "Structured Reporting & Remediation",
-            "skills": [
-              "Technical Reporting",
-              "Risk Prioritisation",
-              "Remediation Planning",
-              "Security Documentation",
-              "Finding Reproduction"
-            ]
-          }
-        }
-      },
-      "IT": {
-        "title": "General IT",
-        "colour": "quinary.main",
-        "services": {
-          "service-1": {
-            "label": "Server Administration",
-            "skills": [
-              "Server Setup",
-              "System Maintenance",
-              "SSH Access",
-              "Firewall Hardening",
-              "CLI Administration"
-            ]
-          },
-          "service-2": {
-            "label": "Self-Hosted Service Deployment",
-            "skills": [
-              "Nextcloud",
-              "SMB File Sharing",
-              "RaspberryPi",
-              "VPN Setup",
-              "Service Configuration"
-            ]
-          },
-          "service-3": {
-            "label": "Network Configuration & Troubleshooting",
-            "skills": [
-              "IP Configuration",
-              "Subnetting",
-              "Routing & Switching",
-              "VLANs",
-              "Cisco CLI"
-            ]
-          },
-          "service-4": {
-            "label": "System Troubleshooting & Diagnostics",
-            "skills": [
-              "Log Analysis",
-              "Connectivity Diagnostics",
-              "Service Debugging",
-              "Process Inspection",
-              "Network Troubleshooting"
-            ]
-          },
-          "service-5": {
-            "label": "Technical Documentation",
-            "skills": [
-              "Setup Documentation",
-              "Infrastructure Documentation",
-              "Configuration Guides",
-              "Reproducibility",
-              "Maintenance Procedures"
-            ]
-          }
-        }
-      },
-      "DP": {
-        "title": "Data Privacy & Compliance",
-        "colour": "senary.main",
-        "services": {
-          "service-1": {
-            "label": "GDPR Documentation & Data Mapping",
-            "skills": [
-              "RoPA",
-              "Data Flow Mapping",
-              "PII Workflow Analysis",
-              "Processing Activity Documentation",
-              "Privacy Gap Identification"
-            ]
-          },
-          "service-2": {
-            "label": "Security Governance & Risk Assessment",
-            "skills": [
-              "Asset Inventory",
-              "Risk Assessment Support",
-              "Risk Register",
-              "Threat Identification"
-            ]
-          },
-          "service-3": {
-            "label": "Security & Privacy Policy Drafting",
-            "skills": [
-              "Access Control Policies",
-              "Password Policies",
-              "Remote Work Guidelines",
-              "Data Handling Procedures"
-            ]
-          },
-          "service-4": {
-            "label": "Contingency Planning Support",
-            "skills": [
-              "Data Breach Planning",
-              "Escalation Procedures",
-              "Recovery Prioritisation",
-              "Backup & Recovery Documentation"
-            ]
-          },
-          "service-5": {
-            "label": "Awareness & Compliance Training Material",
-            "skills": [
-              "Security Awareness",
-              "GDPR Awareness",
-              "Phishing & Password Security Guidance",
-              "Internal Security Checklists"
-            ]
-          }
-        }
+      "navigation": {
+        "home": "Home",
+        "home_sub": "About me",
+        "projects": "Projects",
+        "projects_sub": "My selected work",
+        "experience": "Experience",
+        "experience_sub": "Professional journey",
+        "education": "Education",
+        "education_sub": "Academic background",
+        "achievements": "Certificates",
+        "achievements_sub": "Milestones",
+        "references": "References",
+        "references_sub": "Endorsements"
       }
     }
   },
@@ -429,6 +106,7 @@
   },
   "projects": {
     "keys": {
+      "title": "Projects",
       "general-title": "What I did",
       "specific-labels": {
         "DF": "Digital Forensics Learnings",
@@ -627,6 +305,7 @@
   },
   "experiences": {
     "keys": {
+      "title": "Experience",
       "general-title": "What I did",
       "specific-labels": {
         "DF": "Digital Forensics Skills",
@@ -992,7 +671,9 @@
     }
   },
   "education": {
-    "keys": {},
+    "keys": {
+      "title": "Education"
+    },
     "values": {
       "education-1": {
         "title": "Master of Science in Ethical Hacking & Cybersecurity",
@@ -1066,6 +747,7 @@
   },
   "certificates": {
     "keys": {
+      "title": "Certificates",
       "general-title": "What I did",
       "specific-labels": {
         "IT": "IT Skills"

@@ -20,7 +20,7 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
 
     return (
         <Card elevation={0} sx={{
-            display: "flex", flexDirection: "column", cursor: "pointer", backgroundColor: 'background.default',
+            display: "flex", flexDirection: "column", width: "100%", height: "100%", cursor: "pointer", backgroundColor: 'background.default',
             border: '1px solid', borderRadius: 2, overflow: "hidden", transition: "all 0.2s ease",
             "&:hover": {
                 boxShadow: 3,
@@ -28,8 +28,8 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
                 borderColor: "primary.main"
             }
         }}>
-            <Stack direction="column">
-                <Stack direction="column" sx={{ flex: 1 }}>
+            <Stack direction="column" sx={{ flex: 1, height: "100%" }}>
+                <Stack direction="column" sx={{ flex: 1}}>
                     {/* Static Part */}
                     <Stack direction="column" spacing={0} width="100%" sx={{ flexGrow: 1, justifyContent: expanded ? "flex-start" : "center" }}>
 
@@ -91,7 +91,7 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
                     </Collapse>
                 </Stack>
 
-                <Box onClick={onClick} sx={{ px: 2, pb: 1, pt: { xs: 2, sm: 2, md: 1 }, display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 0.5, color: "text.faded" }}>
+                <Box onClick={onClick} sx={{ px: 2, pb: 1, pt: { xs: 2, sm: 2, md: 1 }, mt: "auto", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 0.5, color: "text.faded" }}>
                     <Typography variant="subtitle1" sx={{ fontSize: '0.9rem' }}>
                         {expanded ? `${t('show-less')}` : `${t('show-more')}`}
                     </Typography>

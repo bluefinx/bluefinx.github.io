@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Paper, Stack, Typography } from "@mui/material";
+import { Box, Stack, Paper, Typography } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import ExtendableCard from "../components/ExtendableCard.jsx";
@@ -98,30 +98,38 @@ export default function Experiences() {
 
     /* Creates grid with extendable cards, passes title, tags, header, body, expanded state and click listener */
     return (
-        <Box sx={{ columnCount: { xs: 1, sm: 1, md: 2 }, columnGap: 1.5 }}>
-            {Object.entries(experiences?.values).map(([key, experience]) => (
-                <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, }}>
-                    <ExtendableCard
-                        title={experience?.title}
-                        tags={mapTags(key)}
-                        remarks={createRemark(experience?.company, experience?.time, experience?.location)}
-                        header={
-                            <Paper sx={{ p: 2, m: 2 }}>
-                                <Typography variant="body1" sx={{ fontSize: '1rem' }}>
-                                    {experience?.summary}
-                                </Typography>
-                            </Paper>
-                        }
-                        body={
-                            <CardBodyProjects
-                                general={experience?.general}
-                                specific={mapSpecificEntries(key, experience?.specific)}
-                            />
-                        }
-                        expanded={openExperience[key]}
-                        onClick={() => toggle(key)} />
-                </Box>
-            ))}
-        </Box>
+        <Stack direction="column" spacing={5}>
+            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
+                {experiences?.keys?.title}
+            </Typography>
+            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
+                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                msOverflowStyle: 'none'
+            }}>
+                {Object.entries(experiences?.values).map(([key, experience]) => (
+                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 625, minWidth: 625, flexShrink: 0 }}>
+                        <ExtendableCard
+                            title={experience?.title}
+                            tags={mapTags(key)}
+                            remarks={createRemark(experience?.company, experience?.time, experience?.location)}
+                            header={
+                                <Paper sx={{ p: 2, m: 2 }}>
+                                    <Typography variant="body1" sx={{ fontSize: '1rem' }}>
+                                        {experience?.summary}
+                                    </Typography>
+                                </Paper>
+                            }
+                            body={
+                                <CardBodyProjects
+                                    general={experience?.general}
+                                    specific={mapSpecificEntries(key, experience?.specific)}
+                                />
+                            }
+                            expanded={openExperience[key]}
+                            onClick={() => toggle(key)} />
+                    </Box>
+                ))}
+            </Stack>
+        </Stack>
     );
 }

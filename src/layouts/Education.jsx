@@ -115,25 +115,33 @@ export default function Education() {
 
     /* Creates grid with extendable cards, passes education details, expanded state and click listener */
     return (
-        <Box sx={{ columnCount: { xs: 1, sm: 1, md: 2 }, columnGap: 1.5 }}>
-            {/* Returns [[key, item], ...] as [["education-1", {title: "", ...}], ...] */}
-            {Object.entries(education?.values).map(([key, education]) => (
-                <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, }}>
-                    <ExtendableCard
-                        title={education?.title}
-                        remarks={createRemark(education?.institution, education?.time, education?.location, education?.grades, education?.prize)}
-                        header={
-                            <Paper sx={{ p: 2, m: 2 }}>
-                                <Typography variant="body1" sx={{ fontSize: '1rem', whiteSpace: 'pre-line' }}>
-                                    {`${education?.summary}\n\n${education?.thesis}`}
-                                </Typography>
-                            </Paper>
-                        }
-                        body={createBody(education?.modules)}
-                        expanded={!!openEducation[key]}
-                        onClick={() => toggle(key)} />
-                </Box>
-            ))}
-        </Box>
+        <Stack direction="column" spacing={5}>
+            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
+                {education?.keys?.title}
+            </Typography>
+            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
+                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                msOverflowStyle: 'none'
+            }}>
+                {/* Returns [[key, item], ...] as [["education-1", {title: "", ...}], ...] */}
+                {Object.entries(education?.values).map(([key, education]) => (
+                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 625, minWidth: 625, flexShrink: 0}}>
+                        <ExtendableCard
+                            title={education?.title}
+                            remarks={createRemark(education?.institution, education?.time, education?.location, education?.grades, education?.prize)}
+                            header={
+                                <Paper sx={{ p: 2, m: 2 }}>
+                                    <Typography variant="body1" sx={{ fontSize: '1rem', whiteSpace: 'pre-line' }}>
+                                        {`${education?.summary}\n\n${education?.thesis}`}
+                                    </Typography>
+                                </Paper>
+                            }
+                            body={createBody(education?.modules)}
+                            expanded={!!openEducation[key]}
+                            onClick={() => toggle(key)} />
+                    </Box>
+                ))}
+            </Stack>
+        </Stack>
     );
 }

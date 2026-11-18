@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import ExtendableCard from "../components/ExtendableCard.jsx";
 import CardBodyProjects from "../components/CardBodyProjects.jsx";
 
-/* Builds the Certificates tab layout */
-export default function Certificates() {
+/* Builds the Achievements tab layout */
+export default function Achievements() {
 
     /*************************** Localisation ***********************************/
 
@@ -93,30 +93,38 @@ export default function Certificates() {
 
     /* Creates grid with extendable cards, passes title, tags, header, body, expanded state and click listener */
     return (
-        <Box sx={{ columnCount: { xs: 1, sm: 1, md: 2 }, columnGap: 1.5 }}>
-            {Object.entries(certificates?.values).map(([key, certificate]) => (
-                <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, }}>
-                    <ExtendableCard
-                        title={certificate?.title}
-                        tags={mapTags(key)}
-                        remarks={createRemark(certificate?.awarder, certificate?.institution, certificate?.date, certificate?.location)}
-                        header={
-                            <Paper sx={{ p: 2, m: 2 }}>
-                                <Typography variant="body1" sx={{ fontSize: '1rem' }}>
-                                    {certificate?.summary}
-                                </Typography>
-                            </Paper>
-                        }
-                        body={
-                            <CardBodyProjects
-                                general={certificate?.general}
-                                specific={mapSpecificEntries(key, certificate?.specific)}
-                            />
-                        }
-                        expanded={openCertificate[key]}
-                        onClick={() => toggle(key)} />
-                </Box>
-            ))}
-        </Box>
+        <Stack direction="column" spacing={5}>
+            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
+                {certificates?.keys?.title}
+            </Typography>
+            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
+                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                msOverflowStyle: 'none'
+            }}>
+                {Object.entries(certificates?.values).map(([key, certificate]) => (
+                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 625, minWidth: 625, flexShrink: 0}}>
+                        <ExtendableCard
+                            title={certificate?.title}
+                            tags={mapTags(key)}
+                            remarks={createRemark(certificate?.awarder, certificate?.institution, certificate?.date, certificate?.location)}
+                            header={
+                                <Paper sx={{ p: 2, m: 2 }}>
+                                    <Typography variant="body1" sx={{ fontSize: '1rem' }}>
+                                        {certificate?.summary}
+                                    </Typography>
+                                </Paper>
+                            }
+                            body={
+                                <CardBodyProjects
+                                    general={certificate?.general}
+                                    specific={mapSpecificEntries(key, certificate?.specific)}
+                                />
+                            }
+                            expanded={openCertificate[key]}
+                            onClick={() => toggle(key)} />
+                    </Box>
+                ))}
+            </Stack>
+        </Stack>
     );
 }

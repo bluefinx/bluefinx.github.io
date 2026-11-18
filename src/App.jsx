@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ThemeProvider, CssBaseline, Tabs, Tab, Typography, Button } from '@mui/material';
+import { ThemeProvider, CssBaseline, Typography, Button } from '@mui/material';
 import { Box, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
@@ -8,9 +7,7 @@ import Projects from "./layouts/Projects.jsx";
 import Experiences from "./layouts/Experiences.jsx";
 import Education from "./layouts/Education.jsx";
 import Hero from "./layouts/Hero.jsx";
-import FocusAreas from "./layouts/FocusAreas.jsx";
-import Skills from "./layouts/Skills.jsx";
-import Certificates from "./layouts/Certificates.jsx";
+import Achievements from "./layouts/Achievements.jsx";
 import References from "./layouts/References.jsx";
 
 /* Builds the App main layout */
@@ -29,12 +26,9 @@ export default function App() {
     const licensesLink = t('licensesLink')
 
     /* Reads JSON tabs and privacy objects */
-    const tabs = t('tabs', { returnObjects: true })
     const privacy = t('privacy', { returnObjects: true })
 
     /*************************** Tabs Functionality ******************************/
-
-    const [selectedTab, setSelectedTab] = useState(0);
 
     return (
         <ThemeProvider theme={theme}>
@@ -58,32 +52,33 @@ export default function App() {
                 <Box component="main" sx={{ flex: 1 }}>
                     <Stack spacing={4}>
 
-                        {/* HeroCards */}
+                        {/* Hero */}
                         <Hero />
 
-                        {/* Focus Areas*/}
-                        <FocusAreas />
+                        {/* Projects */}
+                        <Box id="projects">
+                            <Projects />
+                        </Box>
 
-                        {/* Tabs */}
-                        <Typography variant="h4" align="center" sx={{ pt: 3 }}>
-                            {tabs?.keys?.title}
-                        </Typography>
-                        <Box>
-                            <Tabs variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile value={selectedTab} onChange={(e, v) => setSelectedTab(v)}>
-                                {tabs?.values?.map((tab, index) => (
-                                    <Tab key={index} label={tab} />
-                                ))}
-                            </Tabs>
+                        {/* Experience */}
+                        <Box id="experience">
+                            <Experiences />
+                        </Box>
 
-                            {selectedTab === 0 && <Box sx={{ pl: 2, pt: 4 }}><Projects /></Box>}
-                            {selectedTab === 1 && <Box sx={{ pl: 2, pt: 4 }}><Experiences /></Box>}
-                            {selectedTab === 2 && <Box sx={{ pl: 2, pt: 4 }}><Skills /></Box>}
-                            {selectedTab === 3 && <Box sx={{ pl: 2, pt: 4 }}><Education /></Box>}
-                            {selectedTab === 4 && <Box sx={{ pl: 2, pt: 4 }}><Certificates /></Box>}
+                        {/* Education */}
+                        <Box id="education">
+                            <Education />
+                        </Box>
+
+                        {/* Achievements */}
+                        <Box id="achievements">
+                            <Achievements />
                         </Box>
 
                         {/* References */}
-                        <References/>
+                        <Box id="references">
+                            <References />
+                        </Box>
                     </Stack>
                 </Box>
 

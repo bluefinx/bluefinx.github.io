@@ -26,7 +26,8 @@ const theme = createTheme({
         },
         background: {
             default: '#0A131F',
-            button: '#667ACC'
+            button: '#667ACC',
+            disabled: '#7885B3'
         },
         text: {
             default: '#E0E1DD',
