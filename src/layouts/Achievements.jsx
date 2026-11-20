@@ -22,7 +22,7 @@ export default function Achievements() {
     /* Reads JSON experience object */
     const certificates = t("certificates", { returnObjects: true });
 
-    /*************************** Tag Mapping ******************************/
+    /*************************** ProjectTag Mapping ******************************/
 
     /* Defines tags for certificates (e.g. "Digital Forensics") */
     const certificateTags = {

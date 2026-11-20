@@ -51,24 +51,12 @@
         "experience_sub": "Professional journey",
         "education": "Education",
         "education_sub": "Academic background",
-        "achievements": "Certificates",
+        "achievements": "Achievements",
         "achievements_sub": "Milestones",
         "references": "References",
         "references_sub": "Endorsements"
       }
     }
-  },
-  "tabs": {
-    "keys": {
-      "title": "Professional Profile"
-    },
-    "values": [
-      "Projects",
-      "Experience",
-      "Skills",
-      "Education",
-      "Certificates"
-    ]
   },
   "tags": {
     "DF": {
@@ -85,23 +73,86 @@
     },
     "SD": {
       "label": "Software Development",
-      "colour": "tertiary.main"
+      "colour": "primary.main"
     },
     "PT": {
       "label": "Pentesting",
-      "colour": "quaternary.main"
+      "colour": "primary.main"
     },
     "IT": {
       "label": "General IT",
-      "colour": "quinary.main"
+      "colour": "primary.main"
     },
     "DP": {
       "label": "Data Privacy",
-      "colour": "senary.main"
+      "colour": "primary.main"
     },
     "CP": {
       "label": "Compliance",
-      "colour": "senary.main"
+      "colour": "primary.main"
+    }
+  },
+  "areas": {
+    "ALL": {
+      "label": "All",
+      "colour": "primary.main"
+    },
+    "DF": {
+      "label": "Digital Forensics",
+      "colour": "area1.main"
+    },
+    "CP": {
+      "label": "Data Privacy & Compliance",
+      "colour": "area2.main"
+    },
+    "PT": {
+      "label": "Pentesting",
+      "colour": "area3.main"
+    },
+    "SD": {
+      "label": "Software Engineering & Development",
+      "colour": "area4.main"
+    },
+    "VM": {
+      "label": "Vulnerability Management",
+      "colour": "area5.main"
+    },
+    "SA": {
+      "label": "System Administration",
+      "colour": "area6.main"
+    },
+    "CG": {
+      "label": "Cryptography",
+      "colour": "area7.main"
+    },
+    "CR": {
+      "label": "Current / Active",
+      "colour": "secondary.main"
+    }
+  },
+  "new_projects": {
+    "keys": {
+      "title": "Projects",
+      "subtitle": "Selected Work & Case Studies",
+      "navigation": ["Overview", "Problem & Scope", "What I did", "Results & Learnings"],
+      "skills": "Skills & Tools",
+      "filter": "Filter by"
+    },
+    "values": {
+      "project-1": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      }
     }
   },
   "projects": {

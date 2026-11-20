@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
-import Tag from "./Tag";
+import ProjectTag from "./ProjectTag.jsx";
 
 /* Builds a generic extendable card layout with sections: title, tags, remarks, header, body */
 export default function ExtendableCard({ title, tags, remarks, header, body, expanded, onClick, headerAlways }) {
@@ -53,7 +53,7 @@ export default function ExtendableCard({ title, tags, remarks, header, body, exp
                         {tags && Object.keys(tags).length > 0 && (
                             <Stack direction="row" sx={{ px: 2, flexWrap: "wrap", gap: 1 }}>
                                 {Object.entries(tags).map(([key, value]) => (
-                                    <Tag key={key} label={value?.label} colour={value?.colour} textColour="text.default" />
+                                    <ProjectTag key={key} label={value?.label} colour={value?.colour} textColour="text.default" />
                                 ))}
                             </Stack>
                         )}

@@ -37,13 +37,7 @@ export default function App() {
 
                 {/* Header */}
                 <Box component="header" sx={{ px: 2, height: 150, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <Typography variant="h3" sx={{
-                        fontWeight: 'bold', fontSize: {
-                            xs: 30,
-                            sm: 34,
-                            md: 38,
-                        }, whiteSpace: "nowrap",
-                    }}>
+                    <Typography variant="pageTitle" sx={{ whiteSpace: "nowrap" }}>
                         {header}
                     </Typography>
                 </Box>
@@ -62,17 +56,17 @@ export default function App() {
 
                         {/* Experience */}
                         <Box id="experience">
-                            <Experiences />
+                            {/*<Experiences />*/}
                         </Box>
 
                         {/* Education */}
                         <Box id="education">
-                            <Education />
+                            {/*<Education />*/}
                         </Box>
 
                         {/* Achievements */}
                         <Box id="achievements">
-                            <Achievements />
+                            {/*<Achievements />*/}
                         </Box>
 
                         {/* References */}
@@ -91,7 +85,7 @@ export default function App() {
                             {licenses}
                         </Button>
                         {/* Signature */}
-                        <Typography variant="caption" sx={{ fontSize: 16, fontStyle: 'italic', flexGrow: 1, textAlign: 'center' }}>
+                        <Typography variant="footerCaption" sx={{ flexGrow: 1, textAlign: 'center' }}>
                             {footer}
                         </Typography>
                         {/* Privacy Statement */}

@@ -22,7 +22,7 @@ export default function Experiences() {
     /* Reads JSON experience object */
     const experiences = t("experiences", { returnObjects: true });
 
-    /*************************** Tag Mapping ******************************/
+    /*************************** ProjectTag Mapping ******************************/
 
     /* Defines tags for experiences (e.g. "Digital Forensics") */
     const experienceTags = {

@@ -3,7 +3,7 @@ import { Box, Paper, Stack, Typography } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import ExtendableCard from "../components/ExtendableCard.jsx";
-import Tag from "../components/Tag.jsx";
+import ProjectTag from "../components/ProjectTag.jsx";
 
 /* Builds the Education tab layout */
 export default function Education() {
@@ -82,7 +82,7 @@ export default function Education() {
                             }}>
                                 <Stack direction="row" sx={{ alignItems: "flex-start", flexWrap: "wrap", gap: 1, minWidth: "fit-content" }}>
                                     {area?.modules?.map((module, index) => (
-                                        <Tag key={index} label={module} colour={area.colour} textColour="text.default" sx={{
+                                        <ProjectTag key={index} label={module} colour={area.colour} textColour="text.default" sx={{
                                             flexShrink: 0, width: "max-content",
                                             "& .MuiChip-label": {
                                                 whiteSpace: "nowrap",

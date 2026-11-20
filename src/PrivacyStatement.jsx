@@ -1,9 +1,8 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { Box, Stack, Typography, Link } from "@mui/material";
+import { Box, Stack, Typography, Link, Paper } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import theme from "./theme/theme.jsx";
-import HeroPaper from "./components/HeroPaper.jsx";
 
 export default function PrivacyStatement() {
 
@@ -17,43 +16,72 @@ export default function PrivacyStatement() {
 
     /*************************** Layout Building ***********************************/
 
-    /* Builds the subtitle body */
+    /* Builds the subtitle part */
     function createSubtitle() {
         return (
-            <Typography variant="body1" sx={{ p: 2 }}>
-                {privacy?.values?.subtitle}
-            </Typography>
+            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
+                {/* Body */}
+                <Box sx={{ flexGrow: 1, display: "flex" }}>
+                    <Typography variant="paperBody" sx={{ p: 2 }}>
+                        {privacy?.values?.subtitle}
+                    </Typography>
+                </Box>
+            </Paper>
         );
     }
 
-    /* Builds the Website body */
+    /* Builds the Website part */
     function createWebsite() {
         return (
-            <Typography variant="body1" sx={{ p: 2, whiteSpace: 'pre-line' }}>
-                {privacy?.values?.website}
-            </Typography>
+            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
+                {/* Body */}
+                <Stack direction="column" sx={{ height: "100%", flexGrow: 1 }}>
+                    <Typography variant="paperTitle" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.keys?.website}
+                    </Typography>
+                    <Typography variant="paperBody" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.values?.website}
+                    </Typography>
+                </Stack>
+            </Paper>
         );
     }
 
-    /* Builds the Hosting body */
+    /* Builds the Hosting part */
     function createHosting() {
         return (
-            <Typography variant="body1" sx={{ p: 2, whiteSpace: 'pre-line' }}>
-                {privacy?.values?.hosting}{' '}
-                <Link href={privacy?.values?.link} target="_blank" rel="noopener noreferrer">
-                    {privacy?.values?.description}
-                </Link>
-                .
-            </Typography>
+            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
+                {/* Body */}
+                <Stack direction="column" sx={{ height: "100%", flexGrow: 1 }}>
+                    <Typography variant="paperTitle" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.keys?.hosting}
+                    </Typography>
+                    <Typography variant="paperBody" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.values?.hosting}{' '}
+                        <Link href={privacy?.values?.link} target="_blank" rel="noopener noreferrer">
+                            {privacy?.values?.description}
+                        </Link>
+                        .
+                    </Typography>
+                </Stack>
+            </Paper>
         );
     }
 
-    /* Builds the International body */
+    /* Builds the International part */
     function createInternational() {
         return (
-            <Typography variant="body1" sx={{ p: 2, whiteSpace: 'pre-line' }}>
-                {privacy?.values?.international}
-            </Typography>
+            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
+                {/* Body */}
+                <Stack direction="column" sx={{ height: "100%", flexGrow: 1 }}>
+                    <Typography variant="paperTitle" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.keys?.international}
+                    </Typography>
+                    <Typography variant="paperBody" sx={{ p: 2, whiteSpace: 'pre-line' }}>
+                        {privacy?.values?.international}
+                    </Typography>
+                </Stack>
+            </Paper>
         );
     }
 
@@ -63,31 +91,27 @@ export default function PrivacyStatement() {
             <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', px: '10%' }}>
                 {/* Header */}
                 <Box component="header" sx={{ height: 150, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <Typography variant="h3" sx={{
-                        fontWeight: 'bold', fontSize: {
-                            xs: 30,
-                            sm: 34,
-                            md: 38,
-                        }, whiteSpace: "nowrap",
-                    }}>
+                    <Typography variant="pageTitle" sx={{ whiteSpace: "nowrap" }}>
                         {privacy?.keys?.title}
                     </Typography>
                 </Box>
+
+                {/* Content */}
                 <Box component="main" sx={{ flex: 1 }}>
                     <Stack direction="column" spacing={2}>
                         {/* Subtitle */}
-                        <HeroPaper body={createSubtitle()} />
+                        {createSubtitle()}
                         {/* Website */}
-                        <HeroPaper title={privacy?.keys?.website} body={createWebsite()} />
+                        {createWebsite()}
                         {/* Hosting */}
-                        <HeroPaper title={privacy?.keys?.hosting} body={createHosting()} />
+                        {createHosting()}
                         {/* International */}
-                        <HeroPaper title={privacy?.keys?.international} body={createInternational()} />
+                        {createInternational()}
                     </Stack>
                 </Box>
                 {/* Footer */}
                 <Box component="footer" sx={{ height: 150, display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
-                    <Typography variant="caption" sx={{ fontSize: 16 }}>
+                    <Typography variant="footerCaption">
                         {privacy?.values?.updated}
                     </Typography>
                 </Box>

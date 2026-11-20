@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Box, Stack, Link, Paper, Typography } from "@mui/material";
-import { Tabs, Tab } from "@mui/material";
+import { useMediaQuery, useTheme } from '@mui/material';
+import { Box, Stack, Typography } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
-import ExtendableCard from "../components/ExtendableCard.jsx";
-import CardBodyProjects from "../components/CardBodyProjects.jsx";
+import DesktopCard from "../components/DesktopCard.jsx";
+import FilterTag from "../components/FilterTag.jsx";
 
-/* Builds the Projects tab layout */
+/* Builds the Projects section layout */
 export default function Projects() {
 
     /*************************** Localisation ***********************************/
@@ -14,147 +14,121 @@ export default function Projects() {
     /* Allows access to i18next JSON objects */
     const { t } = useTranslation();
 
-    /* Reads JSON tags object */
-    const tagDefinitions = t("tags", { returnObjects: true });
-
-    /* Reads JSON specific label object */
-    const specificLabels = t("projects.keys.specific-labels", { returnObjects: true });
+    /* Reads JSON areas object */
+    const tags = t("areas", { returnObjects: true });
 
     /* Reads JSON projects object */
-    const projects = t("projects", { returnObjects: true });
+    const projects = t("new_projects", { returnObjects: true });
 
-    /*************************** Tag Mapping ******************************/
+    /*************************** Configuration ***********************************/
+
+    /* Allows access to the global theme */
+    const theme = useTheme();
+
+    /* Stores whether layout is mobile or desktop */
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    /*************************** ProjectTag Mapping ***********************************/
 
     /* Defines tags for projects (e.g. "Digital Forensics") */
     const projectsTags = {
-        "project-1": ["DF", "IR"],
-        "project-2": ["DF", "IR", "SD"],
-        "project-3": ["DF", "IR", "SD"],
-        "project-4": ["PT", "SE"],
-        "project-5": ["PT", "SE"],
-        "project-6": ["PT"],
-        "project-7": ["SE", "IT"],
-        "project-8": ["PT", "DF", "IR"],
+        "project-1": ["DF", "CP"],
     };
 
-    /* Creates filtered tag list: {TAG: {label: label, colour: colour}, ...} */
+    /* Maps tag keys to their corresponding objects (tag key + (title & colour)) */
     function mapTags(projectKey) {
         return Object.fromEntries(
-            projectsTags[projectKey]
-                .filter((tagKey) => tagDefinitions[tagKey])
-                .map((tagKey) => [tagKey, tagDefinitions[tagKey]])
+            (projectsTags[projectKey] || [])
+                .filter((tagKey) => tagKey !== "ALL" && tags[tagKey])
+                .map((tagKey) => [tagKey, tags[tagKey]])
         );
     }
 
-    /*************************** Specific Mapping ******************************/
+    /*************************** Filtering **************************************************/
 
-    /* Defines tags for projects (e.g. "Digital Forensics Skills" ) */
-    const projectSpecificLabels = {
-        "project-1": ["DF", "IR"],
-        "project-2": ["DR", "SD"],
-        "project-3": ["DR", "SD"],
-        "project-4": ["PT", "SE"],
-        "project-5": ["PT", "SE"],
-        "project-6": ["PT"],
-        "project-7": ["SE", "IT"],
-        "project-8": ["PT", "DF"],
-    };
+    /* Stores the selected area */
+    const [selectedArea, setSelectedArea] = useState("ALL");
 
-    /* Creates formatted specific list: [{label: label, values: [string]}, ...]*/
-    function mapSpecificEntries(key, specificEntries) {
-        if (specificEntries.length > 0 && !Array.isArray(specificEntries[0])) {
-            specificEntries = [specificEntries];
-        }
-        return projectSpecificLabels[key].map((label, index) => ({
-            label: specificLabels[label] || label,
-            values: specificEntries[index] || [],
-        }));
-    }
+    /* Get all projects */
+    const projectEntries = Object.entries(projects?.values || {});
 
-    /*************************** Tabs **************************************************/
+    /* Counts all projects */
+    const totalProjects = projectEntries.length;
 
-    /* Holds the current selected tab */
-    const [selectedTab, setSelectedTab] = useState(0);
+    /* Count the projects per tag/area */
+    const areaCounts = Object.fromEntries(
+        Object.keys(tags).map((tagKey) => [
+            tagKey,
+            tagKey === "ALL"
+            ? totalProjects
+            : projectEntries.filter(([projectKey]) =>
+                projectsTags[projectKey]?.includes(tagKey)
+            ).length
+        ])
+    );
 
-    /* Loads the keys from the JSON tags object */
-    const tabs = Object.keys(tagDefinitions);
+    /* Filter projects based on selected tags/areas */
+    const filteredProjects = projectEntries.filter(([projectKey]) =>
+        selectedArea === "ALL" ||
+        projectsTags[projectKey]?.includes(selectedArea)
+    );
 
-    /* Sets the selected tag based on the active tab */
-    const selectedTag = tabs[selectedTab];
-
-    /* Only loads the projects that contain the selected tags */
-    const filteredProjects = Object.entries(projects?.values || {})
-        .filter(([key]) => projectsTags[key].includes(selectedTag));
-
-    /*************************** Expandable Functionality ******************************/
-
-    /* Stores expanded states of cards */
-    const [openProject, setOpenProjects] = useState({});
-
-    /* Toggles expanded states of cards */
-    const toggle = (key) => {
-        setOpenProjects((prev) => ({
-            ...prev,
-            [key]: !prev[key],
-        }));
-    };
-
-    /* Creates grid with extendable cards, passes title, tags, header, body, expanded state and click listener */
+    /* Renders project cards & outer containers */
     return (
         <Stack direction="column" spacing={2}>
-            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
-                {projects?.keys?.title}
-            </Typography>
 
-            <Tabs variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile value={selectedTab} onChange={(e, v) => setSelectedTab(v)}>
-                {tabs.map((tagKey) => (
-                    <Tab key={tagKey} label={tagDefinitions[tagKey]?.label || tagKey}/>
-                ))}
-            </Tabs>
+            {/* Section Header */}
+            <Stack>
+                <Typography variant="sectionTitle" align="left" sx={{ pt: 4 }}>
+                    {projects?.keys?.title}
+                </Typography>
+                <Typography variant="sectionLabel" align="left" sx={{ pt: 0 }}>
+                    {projects?.keys?.subtitle}
+                </Typography>
+            </Stack>
 
+            {/* Filtering */}
+            <Box sx={{ display: "flex", alignItems: "center", border: "1px solid", borderColor: "text.disabled",
+                    borderRadius: 1, px: 2, py: 1, minWidth: 0 }}>
+                <Typography variant="paperBody" sx={{ flexShrink: 0, mr: 2, whiteSpace: "nowrap" }}>
+                    {projects?.keys?.filter}
+                </Typography>
+
+                <Stack direction="row" spacing={2} sx={{ alignItems: "center", flexWrap: "nowrap", flex: 1, minWidth: 0,
+                        overflowX: "auto", "&::-webkit-scrollbar": { display: "none" }, scrollbarWidth: "none", msOverflowStyle: "none" }}>
+
+                    {Object.entries(tags || {}).map(([tagKey, tag]) => (
+                        <FilterTag
+                            key={tagKey}
+                            label={`${tag.label} (${areaCounts[tagKey] || 0})`}
+                            colour={tag.colour}
+                            selected={selectedArea === tagKey}
+                            onClick={() => setSelectedArea(tagKey)}
+                            sx={{ flexShrink: 0 }}
+                        />
+                    ))}
+                </Stack>
+            </Box>
+
+            {/* Projects */}
             <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
-                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
                 msOverflowStyle: 'none'
             }}>
                 {filteredProjects.map(([key, project]) => (
-                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 625, minWidth: 625, flexShrink: 0 }}>
-                        <ExtendableCard
+                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 700, minWidth: 700, flexShrink: 0 }}>
+                        <DesktopCard
                             title={project?.title}
+                            type={project?.type}
+                            date={project?.date}
                             tags={mapTags(key)}
-                            remarks={(typeof project?.remark === 'string' && project?.remark?.trim() !== '')
-                                ? (key === "project-3"
-                                        ? (
-                                            <Typography variant="body1" sx={{ px: 2, pb: 2, mt: -1, fontSize: '1rem', fontStyle: 'italic', whiteSpace: 'pre-line' }}>
-                                                {project?.remark?.split(project?.linkText)[0]}
-                                                <Link href={project?.link} target="_blank" rel="noopener noreferrer" underline="hover">
-                                                    {project?.linkText}
-                                                </Link>
-                                                {project?.remark?.split(project?.linkText)[1]}
-                                            </Typography>
-                                        )
-                                        : (
-                                            <Typography variant="body1" sx={{ px: 2, pb: 2, mt: -1, fontSize: '1rem', fontStyle: 'italic', whiteSpace: 'pre-line' }}>
-                                                {project?.remark}
-                                            </Typography>
-                                        )
-                                )
-                                : undefined
-                            }
-                            header={
-                                <Paper sx={{ p: 2, m: 2 }}>
-                                    <Typography variant="body1" sx={{ fontSize: '1rem' }}>
-                                        {project?.summary}
-                                    </Typography>
-                                </Paper>
-                            }
-                            body={
-                                <CardBodyProjects
-                                    general={project?.general}
-                                    specific={mapSpecificEntries(key, project?.specific)}
-                                />
-                            }
-                            expanded={openProject[key]}
-                            onClick={() => toggle(key)} />
+                            highlights={project?.highlights}
+                            isMobile={isMobile}
+                            parts={project?.parts}
+                            navigation={projects?.keys?.navigation}
+                            skillsTitle={projects?.keys?.skills}
+                            skills={project?.skills}
+                        />
                     </Box>
                 ))}
             </Stack>
