@@ -128,6 +128,7 @@ export default function Projects() {
                             navigation={projects?.keys?.navigation}
                             skillsTitle={projects?.keys?.skills}
                             skills={project?.skills}
+                            isEducation={false}
                         />
                     </Box>
                 ))}

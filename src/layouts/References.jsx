@@ -14,13 +14,23 @@ export default function References() {
     /* Reads JSON references object */
     const references = t('references', { returnObjects: true })
 
+    /* Renders the reference cards & outer container */
     return (
         <Stack direction="column" spacing={2}>
-            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
-                {references?.keys?.title}
-            </Typography>
+
+            {/* Section Header */}
+            <Stack>
+                <Typography variant="sectionTitle" align="left" sx={{ pt: 4 }}>
+                    {references?.keys?.title}
+                </Typography>
+                <Typography variant="sectionLabel" align="left" sx={{ pt: 0 }}>
+                    {references?.keys?.subtitle}
+                </Typography>
+            </Stack>
+
+            {/* References */}
             <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
-                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
                 msOverflowStyle: 'none'
             }}>
                 {Object.entries(references?.values).map(([key, reference]) => (

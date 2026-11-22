@@ -1,16 +1,16 @@
 import { Stack, Typography, Paper } from "@mui/material";
 
-export default function ProjectHighlights({ highlights, isMobile }) {
+export default function ProjectHighlights({ highlights, isEducation }) {
     return (
         <Stack elevation={1} direction="row" spacing={2} sx={{ pb: 2}}>
             {highlights.map (([label, sublabel], index) => (
                 <Paper key={index} sx={{ flex: 1, minWidth: 0, p: 1, pl: 2}}>
-                    <Stack key={index} spacing={2} direction={isMobile ? "column" : "row"} sx={{ p: 0}}>
-                        <Typography variant="paperHighlight" sx={{ p: 0, minWidth: 0, overflow: "hidden", whiteSpace: "nowrap", textAlign: "center" }}>
+                    <Stack spacing={0} direction={"column"} sx={{ p: 0, height: "100%" }}>
+                        <Typography variant={isEducation ? "paperHighlight2" : "paperHighlight"} sx={{ flex: 1, p: 0, pl: 1, minWidth: 0, display: "flex", alignItems: "flex-end", justifyContent: "flex-start" }}>
                             {label}
                         </Typography>
 
-                        <Typography variant="paperLabel" sx={{ p: 0, minWidth: 0, overflow: "hidden", whiteSpace: "nowrap", textAlign: "left", alignSelf: "flex-end" }}>
+                        <Typography variant="paperLabel" sx={{ p: 0, pr: 2, minWidth: 0, textAlign: "right" }}>
                             {sublabel}
                         </Typography>
                     </Stack>

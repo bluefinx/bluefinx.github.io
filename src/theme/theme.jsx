@@ -118,6 +118,16 @@ theme = createTheme(theme, {
                 fontSize: 34,
             },
         },
+        paperHighlight2: {
+            fontWeight: 'bold',
+            fontSize: 18,
+            '@media (min-width:600px)': {
+                fontSize: 22,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 26,
+            },
+        },
         paperBody: {
             fontSize: 11,
             '@media (min-width:600px)': {
@@ -137,6 +147,16 @@ theme = createTheme(theme, {
             },
             color: theme.palette.text.faded
         },
+        paperLabel2: {
+            fontSize: 12,
+            '@media (min-width:600px)': {
+                fontSize: 14,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 18,
+            },
+            color: theme.palette.text.faded
+        },
         timelineLabel: {
             fontSize: 10,
             '@media (min-width:600px)': {
@@ -146,6 +166,53 @@ theme = createTheme(theme, {
                 fontSize: 13,
             },
             color: theme.palette.text.faded
+        },
+        moduleLabel: {
+            fontSize: 10,
+            '@media (min-width:600px)': {
+                fontSize: 11,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 14,
+            },
+        },
+        achievementTag: {
+            fontSize: 10,
+            '@media (min-width:600px)': {
+                fontSize: 11,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 14,
+            },
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: 1,
+            display: "block",
+            color: theme.palette.background.default
+        },
+        achievementFooter: {
+            fontSize: 10,
+            '@media (min-width:600px)': {
+                fontSize: 11,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 14,
+            },
+            textTransform: "uppercase",
+            letterSpacing: 1,
+            display: "block",
+            lineHeight: 1.4,
+            color: theme.palette.background.default
+        },
+        achievementTitle: {
+            fontSize: 14,
+            '@media (min-width:600px)': {
+                fontSize: 18,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 20,
+            },
+            fontWeight: 700,
         },
         footerCaption: {
             fontStyle: 'italic',

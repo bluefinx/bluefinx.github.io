@@ -232,24 +232,22 @@
         "type": "Abertay University, Dundee, UK",
         "date": "Sep 2024 - Aug 2025",
         "highlights": [["Distinction", "Graduation"], ["4.07/4.5", "Average Grade"], ["Best Student", "Award Winner"]],
-        "parts": [
-          {
+        "parts": {
+          "focus": {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Master Thesis",
-            "takeaways": ["CAMAVITO: Digital Forensics Case & Evidence Management Tool", "see Projects: Forensic Case Management Framework & Tool Architecture"]
+            "thesis": ["CAMAVITO: Digital Forensics Case & Evidence Management Tool", "see Projects (Forensic Case Management Framework & Tool Architecture)"]
           },
-          [
-            {
-              "DF": ["Computer Forensics Case Study", "Malware Analysis (basic)"],
-              "CP": ["UK Data Privacy & Computer Law"],
-              "PT": ["Systems & Web Application Pentesting"],
-              "SD": ["Python Scripting", "Secure & Resilient Systems"],
-              "VM": ["Incident Response & Risk Management (basic)", "Information Security (Theoretical Foundations)"],
-              "SA": ["Network Security & System Hardening"],
-              "GI": ["Introductory Machine Learning"]
-            }
-          ]
-        ],
+          "modules": {
+            "DF": ["Computer Forensics Case Study", "Malware Analysis (basic)"],
+            "CP": ["UK Data Privacy & Computer Law"],
+            "PT": ["Systems & Web Application Pentesting"],
+            "GI": ["Introductory Machine Learning"],
+            "SD": ["Python Scripting", "Secure & Resilient Systems"],
+            "VM": ["Incident Response & Risk Management (basic)", "Information Security (Theoretical Foundations)"],
+            "SA": ["Network Security & System Hardening"]
+          }
+        },
         "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
       },
       "education-2": {
@@ -257,42 +255,45 @@
         "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
         "date": "Oct 2017 - Aug 2023",
         "highlights": [["1.7", "Final Grade"], ["2:1", "UK Honours Equivalent"], ["Cybersecurity", "Specialisation"]],
-        "parts": [
-          {
+        "parts": {
+          "focus": {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Bachelor Thesis",
-            "takeaways": ["Cryptanalysis of Swissphone's DiCal-IDEA implementation", "see Projects"]
+            "thesis": ["Cryptanalysis of Swissphone's DiCal-IDEA implementation", "see Projects"]
           },
-          [
-            {
-              "DF": ["Mobile Forensics Case Study"],
-              "CP": ["European Data Privacy Law & Ethics"],
-              "PT": ["Manual Open-Source Web App Security Assessment"],
-              "SD": ["System Programming (Java, C)", "App & Web Development", "UI Design & Development", "Software Engineering"],
-              "VM": ["Data & System Security"],
-              "SA": ["Networking & Internet", "OS & System Administration"],
-              "GI": ["Artificial Intelligence"]
-            }
-          ]
-        ],
+          "modules": {
+            "DF": ["Mobile Forensics Case Study"],
+            "CP": ["European Data Privacy Law & Ethics"],
+            "PT": ["Manual Open-Source Web App Security Assessment"],
+            "VM": ["Data & System Security"],
+            "SD": ["System Programming (Java, C)", "App & Web Development", "UI Design & Development", "Software Engineering"],
+            "SA": ["Networking & Internet", "OS & System Administration"],
+            "GI": ["Artificial Intelligence"]
+          }
+        },
         "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
       }
     }
   },
   "achievements": {
     "keys": {
+      "title": "Achievements",
+      "subtitle": "Selected Milestones",
       "categories": {
         "RE": {
           "label": "Research",
-          "colour": "category1"
+          "colour": "category1.main",
+          "icon": "Science"
         },
         "AW": {
           "label": "Award",
-          "colour": "category2"
+          "colour": "category2.main",
+          "icon": "EmojiEvents"
         },
         "CE": {
           "label": "Certification",
-          "colour": "category3"
+          "colour": "category3.main",
+          "icon": "Verified"
         }
       }
     },
@@ -302,8 +303,8 @@
         "title": "Paper on Digital Forensics Case Management",
         "institution": "Abertay University, Dundee, UK",
         "date": "Oct 2026",
-        "description": "Paper based on my master's thesis. Presents DiFCaM and CAMAVITO, a framework and open-source tool architecture for forensic case management that unifies procedural and technical requirements, ensures chain-of-custody integrity and separates forensically sensitive evidence from operational data. Validated via a proof-of-concept usability study.",
-        "status": "Submitted & Under Review"
+        "description": "Paper based on my master's thesis. Presents a framework and an open-source tool architecture for forensic case management that unifies procedural and technical requirements, ensures chain-of-custody integrity and separates forensically sensitive evidence from operational data. Validated via a proof-of-concept usability study.",
+        "status": "Under Review"
       },
       "achievement-2": {
         "category": "AW",
@@ -325,7 +326,8 @@
   },
   "references": {
     "keys": {
-      "title": "References"
+      "title": "References",
+      "subtitle": "Professional Testimonials"
     },
     "values": {
       "reference-1": {

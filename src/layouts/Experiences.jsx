@@ -1,12 +1,10 @@
-import { useState } from "react";
 import { useMediaQuery, useTheme } from '@mui/material';
 import { Box, Stack, Typography } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import DesktopCard from "../components/DesktopCard.jsx";
-import FilterTag from "../components/FilterTag.jsx";
 
-/* Builds the Experiences tab layout */
+/* Builds the Experiences section layout */
 export default function Experiences() {
 
     /*************************** Localisation ***********************************/
@@ -78,6 +76,7 @@ export default function Experiences() {
                             navigation={experiences?.keys?.navigation}
                             skillsTitle={experiences?.keys?.skills}
                             skills={experience?.skills}
+                            isEducation={false}
                         />
                     </Box>
                 ))}

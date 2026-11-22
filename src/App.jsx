@@ -61,12 +61,12 @@ export default function App() {
 
                         {/* Education */}
                         <Box id="education">
-                            {/*<Education />*/}
+                            <Education />
                         </Box>
 
                         {/* Achievements */}
                         <Box id="achievements">
-                            {/*<Achievements />*/}
+                            <Achievements />
                         </Box>
 
                         {/* References */}
