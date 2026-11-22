@@ -1,8 +1,6 @@
 {
   "header": "Blue Finjan Butscher",
   "footer": "© 2026 - Blue Finjan Butscher",
-  "show-less": "Show less",
-  "show-more": "Show more",
   "licenses": "Open Source Licenses",
   "licensesLink": "/licenses.txt",
   "hero": {
@@ -44,52 +42,18 @@
       },
       "navigation": {
         "home": "Home",
-        "home_sub": "About me",
+        "home_sub": "About Me",
         "projects": "Projects",
-        "projects_sub": "My selected work",
+        "projects_sub": "Selected Work",
         "experience": "Experience",
-        "experience_sub": "Professional journey",
+        "experience_sub": "Professional Journey",
         "education": "Education",
-        "education_sub": "Academic background",
+        "education_sub": "Academic Background",
         "achievements": "Achievements",
-        "achievements_sub": "Milestones",
+        "achievements_sub": "Selected Milestones",
         "references": "References",
-        "references_sub": "Endorsements"
+        "references_sub": "Professional Testimonials"
       }
-    }
-  },
-  "tags": {
-    "DF": {
-      "label": "Digital Forensics",
-      "colour": "primary.main"
-    },
-    "IR": {
-      "label": "Incident Response",
-      "colour": "primary.main"
-    },
-    "SE": {
-      "label": "Security Engineering",
-      "colour": "secondary.main"
-    },
-    "SD": {
-      "label": "Software Development",
-      "colour": "primary.main"
-    },
-    "PT": {
-      "label": "Pentesting",
-      "colour": "primary.main"
-    },
-    "IT": {
-      "label": "General IT",
-      "colour": "primary.main"
-    },
-    "DP": {
-      "label": "Data Privacy",
-      "colour": "primary.main"
-    },
-    "CP": {
-      "label": "Compliance",
-      "colour": "primary.main"
     }
   },
   "areas": {
@@ -125,6 +89,10 @@
       "label": "Cryptography",
       "colour": "area7.main"
     },
+    "GI": {
+      "label": "General IT & AI",
+      "colour": "area8.main"
+    },
     "CR": {
       "label": "Current / Active",
       "colour": "secondary.main"
@@ -152,7 +120,283 @@
           }
         ],
         "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "project-2": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "project-3": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "project-4": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "project-5": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "project-6": {
+        "title": "Mobile & Computer Forensics Case Studies",
+        "type": "Academic Labs",
+        "date": "2020 & 2025",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
       }
+    }
+  },
+  "new_experiences": {
+    "keys": {
+      "title": "Experience",
+      "subtitle": "Professional Journey",
+      "navigation": ["Overview", "Problem & Scope", "What I did", "Results & Learnings"],
+      "skills": "Skills & Tools",
+      "filter": "Filter by"
+    },
+    "values": {
+      "experience-1": {
+        "title": "Cybersecurity Student Assistant (Part-Time)",
+        "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
+        "date": "May 2022 - Feb 2023",
+        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Investigative Scope",
+            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+          }
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      }
+    }
+  },
+  "new_education": {
+    "keys": {
+      "title": "Education",
+      "subtitle": "Academic Background",
+      "navigation": ["Academic Focus", "Modules"],
+      "skills": "Skills & Tools",
+      "filter": "Filter by"
+    },
+    "values": {
+      "education-1": {
+        "title": "Master of Science in Ethical Hacking & Cybersecurity",
+        "type": "Abertay University, Dundee, UK",
+        "date": "Sep 2024 - Aug 2025",
+        "highlights": [["Distinction", "Graduation"], ["4.07/4.5", "Average Grade"], ["Best Student", "Award Winner"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Master Thesis",
+            "takeaways": ["CAMAVITO: Digital Forensics Case & Evidence Management Tool", "see Projects: Forensic Case Management Framework & Tool Architecture"]
+          },
+          [
+            {
+              "DF": ["Computer Forensics Case Study", "Malware Analysis (basic)"],
+              "CP": ["UK Data Privacy & Computer Law"],
+              "PT": ["Systems & Web Application Pentesting"],
+              "SD": ["Python Scripting", "Secure & Resilient Systems"],
+              "VM": ["Incident Response & Risk Management (basic)", "Information Security (Theoretical Foundations)"],
+              "SA": ["Network Security & System Hardening"],
+              "GI": ["Introductory Machine Learning"]
+            }
+          ]
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      },
+      "education-2": {
+        "title": "Bachelor of Science in Applied Computer Science",
+        "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
+        "date": "Oct 2017 - Aug 2023",
+        "highlights": [["1.7", "Final Grade"], ["2:1", "UK Honours Equivalent"], ["Cybersecurity", "Specialisation"]],
+        "parts": [
+          {
+            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "sublabel": "Bachelor Thesis",
+            "takeaways": ["Cryptanalysis of Swissphone's DiCal-IDEA implementation", "see Projects"]
+          },
+          [
+            {
+              "DF": ["Mobile Forensics Case Study"],
+              "CP": ["European Data Privacy Law & Ethics"],
+              "PT": ["Manual Open-Source Web App Security Assessment"],
+              "SD": ["System Programming (Java, C)", "App & Web Development", "UI Design & Development", "Software Engineering"],
+              "VM": ["Data & System Security"],
+              "SA": ["Networking & Internet", "OS & System Administration"],
+              "GI": ["Artificial Intelligence"]
+            }
+          ]
+        ],
+        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+      }
+    }
+  },
+  "achievements": {
+    "keys": {
+      "categories": {
+        "RE": {
+          "label": "Research",
+          "colour": "category1"
+        },
+        "AW": {
+          "label": "Award",
+          "colour": "category2"
+        },
+        "CE": {
+          "label": "Certification",
+          "colour": "category3"
+        }
+      }
+    },
+    "values": {
+      "achievement-1": {
+        "category": "RE",
+        "title": "Paper on Digital Forensics Case Management",
+        "institution": "Abertay University, Dundee, UK",
+        "date": "Oct 2026",
+        "description": "Paper based on my master's thesis. Presents DiFCaM and CAMAVITO, a framework and open-source tool architecture for forensic case management that unifies procedural and technical requirements, ensures chain-of-custody integrity and separates forensically sensitive evidence from operational data. Validated via a proof-of-concept usability study.",
+        "status": "Submitted & Under Review"
+      },
+      "achievement-2": {
+        "category": "AW",
+        "title": "Best Student Award",
+        "institution": "Abertay University, Dundee, UK",
+        "date": "Dec 2025",
+        "description": "Awarded the NCR Atleos Prize for the student who achieved a high level of performance and is considered to be the best student overall from the MSc Ethical Hacking and Cybersecurity programme.",
+        "status": "Awarded"
+      },
+      "achievement-3": {
+        "category": "CE",
+        "title": "CCNA: Introduction to Networks",
+        "institution": "Hochschule Ravensburg Weingarten • Cisco Networking Academy",
+        "date": "Sep 2020",
+        "description": "Completed foundational networking training covering network technologies, routing and switching, IP addressing and network device configuration. Gained practical skills in establishing network connectivity and monitoring small to medium-sized networks.",
+        "status": "Completed"
+      }
+    }
+  },
+  "references": {
+    "keys": {
+      "title": "References"
+    },
+    "values": {
+      "reference-1": {
+        "body": "I have known Blue since his enrolment on the MSc Ethical Hacking programme at Abertay in September 2024, when he took my Digital Forensics class. Blue quickly stood out as an exceptionally capable student, bringing intelligence, diligence and thoroughness to every task. His approach to complex problems was mature, methodical and determined, underpinned by a genuine enthusiasm for the subject. It was therefore no surprise when Blue was awarded the NCR Atleos Prize for Best Student on the Programme. Beyond his academic strengths, Blue is thoughtful, reliable, engaging and easy to work with: a real asset to any team.",
+        "role": "Cybersecurity Lecturer (Abertay University)"
+      },
+      "reference-2": {
+        "body": "Blue Butscher worked together in IT security and data protection related projects. Blue's contribution was highly valuable and useful: He provided great ideas and concepts, that he could very well argue for. His critical thinking skills supported by a good technical background made good judgement. He is able to do both: Good analysis of a status-quo as well as to develop ways to improve and augment any solution. While we worked together, Blue proved his curiosity in acquiring new knowledge and his ability to do so very fast. Blue is a trustworthy, reliable and highly committed team member. I therefore strongly recommend working with Blue.",
+        "role": "Supervisor (Data Privacy & Cybersecurity)"
+      },
+      "reference-3": {
+        "body": "During his time as my student, he consistently demonstrated a strong work ethic, excellent attendance, and a genuine willingness to engage with both the course material and wider class discussions. He approached his studies with professionalism and maturity and contributed positively to the learning environment throughout. What particularly distinguished him from his peers was his attention to detail. He completed his work carefully and thoughtfully, often demonstrating a high level of precision. His commitment to producing sound work, combined with his enthusiasm for learning, made him a standout student.",
+        "role": "Cybersecurity Lecturer (Abertay University)"
+      },
+      "reference-4": {
+        "body": "Blue consistently demonstrated reliability and professionalism. He was punctual, arrived prepared and ready to begin work. His self-directed approach meant he took initiative, managed tasks independently, and required minimal supervision. Blue also showed strong discipline and maintained steady progress on all assigned work. Overall, it was encouraging to see his commitment to producing quality work.",
+        "role": "Cybersecurity Lecturer (Abertay University)"
+      }
+    }
+  },
+  "privacy": {
+    "keys": {
+      "link": "/privacy.html",
+      "title": "Privacy Statement",
+      "website": "Website",
+      "hosting": "Hosting",
+      "international": "International Data Transfers"
+    },
+    "values": {
+      "subtitle": "This page explains if, how and by whom personal data is processed.",
+      "website": "This website does not collect, store or process any personal data of visitors. This website does not use cookies or any form of tracking (incl. Google Analytics).\n\nThis website may contain links to third-party services such as LinkedIn or GitHub. When visiting those external websites, personal data and technical information, such as IP addresses, browser information or request data, may be automatically processed by the respective providers.\n\nPlease refer to their respective privacy policies for more details.",
+      "hosting": "This website is hosted through GitHub Pages by\n\nGitHub Inc.\n88 Colin P Kelly Jr St\nSan Francisco, CA 94107\nUnited States.\n\nAs part of the hosting service, GitHub may process technical information such as IP addresses, browser type, request information and access times in server log files. This processing is necessary to ensure the availability, security and integrity of the website and is based on legitimate interests under Article 6(1)(f) UK GDPR.\n\nMore information, including your rights and how to exercise them, can be found in the",
+      "link": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "description": "GitHub Privacy Statement",
+      "international": "Data may be transferred to servers located in the United States. According to GitHub, such transfers are based on the European Commission’s Standard Contractual Clauses (SCCs) and GitHub’s certification under the EU-U.S. Data Privacy Framework (including the UK Extension).",
+      "updated": "Last updated: 13 May 2026"
+    }
+  },
+
+  "tags": {
+    "DF": {
+      "label": "Digital Forensics",
+      "colour": "primary.main"
+    },
+    "IR": {
+      "label": "Incident Response",
+      "colour": "primary.main"
+    },
+    "SE": {
+      "label": "Security Engineering",
+      "colour": "secondary.main"
+    },
+    "SD": {
+      "label": "Software Development",
+      "colour": "primary.main"
+    },
+    "PT": {
+      "label": "Pentesting",
+      "colour": "primary.main"
+    },
+    "IT": {
+      "label": "General IT",
+      "colour": "primary.main"
+    },
+    "DP": {
+      "label": "Data Privacy",
+      "colour": "primary.main"
+    },
+    "CP": {
+      "label": "Compliance",
+      "colour": "primary.main"
     }
   },
   "projects": {
@@ -195,7 +439,7 @@
         ]
       },
       "project-2": {
-        "title": "Digital Forensics Case Management Framework & Tool Prototype (Master Thesis)",
+        "title": "Digital Forensics Case Management Framework & Reference Architecture (Master Thesis)",
         "summary": "Researched digital forensics case management through an analysis of 20 academic papers and 5 additional industry sources, deriving an 8-module requirements framework for forensic case management systems. Based on a comparative assessment of 6 existing solutions, designed and prototyped a security-by-design digital forensics case management platform addressing 20 forensic and security properties, with a focus on evidence integrity, chain of custody, auditability and investigator workflows.",
         "remark": "Currently being written up as a paper.",
         "general": [
@@ -825,47 +1069,6 @@
           "Demonstrated networking proficiency by successfully deploying and resolving connectivity issues across multiple multi-subnet environments."
         ]
       }
-    }
-  },
-  "references": {
-    "keys": {
-      "title": "References"
-    },
-    "values": {
-      "reference-1": {
-        "body": "I have known Blue since his enrolment on the MSc Ethical Hacking programme at Abertay in September 2024, when he took my Digital Forensics class. Blue quickly stood out as an exceptionally capable student, bringing intelligence, diligence and thoroughness to every task. His approach to complex problems was mature, methodical and determined, underpinned by a genuine enthusiasm for the subject. It was therefore no surprise when Blue was awarded the NCR Atleos Prize for Best Student on the Programme. Beyond his academic strengths, Blue is thoughtful, reliable, engaging and easy to work with: a real asset to any team.",
-        "role": "Cybersecurity Lecturer (Abertay University)"
-      },
-      "reference-2": {
-        "body": "Blue Butscher worked together in IT security and data protection related projects. Blue's contribution was highly valuable and useful: He provided great ideas and concepts, that he could very well argue for. His critical thinking skills supported by a good technical background made good judgement. He is able to do both: Good analysis of a status-quo as well as to develop ways to improve and augment any solution. While we worked together, Blue proved his curiosity in acquiring new knowledge and his ability to do so very fast. Blue is a trustworthy, reliable and highly committed team member. I therefore strongly recommend working with Blue.",
-        "role": "Supervisor (Data Privacy & Cybersecurity)"
-      },
-      "reference-3": {
-        "body": "During his time as my student, he consistently demonstrated a strong work ethic, excellent attendance, and a genuine willingness to engage with both the course material and wider class discussions. He approached his studies with professionalism and maturity and contributed positively to the learning environment throughout. What particularly distinguished him from his peers was his attention to detail. He completed his work carefully and thoughtfully, often demonstrating a high level of precision. His commitment to producing sound work, combined with his enthusiasm for learning, made him a standout student.",
-        "role": "Cybersecurity Lecturer (Abertay University)"
-      },
-      "reference-4": {
-        "body": "Blue consistently demonstrated reliability and professionalism. He was punctual, arrived prepared and ready to begin work. His self-directed approach meant he took initiative, managed tasks independently, and required minimal supervision. Blue also showed strong discipline and maintained steady progress on all assigned work. Overall, it was encouraging to see his commitment to producing quality work.",
-        "role": "Cybersecurity Lecturer (Abertay University)"
-      }
-    }
-  },
-  "privacy": {
-    "keys": {
-      "link": "/privacy.html",
-      "title": "Privacy Statement",
-      "website": "Website",
-      "hosting": "Hosting",
-      "international": "International Data Transfers"
-    },
-    "values": {
-      "subtitle": "This page explains if, how and by whom personal data is processed.",
-      "website": "This website does not collect, store or process any personal data of visitors. This website does not use cookies or any form of tracking (incl. Google Analytics).\n\nThis website may contain links to third-party services such as LinkedIn or GitHub. When visiting those external websites, personal data and technical information, such as IP addresses, browser information or request data, may be automatically processed by the respective providers.\n\nPlease refer to their respective privacy policies for more details.",
-      "hosting": "This website is hosted through GitHub Pages by\n\nGitHub Inc.\n88 Colin P Kelly Jr St\nSan Francisco, CA 94107\nUnited States.\n\nAs part of the hosting service, GitHub may process technical information such as IP addresses, browser type, request information and access times in server log files. This processing is necessary to ensure the availability, security and integrity of the website and is based on legitimate interests under Article 6(1)(f) UK GDPR.\n\nMore information, including your rights and how to exercise them, can be found in the",
-      "link": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
-      "description": "GitHub Privacy Statement",
-      "international": "Data may be transferred to servers located in the United States. According to GitHub, such transfers are based on the European Commission’s Standard Contractual Clauses (SCCs) and GitHub’s certification under the EU-U.S. Data Privacy Framework (including the UK Extension).",
-      "updated": "Last updated: 13 May 2026"
     }
   }
 }

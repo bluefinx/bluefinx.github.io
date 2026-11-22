@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Box, Stack, Paper, Typography } from "@mui/material";
+import { useMediaQuery, useTheme } from '@mui/material';
+import { Box, Stack, Typography } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
-import ExtendableCard from "../components/ExtendableCard.jsx";
-import CardBodyProjects from "../components/CardBodyProjects.jsx";
+import DesktopCard from "../components/DesktopCard.jsx";
+import FilterTag from "../components/FilterTag.jsx";
 
 /* Builds the Experiences tab layout */
 export default function Experiences() {
@@ -14,119 +15,70 @@ export default function Experiences() {
     const { t } = useTranslation();
 
     /* Reads JSON tags object */
-    const tagDefinitions = t("tags", { returnObjects: true });
-
-    /* Reads JSON specific label object */
-    const specificLabels = t("experiences.keys.specific-labels", { returnObjects: true });
+    const tags = t("areas", { returnObjects: true });
 
     /* Reads JSON experience object */
-    const experiences = t("experiences", { returnObjects: true });
+    const experiences = t("new_experiences", { returnObjects: true });
 
-    /*************************** ProjectTag Mapping ******************************/
+    /*************************** Configuration ***********************************/
+
+    /* Allows access to the global theme */
+    const theme = useTheme();
+
+    /* Stores whether layout is mobile or desktop */
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    /*************************** ExperienceTag Mapping ******************************/
 
     /* Defines tags for experiences (e.g. "Digital Forensics") */
     const experienceTags = {
-        "experience-1": ["PT", "SE"],
-        "experience-2": ["DP", "CP", "SE"],
+        "experience-1": ["PT", "SD"],
+        "experience-2": ["CP"],
         "experience-3": ["SD"]
     };
 
-    /* Creates filtered tag list: {TAG: {label: label, colour: colour}, ...} */
-    function mapTags(experienceKey) {
+    /* Maps tag keys to their corresponding objects (tag key + (title & colour)) */
+    function mapTags(projectKey) {
         return Object.fromEntries(
-            experienceTags[experienceKey]
-                .filter((tagKey) => tagDefinitions[tagKey])
-                .map((tagKey) => [tagKey, tagDefinitions[tagKey]])
+            (experienceTags[projectKey] || [])
+                .filter((tagKey) => tagKey !== "ALL" && tags[tagKey])
+                .map((tagKey) => [tagKey, tags[tagKey]])
         );
     }
 
-    /*************************** Specific Mapping ******************************/
-
-    /* Defines tags for experiences (e.g. "Digital Forensics Skills" ) */
-    const experienceSpecificLabels = {
-        "experience-1": ["PT", "SE"],
-        "experience-2": ["DP", "SE"],
-        "experience-3": ["SD"]
-    };
-
-    /* Creates formatted specific list: [{label: label, values: [string]}, ...]*/
-    function mapSpecificEntries(key, specificEntries) {
-        if (specificEntries.length > 0 && !Array.isArray(specificEntries[0])) {
-            specificEntries = [specificEntries];
-        }
-        return experienceSpecificLabels[key].map((label, index) => ({
-            label: specificLabels[label] || label,
-            values: specificEntries[index] || [],
-        }));
-    }
-
-    /*************************** Layout Building ***********************************/
-
-    /* Builds the remark section */
-    function createRemark(company, time, location) {
-        return (
-            <Paper sx={{ mx: 2, mt: -1, mb: 2, p: 1 }} >
-                <Stack direction="column">
-                    <Typography variant="body1" sx={{
-                        fontSize: {
-                            xs: 14,
-                            sm: 15,
-                            md: 16,
-                        }, fontStyle: 'italic', whiteSpace: 'pre-line'
-                    }}>
-                        <span style={{ fontStyle: 'normal' }}>🏬 </span>{` ${company}\n`}
-                        <span style={{ fontStyle: 'normal' }}>⏳ </span>{` ${time}\n`}
-                        <span style={{ fontStyle: 'normal' }}>🌍 </span>{` ${location}`}
-                    </Typography>
-                </Stack>
-            </Paper>
-        );
-    }
-
-    /*************************** Expandable Functionality ******************************/
-
-    /* Stores expanded states of cards */
-    const [openExperience, setOpenExperiences] = useState({});
-
-    /* Toggles expanded states of cards */
-    const toggle = (key) => {
-        setOpenExperiences((prev) => ({
-            ...prev,
-            [key]: !prev[key],
-        }));
-    };
-
-    /* Creates grid with extendable cards, passes title, tags, header, body, expanded state and click listener */
+    /* Renders experience cards & outer containers */
     return (
-        <Stack direction="column" spacing={5}>
-            <Typography variant="h4" align="center" sx={{ pt: 4 }}>
-                {experiences?.keys?.title}
-            </Typography>
+        <Stack direction="column" spacing={2}>
+
+            {/* Section Header */}
+            <Stack>
+                <Typography variant="sectionTitle" align="left" sx={{ pt: 4 }}>
+                    {experiences?.keys?.title}
+                </Typography>
+                <Typography variant="sectionLabel" align="left" sx={{ pt: 0 }}>
+                    {experiences?.keys?.subtitle}
+                </Typography>
+            </Stack>
+
+            {/* Experiences */}
             <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
-                overflowX: 'auto', p: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
                 msOverflowStyle: 'none'
             }}>
                 {Object.entries(experiences?.values).map(([key, experience]) => (
-                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 625, minWidth: 625, flexShrink: 0 }}>
-                        <ExtendableCard
+                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 700, minWidth: 700, flexShrink: 0 }}>
+                        <DesktopCard
                             title={experience?.title}
+                            type={experience?.type}
+                            date={experience?.date}
                             tags={mapTags(key)}
-                            remarks={createRemark(experience?.company, experience?.time, experience?.location)}
-                            header={
-                                <Paper sx={{ p: 2, m: 2 }}>
-                                    <Typography variant="body1" sx={{ fontSize: '1rem' }}>
-                                        {experience?.summary}
-                                    </Typography>
-                                </Paper>
-                            }
-                            body={
-                                <CardBodyProjects
-                                    general={experience?.general}
-                                    specific={mapSpecificEntries(key, experience?.specific)}
-                                />
-                            }
-                            expanded={openExperience[key]}
-                            onClick={() => toggle(key)} />
+                            highlights={experience?.highlights}
+                            isMobile={isMobile}
+                            parts={experience?.parts}
+                            navigation={experiences?.keys?.navigation}
+                            skillsTitle={experiences?.keys?.skills}
+                            skills={experience?.skills}
+                        />
                     </Box>
                 ))}
             </Stack>

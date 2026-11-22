@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fee4e3ac-adc3-4687-8ae5-9329e8cff5a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DesktopCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DesktopCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProjectPartsPaper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectPartsPaper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/Experiences.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/Experiences.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/theme.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/theme/theme.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.9085985934022851E-271" />
+      <entry key="MS500" value="7.180305459835607E-55" />
+      <entry key="S2" value="2.9247774767852604E-14" />
+      <entry key="S5" value="4.304482662103892E-6" />
+      <entry key="S10" value="0.002635632016178365" />
+      <entry key="S30" value="0.2137336756584538" />
+      <entry key="S60" value="0.6839036653549863" />
+      <entry key="M2" value="1.4660870370982975" />
+      <entry key="M5" value="4.248177319387572" />
+      <entry key="M10" value="11.437661700006808" />
+      <entry key="M15" value="22.882177848359337" />
+      <entry key="M30" value="69.00022043551063" />
+      <entry key="H1" value="147.75993347980247" />
+      <entry key="H2" value="230.51448723827934" />
+      <entry key="H4" value="293.21793743033663" />
+      <entry key="D1" value="361.98035959622354" />
+      <entry key="W1" value="375.65958086221195" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000004" />
+      <entry key="S30" value="1.00003011820124" />
+      <entry key="S60" value="1.018861186999535" />
+      <entry key="M2" value="1.497221469249915" />
+      <entry key="M5" value="4.64436318595898" />
+      <entry key="M10" value="8.130058312780161" />
+      <entry key="M15" value="9.939481244084032" />
+      <entry key="M30" value="12.305723465871807" />
+      <entry key="H1" value="13.870112776382047" />
+      <entry key="H2" value="14.835059772617527" />
+      <entry key="H4" value="15.38711817106573" />
+      <entry key="D1" value="15.893052614929475" />
+      <entry key="W1" value="15.984595767757096" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.011923900070004365" />
+      <entry key="MS500" value="0.4123667743050407" />
+      <entry key="S2" value="0.8013475553683054" />
+      <entry key="S5" value="0.9152303260683455" />
+      <entry key="S10" value="0.9593054429748903" />
+      <entry key="S30" value="1.1989542604221943" />
+      <entry key="S60" value="1.6945847486079155" />
+      <entry key="M2" value="2.9556123868798463" />
+      <entry key="M5" value="8.880426133643756" />
+      <entry key="M10" value="19.55488160537524" />
+      <entry key="M15" value="32.809920943030036" />
+      <entry key="M30" value="81.29710267929471" />
+      <entry key="H1" value="161.62410486764114" />
+      <entry key="H2" value="245.3459373602731" />
+      <entry key="H4" value="308.60303174606946" />
+      <entry key="D1" value="377.87303714241966" />
+      <entry key="W1" value="391.6441220065723" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3MSwdRbcB2GLJ4TwOhGwXxXKoma" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "design-update",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-WS-263.7307.202" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fee4e3ac-adc3-4687-8ae5-9329e8cff5a2" name="Changes" comment="" />
+      <created>1795357364529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1795357364529</updated>
+      <workItem from="1795357365827" duration="6323000" />
+      <workItem from="1795365964175" duration="4070000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

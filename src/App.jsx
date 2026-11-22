@@ -56,7 +56,7 @@ export default function App() {
 
                         {/* Experience */}
                         <Box id="experience">
-                            {/*<Experiences />*/}
+                            <Experiences />
                         </Box>
 
                         {/* Education */}

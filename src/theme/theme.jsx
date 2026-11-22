@@ -41,18 +41,18 @@ let theme = createTheme({
         area7: { // Cryptography
             main: '#B99B70'
         },
-        tertiary: {
-            main: '#3A5743'
+        area8: { // General IT & AI
+            main: '#A0A6B8'
         },
-        quaternary: {
-            main: '#B07156'
+        category1: { // Research
+            main: '#E59A68'
         },
-        quinary: {
-            main: '#828C51'
+        category2: { // Awards
+            main: '#D6C16B'
         },
-        senary: {
-            main: '#5B3345'
-        },
+        category3: { // Certifications
+            main: '#75B8E0'
+        }
     }
 });
 

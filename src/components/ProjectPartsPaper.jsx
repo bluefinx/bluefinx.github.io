@@ -26,7 +26,7 @@ export default function ProjectPartsPaper({ title, content, sublabel, takeaways 
                     {/* Takeaways */}
                     <Stack spacing={0}>
                         {takeaways.map((takeaway, index) => (
-                            <Stack key={index} direction="row" alignItems="center" spacing={1}>
+                            <Stack key={index} direction="row" spacing={1} sx={{ alignItems: "center" }}>
                                 <TaskAltIcon fontSize="small" sx={{ color: "secondary.main"}} />
                                 <Typography variant="paperLabel" sx={{ color: "text.primary" }}>
                                     {takeaway}

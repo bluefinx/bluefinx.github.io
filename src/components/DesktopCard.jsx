@@ -38,19 +38,17 @@ export default function DesktopCard({ title, type, date, tags, highlights, isMob
                     <Typography variant="paperLabel" sx={{ flex: 1, minWidth: 0, overflow: "hidden", whiteSpace: "nowrap" }}>
                         {type}
                     </Typography>
-                    <Typography variant="paperLabel" sx={{ flex: 1, minWidth: 0, overflow: "hidden", whiteSpace: "nowrap", textAlign: "right" }}>
+                    <Typography variant="paperLabel" sx={{ flexShrink: 0, minWidth: 0, overflow: "hidden", whiteSpace: "nowrap", textAlign: "right" }}>
                         {date}
                     </Typography>
                 </Stack>
 
                 {/* Tags*/}
-                {tags && Object.keys(tags).length > 0 && (
-                    <Stack direction="row" sx={{ pb: 2, pt: 2, flexWrap: "wrap", gap: 1 }}>
-                        {Object.entries(tags).map(([key, value]) => (
-                            <ProjectTag key={key} label={value?.label} colour={value?.colour} textColour="text.default" />
-                        ))}
-                    </Stack>
-                )}
+                <Stack direction="row" sx={{ pb: 2, pt: 2, flexWrap: "wrap", gap: 1, minHeight: 54, alignContent: "flex-start" }}>
+                    {tags && Object.entries(tags).map(([key, value]) => (
+                        <ProjectTag key={key} label={value?.label} colour={value?.colour} textColour="text.default" />
+                    ))}
+                </Stack>
 
                 {/* ProjectHighlights */}
                 <ProjectHighlights highlights={highlights} isMobile={isMobile} />
@@ -119,7 +117,7 @@ export default function DesktopCard({ title, type, date, tags, highlights, isMob
                 </Stack>
 
                 {/* Skills */}
-                <Stack sx={{ pt: 2, pl: 1}}>
+                <Stack sx={{ pt: 2, pl: 1, mt: "auto"}}>
                     <Typography variant="paperSection" sx={{ }}>
                         {skillsTitle}
                     </Typography>

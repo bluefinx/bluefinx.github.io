@@ -142,8 +142,8 @@ export default function Hero() {
     /* Builds the Navigation paper */
     function createNavigation() {
         return (
-            <Paper sx={{ gridArea: "nav", p: 2, width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
-                <Stack spacing={0} sx={{ flexGrow: 1, width: "100%", pt: 2, pl: 2 }}>
+            <Paper sx={{ gridArea: "nav", width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
+                <Stack spacing={2} sx={{ flexGrow: 1, width: "100%", p: 2, justifyContent: "center", boxSizing: "border-box"}}>
                     {sections.map((section, index) => {
                         const active = activeSection === section.id;
                         return (
@@ -153,7 +153,7 @@ export default function Hero() {
                                 }}}
                                  sx={{ display: "flex", alignItems: "stretch", minHeight: 48, cursor: section.link ? "pointer" : "default" }}>
                                 {/* Timeline line and dot */}
-                                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: 24, mr: 2 }}>
+                                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: 24, mr: 1 }}>
                                     <Box sx={{
                                         width: 12,
                                         height: 12,
@@ -172,7 +172,7 @@ export default function Hero() {
                                 </Box>
 
                                 {/* Label */}
-                                <Box sx={{ pb: 2, display: "flex", flexDirection: "column" }}>
+                                <Box sx={{ display: "flex", flexDirection: "column" }}>
                                     <Typography variant="paperBody"
                                         sx={{
                                             color: active ? "primary.main" : "text.default",
