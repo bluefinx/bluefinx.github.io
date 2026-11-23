@@ -8,7 +8,7 @@ import ProjectSkill from "./ProjectSkill.jsx";
 import EducationPartsPaper from "./EducationPartsPaper.jsx";
 
 /* Builds a generic desktop card layout */
-export default function DesktopCard({ title, type, date, tags, highlights, isMobile, parts, navigation, skillsTitle, skills, isEducation }) {
+export default function DesktopCard({ title, type, date, tags, highlights, parts, navigation, skillsTitle, skills, isEducation }) {
 
     /*************************** Navigation ***********************************/
 
@@ -26,6 +26,7 @@ export default function DesktopCard({ title, type, date, tags, highlights, isMob
         ? parts[selectedKey]
         : parts[selectedIndex];
 
+    /* Renders the Desktop project cards */
     return (
         <Card elevation={0} sx={{
             display: "flex", flexDirection: "column", width: "100%", height: "100%", cursor: "pointer", backgroundColor: 'background.default',
@@ -38,7 +39,7 @@ export default function DesktopCard({ title, type, date, tags, highlights, isMob
             <Stack direction="column" sx={{ flex: 1, height: "100%", p: 2 }}>
 
                 {/* Title*/}
-                <Typography variant="paperTitle" sx={{ pl: 1}}>
+                <Typography variant="paperTitle" sx={{ pl: 1, whiteSpace: 'pre-line'}}>
                     {title}
                 </Typography>
 
@@ -84,19 +85,16 @@ export default function DesktopCard({ title, type, date, tags, highlights, isMob
                             "& .MuiTab-root": {
                                 textTransform: "none",
                                 flex: 1,
-                                fontSize: 11,
-                                '@media (min-width:600px)': {
-                                    fontSize: 13,
-                                },
-                                '@media (min-width:900px)': {
-                                    fontSize: 15,
-                                },
+                                fontSize: {xs: 11, sm: 13, md: 15},
                                 color: "text.default",
                                 fontWeight: 500,
                                 minHeight: 34,
-                                height: 34,
+                                height: "auto",
                                 py: 0,
                                 px: 1,
+                                whiteSpace: "normal",
+                                lineHeight: 1.3,
+                                paddingBottom: "6px",
 
                                 transition: "color 0.25s ease",
 

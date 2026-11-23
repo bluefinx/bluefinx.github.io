@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Box, Button, Grid, Stack, Paper, Typography } from "@mui/material";
+import { Box, Button, Grid, Stack, Paper, Typography, Card, CardActionArea } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import Logo from "../assets/logo.png";
@@ -8,6 +8,7 @@ import GitHub from "../assets/GitHub.png";
 
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import CheckIcon from '@mui/icons-material/Check';
+import {email1, email2, gitHubLink, linkedInLink, NAVIGATION} from "../config.jsx";
 
 /* Builds the Hero section layout */
 export default function Hero() {
@@ -22,20 +23,100 @@ export default function Hero() {
 
     /*************************** Layout Building ***********************************/
 
+    /* Stores the active section with default "Home" */
+    const [activeSection, setActiveSection] = useState("home");
+
+    /* Builds the Navigation paper */
+    function createNavigation() {
+        return (
+            <Paper sx={{ width: "100%", height: "100%", display: "flex" }}>
+                <Stack direction="column" sx={{ p: 0, pl: { xs: 0, md: 2 }, height: "100%", flexGrow: 1, backgroundColor: "background.default" }}>
+                    {/* Title*/}
+                    <Typography variant="paperTitle" sx={{ pb: 2 }}>
+                        {hero?.keys?.navigation?.title}
+                    </Typography>
+
+                    {/* Body */}
+                    <Box sx={{ flexGrow: 1, display: "flex" }}>
+                        <Grid container spacing={1}>
+                            {Object.entries(hero?.values?.navigation || {}).map(([id, section], index) => {
+                                const active = activeSection === id;
+                                const config = NAVIGATION[id];
+                                return (
+                                    <Grid size={{ xs: 6, md: 12 }} key={index}>
+                                        <Card variant="outlined" sx={{ height: "100%", borderRadius: 2, transition: "all 0.2s",
+                                            "&:hover": {
+                                                borderColor: "primary.main",
+                                                boxShadow: 3,
+                                                transform: "translateY(-2px)"
+                                            }}}>
+                                            <CardActionArea sx={{ height: "100%", cursor: config?.link ? "pointer" : "default" }} onClick={() => {
+                                                if (config?.link) {
+                                                    scrollToSection(id);
+                                                }
+                                            }}>
+                                                <Stack direction="row" spacing={1} sx={{ p: 1, alignItems: "center" }}>
+                                                    <Box sx={{ pl: 1, pr: 1, display: "flex", alignItems: "center", color: active ? "primary.main" : "text.secondary",
+                                                        transition: "color 0.2s ease" }}>
+                                                        {NAVIGATION[id]?.icon}
+                                                    </Box>
+
+                                                    <Stack spacing={0}>
+                                                        <Typography variant="paperBody"
+                                                                    sx={{
+                                                                        color: active ? "primary.main" : "text.default",
+                                                                        fontWeight: 600,
+                                                                        transition: "all 0.2s ease",
+                                                                        "&:hover": config?.link ? { color: "primary.main" } : {},
+                                                                    }}>
+                                                            {section.title}
+                                                        </Typography>
+
+                                                        <Typography variant="timelineLabel" sx={{ mt: 0.3 }}>
+                                                            {section.subtitle}
+                                                        </Typography>
+                                                    </Stack>
+                                                </Stack>
+                                            </CardActionArea>
+                                        </Card>
+                                    </Grid>
+                                );
+                            })}
+                        </Grid>
+                    </Box>
+                </Stack>
+            </Paper>
+        )
+    }
+
     /* Builds the About paper */
     function createAbout() {
+        const logoWidth = 100;
         return (
-            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
+            <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex", position: "relative" }}>
+                {/* Logo */}
+                <Box component="img" src={Logo} alt={hero?.keys?.logo?.alt}
+                    sx={{
+                        position: "absolute",
+                        top: 16,
+                        right: 16,
+                        width: logoWidth,
+                        maxHeight: "90px",
+                        objectFit: "contain",
+                    }}/>
+
+                {/* Text */}
                 <Stack direction="column" sx={{ height: "100%", flexGrow: 1 }}>
                     {/* Title*/}
-                    <Typography variant="paperTitle" sx={{ pl: 2 }}>
+                    <Typography variant="paperTitle" sx={{ pl: 2, pr: `${logoWidth + 8}px` }}>
                         {hero?.keys?.about?.title}
                     </Typography>
 
                     {/* Body */}
                     <Box sx={{ flexGrow: 1, display: "flex" }}>
-                        <Stack direction="column" spacing={1} sx={{ pt: 2, p: 2, pr: 6 }}>
-                            <Typography variant="paperBody" sx={{ whiteSpace: 'pre-line' }}>
+                        <Stack direction="column" spacing={1} sx={{ flexGrow: 1, width: "100%", p: 2, pt: 2 }}>
+                            <Typography variant="paperBody" sx={{ whiteSpace: "pre-line", display: "block" }}>
+                                <Box component="span" sx={{ float: "right", width: logoWidth - 16, height: 90 }} />
                                 {hero?.values?.about?.body}
                             </Typography>
                             <Typography variant="paperBody" sx={{ fontStyle: "italic", pt: 2 }}>
@@ -76,12 +157,11 @@ export default function Hero() {
     /* Builds the Contact paper */
     function createContact() {
         return (
-            <Paper sx={{ gridArea: "contact", p: 2, width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 1 }}>
-                {/* Logo */}
-                <Box sx={{ flex: 1, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "150px", padding: 2 }}>
-                    <Box component="img" src={Logo} alt={hero?.keys?.logo?.alt}
-                         sx={{ maxWidth: "100%", maxHeight: "120px", height: "auto", objectFit: "contain" }} />
-                </Box>
+            <Paper sx={{ gridArea: "contact", p: 2, width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "start", gap: 1 }}>
+                {/* Title*/}
+                <Typography variant="paperTitle" sx={{ pb: 2 }}>
+                    {hero?.keys?.contact?.title}
+                </Typography>
 
                 {/* Email */}
                 <Button
@@ -100,10 +180,10 @@ export default function Hero() {
                     <Grid size={6}>
                         <Button
                             variant="contained"
-                            href={hero?.values?.contact?.linkedin}
+                            href={linkedInLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label={hero?.keys?.contact?.linkedin}
+                            aria-label={linkedInLink}
                             sx={contactButtons}
                         >
                             <Box component="img" src={LinkedIn} alt="" sx={logoStyle} />
@@ -112,10 +192,10 @@ export default function Hero() {
                     <Grid size={6}>
                         <Button
                             variant="contained"
-                            href={hero?.values?.contact?.github}
+                            href={gitHubLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label={hero?.keys?.contact?.github}
+                            aria-label={gitHubLink}
                             sx={contactButtons}
                         >
                             <Box component="img" src={GitHub} alt="" sx={logoStyle} />
@@ -126,86 +206,23 @@ export default function Hero() {
         );
     }
 
-    /* Navigation sections */
-    const sections = [
-        { id: "home", label: hero?.values?.navigation?.home, subtitle: hero?.values?.navigation?.home_sub, link: false },
-        { id: "projects", label: hero?.values?.navigation?.projects, subtitle: hero?.values?.navigation?.projects_sub, link: true },
-        { id: "experience", label: hero?.values?.navigation?.experience, subtitle: hero?.values?.navigation?.experience_sub, link: true },
-        { id: "education", label: hero?.values?.navigation?.education, subtitle: hero?.values?.navigation?.education_sub, link: true },
-        { id: "achievements", label: hero?.values?.navigation?.achievements, subtitle: hero?.values?.navigation?.achievements_sub, link: true },
-        { id: "references", label: hero?.values?.navigation?.references, subtitle: hero?.values?.navigation?.references_sub, link: true },
-    ];
-
-    /* Stores the active section with default "Home" */
-    const [activeSection, setActiveSection] = useState("home");
-
-    /* Builds the Navigation paper */
-    function createNavigation() {
-        return (
-            <Paper sx={{ gridArea: "nav", width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
-                <Stack spacing={2} sx={{ flexGrow: 1, width: "100%", p: 2, justifyContent: "center", boxSizing: "border-box"}}>
-                    {sections.map((section, index) => {
-                        const active = activeSection === section.id;
-                        return (
-                            <Box key={section.id} onClick={() => {
-                                if (section.link) {
-                                    scrollToSection(section.id);
-                                }}}
-                                 sx={{ display: "flex", alignItems: "stretch", minHeight: 48, cursor: section.link ? "pointer" : "default" }}>
-                                {/* Timeline line and dot */}
-                                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: 24, mr: 1 }}>
-                                    <Box sx={{
-                                        width: 12,
-                                        height: 12,
-                                        borderRadius: "50%",
-                                        bgcolor: active ? "primary.main" : "text.faded",
-                                        border: "2px solid",
-                                        borderColor: active ? "primary.main" : "text.faded",
-                                        transition: "all 0.2s ease",
-                                        flexShrink: 0,
-                                    }}/>
-
-                                    {index !== sections.length - 1 && (
-                                        /* Line */
-                                        <Box sx={{ width: 2, flexGrow: 1, bgcolor: "divider", minHeight: 30 }}/>
-                                    )}
-                                </Box>
-
-                                {/* Label */}
-                                <Box sx={{ display: "flex", flexDirection: "column" }}>
-                                    <Typography variant="paperBody"
-                                        sx={{
-                                            color: active ? "primary.main" : "text.default",
-                                            fontWeight: active ? 600 : 600,
-                                            transition: "all 0.2s ease",
-                                            "&:hover": section.link ? { color: "primary.main" } : {},
-                                        }}>
-                                        {section.label}
-                                    </Typography>
-
-                                    <Typography variant="timelineLabel" sx={{ mt: 0.3 }}>
-                                        {section.subtitle}
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        );
-                    })}
-                </Stack>
-            </Paper>
-        );
-    }
-
     /* Builds the Languages paper */
     function createLanguages() {
         return (
             <Paper sx={{ p: 2, width: "100%", height: "100%", display: "flex" }}>
-                <Grid container spacing={1} sx={{ width: "100%" }}>
+                <Stack spacing={1} sx={{ width: "100%" }}>
+
+                    {/* Title*/}
+                    <Typography variant="paperTitle" sx={{ pb: 2 }}>
+                        {hero?.keys?.languages?.title}
+                    </Typography>
 
                     {/* Language Buttons */}
                     {hero?.values?.languages?.map((language, index) => (
-                        <Grid size={{ xs: 12, sm: 6, md: 4, lg: "grow" }} key={index}>
+
                             <Button
                                 disabled
+                                key={index}
                                 variant="contained"
                                 sx={{
                                     width: "100%",
@@ -221,9 +238,8 @@ export default function Hero() {
                                     {language}
                                 </Typography>
                             </Button>
-                        </Grid>
                     ))}
-                </Grid>
+                </Stack>
             </Paper>
         );
     }
@@ -235,7 +251,7 @@ export default function Hero() {
     /* Generates email address and copies to clipboard (basic spam protection) */
     const handleCopy = async () => {
         try {
-            const email = [hero?.values?.contact?.email1, hero?.values?.contact?.email2].join("@");
+            const email = [email1, email2].join("@");
             await navigator.clipboard.writeText(email);
             setEmailCopied(true);
             // reset after 2 seconds
@@ -245,7 +261,7 @@ export default function Hero() {
         } catch (err) { }
     };
 
-    /*************************** Page Scroll Functionality ***********************************/
+    /*************************** Page Scroll Functionality (AI Generated) ****************************/
 
     /* Uses Box IDs to scroll to section */
     const scrollToSection = (sectionID) => {
@@ -257,6 +273,8 @@ export default function Hero() {
 
     /* Resets active state to "Home" when scrolling to top */
     useEffect(() => {
+        const navigation = hero?.values?.navigation || {};
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -271,12 +289,14 @@ export default function Hero() {
             }
         );
 
-        sections.forEach((section) => {
-            if (section.id === "home") return;
+        Object.keys(navigation).forEach((id) => {
+            if (id === "home") return;
 
-            const element = document.getElementById(section.id);
+            const element = document.getElementById(id);
 
-            if (element) observer.observe(element);
+            if (element) {
+                observer.observe(element);
+            }
         });
 
         const handleScroll = () => {
@@ -291,41 +311,28 @@ export default function Hero() {
             observer.disconnect();
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hero?.values?.navigation]);
 
 
+    /* Renders the Hero papers */
     return (
-        <Box sx={{ display: "grid", gap: 2,
+        <Box
+            sx={{ display: "grid", gap: 2,
                 gridTemplateColumns: {
                     xs: "1fr",
-                    md: "1fr minmax(200px, 25%)",
-                    lg: "7fr 3fr minmax(180px, 2fr)",
+                    md: "1fr minmax(240px, 30%)",
+                    lg: "3fr 6fr minmax(240px, 3fr)",
                 },
                 gridTemplateAreas: {
                     xs: `"nav" "about" "contact" "languages"`,
-                    md: `"about nav" "contact contact" "languages languages"`,
-                    lg: `"about contact nav" "languages languages nav"`,
-                } }}>
-
-            {/* About */}
-            <Box sx={{ gridArea: "about" }}>
-                {createAbout()}
-            </Box>
-
-            {/* Contact */}
-            <Box sx={{ gridArea: "contact" }}>
-                {createContact()}
-            </Box>
-
-            {/* Languages */}
-            <Box sx={{ gridArea: "languages" }}>
-                {createLanguages()}
-            </Box>
-
-            {/* Navigation */}
-            <Box sx={{ gridArea: "nav", display: "flex" }}>
-                {createNavigation()}
-            </Box>
+                    md: `"about nav" "contact nav" "languages nav"`,
+                    lg: `"contact about nav" "languages about nav"`,
+                },
+            }}>
+            <Box sx={{ gridArea: "nav", display: "flex", pb: { xs: 2, sm: 2, md: 0 } }}>{createNavigation()}</Box>
+            <Box sx={{ gridArea: "about" }}>{createAbout()}</Box>
+            <Box sx={{ gridArea: "contact" }}>{createContact()}</Box>
+            <Box sx={{ gridArea: "languages" }}>{createLanguages()}</Box>
         </Box>
     );
 }

@@ -1,24 +1,11 @@
-import { Card, CardContent, Box, Typography, Stack, Icon, Divider } from "@mui/material";
+import { Card, CardContent, Box, Typography, Stack } from "@mui/material";
 
-import ScienceIcon from '@mui/icons-material/Science';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import VerifiedIcon from '@mui/icons-material/Verified';
-
-export default function AchievementCard({ category, achievement, isMobile}) {
-
-    /*************************** Icon Mapping ***********************************/
-
-    /* Maps the icons from the JSON object to the imported icons */
-    const iconMap = {
-        Science: ScienceIcon,
-        EmojiEvents: EmojiEventsIcon,
-        Verified: VerifiedIcon
-    };
+export default function AchievementCard({ categoryLabel, categoryIcon: CategoryIcon, categoryColour, achievement, isMobile}) {
 
     /* Builds the achievement card */
     return (
         <Card elevation={0} sx={{ display: "flex", flexDirection: "column", width: "100%", height: "100%", cursor: "pointer", backgroundColor: 'background.default',
-            border: '1px solid', borderColor: category?.colour, borderRadius: 2, overflow: "hidden", transition: "all 0.2s ease",
+            border: '1px solid', borderColor: categoryColour, borderRadius: 2, overflow: "hidden", transition: "all 0.2s ease",
             "&:hover": {
                 boxShadow: 3,
                 transform: "translateY(-2px)",
@@ -26,9 +13,9 @@ export default function AchievementCard({ category, achievement, isMobile}) {
             }}}>
 
             {/* Header */}
-            <Box sx={{backgroundColor: category?.colour, px: 2, py: 0.75 }}>
+            <Box sx={{backgroundColor: categoryColour, px: 2, py: 0.75 }}>
                 <Typography variant="achievementTag">
-                    {category?.label}
+                    {categoryLabel}
                 </Typography>
             </Box>
 
@@ -50,20 +37,10 @@ export default function AchievementCard({ category, achievement, isMobile}) {
             </CardContent>
 
             {/* Footer */}
-            <Box sx={{ backgroundColor: category?.colour, px: 2, py: 0.75 }}>
-                <Stack direction="row" alignItems="center" sx={{ width: "100%"}}>
-                    {category?.icon && (
-                        <Icon
-                            component={iconMap[category.icon]}
-                            sx={{ color: "background.default",
-                                fontSize: 14,
-                                '@media (min-width:600px)': {
-                                    fontSize: 18,
-                                },
-                                '@media (min-width:900px)': {
-                                    fontSize: 20,
-                                },
-                                display: "block" }}/>
+            <Box sx={{ backgroundColor: categoryColour, px: 2, py: 0.75 }}>
+                <Stack direction="row" sx={{ width: "100%", alignItems: "center"}}>
+                    {CategoryIcon && (
+                        <CategoryIcon sx={{ color: "background.default", fontSize: { xs: 14, sm: 18, md: 20 }, display: "block" }} />
                     )}
                     <Typography variant="achievementFooter" sx={{ pl: 1 }}>
                         {achievement?.status}

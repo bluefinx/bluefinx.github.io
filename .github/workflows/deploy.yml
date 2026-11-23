@@ -38,7 +38,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Update licenses.txt
+      - name: Update licences.txt
         run: |
           npx license-checker --production --json \
           | jq 'to_entries
@@ -51,13 +51,13 @@ jobs:
                   license: .value.licenses,
                   repository: .value.repository
                 }
-              )' > public/licenses.txt
-      - name: Commit licenses.txt if changed
+              )' > public/licences.txt
+      - name: Commit licences.txt if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/licenses.txt
-          git diff --staged --quiet || (git commit -m "chore: update licenses.txt" && git push)
+          git add public/licences.txt
+          git diff --staged --quiet || (git commit -m "chore: update licences.txt" && git push)
       - name: Build
         run: npm run build
       - name: Setup Pages

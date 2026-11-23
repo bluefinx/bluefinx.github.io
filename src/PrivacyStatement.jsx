@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 
 import theme from "./theme/theme.jsx";
 
+import { githubPrivacyLink} from "./config.jsx";
+
 export default function PrivacyStatement() {
 
     /*************************** Localisation *********************************************/
@@ -58,7 +60,7 @@ export default function PrivacyStatement() {
                     </Typography>
                     <Typography variant="paperBody" sx={{ p: 2, whiteSpace: 'pre-line' }}>
                         {privacy?.values?.hosting}{' '}
-                        <Link href={privacy?.values?.link} target="_blank" rel="noopener noreferrer">
+                        <Link href={githubPrivacyLink} target="_blank" rel="noopener noreferrer">
                             {privacy?.values?.description}
                         </Link>
                         .

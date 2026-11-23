@@ -1,10 +1,17 @@
 import { useState } from "react";
 import { useMediaQuery, useTheme } from '@mui/material';
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, IconButton } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import DesktopCard from "../components/DesktopCard.jsx";
+import MobileCard from "../components/MobileCard.jsx";
 import FilterTag from "../components/FilterTag.jsx";
+import {useMobileNavigation} from "../hooks/useSwipeNavigation.jsx";
+
+import { AREAS} from "../config.jsx";
+
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 /* Builds the Projects section layout */
 export default function Projects() {
@@ -18,7 +25,7 @@ export default function Projects() {
     const tags = t("areas", { returnObjects: true });
 
     /* Reads JSON projects object */
-    const projects = t("new_projects", { returnObjects: true });
+    const projects = t("projects", { returnObjects: true });
 
     /*************************** Configuration ***********************************/
 
@@ -40,7 +47,13 @@ export default function Projects() {
         return Object.fromEntries(
             (projectsTags[projectKey] || [])
                 .filter((tagKey) => tagKey !== "ALL" && tags[tagKey])
-                .map((tagKey) => [tagKey, tags[tagKey]])
+                .map((tagKey) => [
+                    tagKey,
+                    {
+                        ...tags[tagKey],
+                        colour: AREAS[tagKey]?.colour
+                    }
+                ])
         );
     }
 
@@ -73,6 +86,20 @@ export default function Projects() {
         projectsTags[projectKey]?.includes(selectedArea)
     );
 
+    /*************************** Mobile Navigation with Swipe ****************************************/
+
+    /* Determines the total projects per view */
+    const total = filteredProjects.length;
+
+    const {
+        safeIndex,
+        slideDirection,
+        handlePrev,
+        handleNext,
+        handleTouchStart,
+        handleTouchEnd,
+    } = useMobileNavigation(filteredProjects.length, selectedArea);
+
     /* Renders project cards & outer containers */
     return (
         <Stack direction="column" spacing={2}>
@@ -101,7 +128,7 @@ export default function Projects() {
                         <FilterTag
                             key={tagKey}
                             label={`${tag.label} (${areaCounts[tagKey] || 0})`}
-                            colour={tag.colour}
+                            colour={AREAS[tagKey]?.colour}
                             selected={selectedArea === tagKey}
                             onClick={() => setSelectedArea(tagKey)}
                             sx={{ flexShrink: 0 }}
@@ -111,28 +138,108 @@ export default function Projects() {
             </Box>
 
             {/* Projects */}
-            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
-                overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
-                msOverflowStyle: 'none'
-            }}>
-                {filteredProjects.map(([key, project]) => (
-                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 700, minWidth: 700, flexShrink: 0 }}>
-                        <DesktopCard
-                            title={project?.title}
-                            type={project?.type}
-                            date={project?.date}
-                            tags={mapTags(key)}
-                            highlights={project?.highlights}
-                            isMobile={isMobile}
-                            parts={project?.parts}
-                            navigation={projects?.keys?.navigation}
-                            skillsTitle={projects?.keys?.skills}
-                            skills={project?.skills}
-                            isEducation={false}
-                        />
-                    </Box>
-                ))}
-            </Stack>
+            {isMobile ? (
+                total > 0 && (() => {
+                    const [key, project] = filteredProjects[safeIndex];
+                    return (
+                        <Box key={key} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}
+                             sx={{
+                                 width: "100%",
+                                 touchAction: "pan-y",
+
+                                 transition: slideDirection
+                                     ? "transform 220ms cubic-bezier(0.22, 1, 0.36, 1), opacity 220ms ease"
+                                     : "none",
+
+                                 transform: slideDirection
+                                     ? `translate3d(${slideDirection === "left" ? "-50px" : "50px"}, 0, 0)`
+                                     : "translate3d(0, 0, 0)",
+
+                                 opacity: slideDirection ? 0 : 1,
+
+                                 willChange: slideDirection ? "transform, opacity" : "auto",
+                                 backfaceVisibility: "hidden",
+                             }}>
+                            <MobileCard
+                                title={project?.title}
+                                type={project?.type}
+                                date={project?.date}
+                                tags={mapTags(key)}
+                                highlights={project?.highlights}
+                                parts={project?.parts}
+                                navigation={projects?.keys?.navigation}
+                                skillsTitle={projects?.keys?.skills}
+                                skills={project?.skills}
+                                isEducation={false}
+                            />
+                        </Box>
+                    );
+                })()
+            ) : (
+                <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
+                    overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                    msOverflowStyle: 'none'
+                }}>
+                    {filteredProjects.map(([key, project]) => (
+                        <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: { sm: 550, lg: 700 },
+                            minWidth: { sm: 550, lg: 700 }, flexShrink: 0 }}>
+                            <DesktopCard
+                                title={project?.title}
+                                type={project?.type}
+                                date={project?.date}
+                                tags={mapTags(key)}
+                                highlights={project?.highlights}
+                                parts={project?.parts}
+                                navigation={projects?.keys?.navigation}
+                                skillsTitle={projects?.keys?.skills}
+                                skills={project?.skills}
+                                isEducation={false}
+                            />
+                        </Box>
+                    ))}
+                </Stack>
+            )}
+
+            {/* Mobile Navigation */}
+            {isMobile && total > 0 && (
+                <Stack direction="row" sx={{ width: "100%", alignItems: "center", justifyContent: "space-between" }}>
+                    <IconButton onClick={handlePrev} disabled={safeIndex === 0}
+                                sx={{
+                                    width: 40,
+                                    height: 40,
+                                    border: "1px solid",
+                                    borderColor: "divider",
+                                    borderRadius: "10px",
+                                    color: "text.primary",
+                                }}>
+                        <ChevronLeftIcon />
+                    </IconButton>
+
+                    <Typography variant="paperSection"
+                                sx={{
+                                    textAlign: "center",
+                                    fontWeight: 600,
+                                    fontVariantNumeric: "tabular-nums",
+                                }}>
+                        {String(safeIndex + 1).padStart(2, "0")}
+                        <Box component="span" sx={{ color: "text.secondary", mx: 0.5 }}>
+                            /
+                        </Box>
+                        {String(total).padStart(2, "0")}
+                    </Typography>
+
+                    <IconButton onClick={handleNext} disabled={safeIndex === total - 1} sx={{
+                        width: 40,
+                        height: 40,
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: "10px",
+                        color: "text.primary",
+                    }}>
+                        <ChevronRightIcon />
+                    </IconButton>
+                </Stack>
+            )}
         </Stack>
     );
 }

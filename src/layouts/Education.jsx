@@ -1,8 +1,13 @@
 import { useMediaQuery, useTheme } from '@mui/material';
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, IconButton } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 import DesktopCard from "../components/DesktopCard.jsx";
+import MobileCard from "../components/MobileCard.jsx";
+import {useMobileNavigation} from "../hooks/useSwipeNavigation.jsx";
+
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 /* Builds the Education section layout */
 export default function Education() {
@@ -13,7 +18,7 @@ export default function Education() {
     const { t } = useTranslation();
 
     /* Reads JSON experience object */
-    const educations = t("new_education", { returnObjects: true });
+    const educations = t("education", { returnObjects: true });
 
     /*************************** Configuration ***********************************/
 
@@ -22,6 +27,23 @@ export default function Education() {
 
     /* Stores whether layout is mobile or desktop */
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    /*************************** Mobile Navigation with Swipe ****************************************/
+
+    /* Get all educations */
+    const educationEntries = Object.entries(educations?.values || {});
+
+    /* Counts all experiences */
+    const total = educationEntries.length;
+
+    const {
+        safeIndex,
+        slideDirection,
+        handlePrev,
+        handleNext,
+        handleTouchStart,
+        handleTouchEnd,
+    } = useMobileNavigation(educationEntries.length);
 
     /* Renders education cards & outer container */
     return (
@@ -37,29 +59,109 @@ export default function Education() {
                 </Typography>
             </Stack>
 
-            {/* Education */}
-            <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
-                overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
-                msOverflowStyle: 'none'
-            }}>
-                {Object.entries(educations?.values).map(([key, education]) => (
-                    <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: 700, minWidth: 700, flexShrink: 0 }}>
-                        <DesktopCard
-                            title={education?.title}
-                            type={education?.type}
-                            date={education?.date}
-                            tags={{}}
-                            highlights={education?.highlights}
-                            isMobile={isMobile}
-                            parts={education?.parts}
-                            navigation={educations?.keys?.navigation}
-                            skillsTitle={educations?.keys?.skills}
-                            skills={education?.skills}
-                            isEducation={true}
-                        />
-                    </Box>
-                ))}
-            </Stack>
+            {/* Experiences */}
+            {isMobile ? (
+                total > 0 && (() => {
+                    const [key, education] = educationEntries[safeIndex];
+                    return (
+                        <Box key={key} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}
+                             sx={{
+                                 width: "100%",
+                                 touchAction: "pan-y",
+
+                                 transition: slideDirection
+                                     ? "transform 220ms cubic-bezier(0.22, 1, 0.36, 1), opacity 220ms ease"
+                                     : "none",
+
+                                 transform: slideDirection
+                                     ? `translate3d(${slideDirection === "left" ? "-50px" : "50px"}, 0, 0)`
+                                     : "translate3d(0, 0, 0)",
+
+                                 opacity: slideDirection ? 0 : 1,
+
+                                 willChange: slideDirection ? "transform, opacity" : "auto",
+                                 backfaceVisibility: "hidden",
+                             }}>
+                            <MobileCard
+                                title={education?.title}
+                                type={education?.type}
+                                date={education?.date}
+                                tags={{}}
+                                highlights={education?.highlights}
+                                parts={education?.parts}
+                                navigation={educations?.keys?.navigation}
+                                skillsTitle={educations?.keys?.skills}
+                                skills={education?.skills}
+                                isEducation={true}
+                            />
+                        </Box>
+                    );
+                })()
+            ) : (
+                <Stack direction="row" spacing={2} sx={{ alignItems: "stretch",
+                    overflowX: 'auto', pt: 2, '&::-webkit-scrollbar': { display: 'none', }, scrollbarWidth: 'none',
+                    msOverflowStyle: 'none'
+                }}>
+                    {educationEntries.map(([key, education]) => (
+                        <Box key={key} sx={{ breakInside: "avoid", mb: 1.5, width: { sm: 550, lg: 700 },
+                            minWidth: { sm: 550, lg: 700 }, flexShrink: 0 }}>
+                            <DesktopCard
+                                title={education?.title}
+                                type={education?.type}
+                                date={education?.date}
+                                tags={{}}
+                                highlights={education?.highlights}
+                                parts={education?.parts}
+                                navigation={educations?.keys?.navigation}
+                                skillsTitle={educations?.keys?.skills}
+                                skills={education?.skills}
+                                isEducation={true}
+                            />
+                        </Box>
+                    ))}
+                </Stack>
+            )}
+
+            {/* Mobile Navigation */}
+            {isMobile && total > 0 && (
+                <Stack direction="row" sx={{ width: "100%", alignItems: "center", justifyContent: "space-between" }}>
+                    <IconButton onClick={handlePrev} disabled={safeIndex === 0}
+                                sx={{
+                                    width: 40,
+                                    height: 40,
+                                    border: "1px solid",
+                                    borderColor: "divider",
+                                    borderRadius: "10px",
+                                    color: "text.primary",
+                                }}>
+                        <ChevronLeftIcon />
+                    </IconButton>
+
+                    <Typography variant="paperSection"
+                                sx={{
+                                    textAlign: "center",
+                                    fontWeight: 600,
+                                    fontVariantNumeric: "tabular-nums",
+                                }}>
+                        {String(safeIndex + 1).padStart(2, "0")}
+                        <Box component="span" sx={{ color: "text.secondary", mx: 0.5 }}>
+                            /
+                        </Box>
+                        {String(total).padStart(2, "0")}
+                    </Typography>
+
+                    <IconButton onClick={handleNext} disabled={safeIndex === total - 1} sx={{
+                        width: 40,
+                        height: 40,
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: "10px",
+                        color: "text.primary",
+                    }}>
+                        <ChevronRightIcon />
+                    </IconButton>
+                </Stack>
+            )}
         </Stack>
     );
 }

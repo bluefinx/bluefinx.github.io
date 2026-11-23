@@ -3,6 +3,8 @@ import { Card, CardHeader, CardContent } from "@mui/material";
 import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
+import { AREAS } from "../config.jsx";
+
 import ArticleIcon from '@mui/icons-material/Article';
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 
@@ -65,11 +67,11 @@ export default function EducationPartsPaper({ title, type, data }) {
 
         // renders the card
         const renderCard = ([key, value]) => (
-            <Card key={key} sx={{ flex: "1 0 auto", border: "1px solid", borderColor: tags[key].colour, borderRadius: 1, overflow: "hidden" }}>
+            <Card key={key} sx={{ flex: "1 0 auto", border: "1px solid", borderColor: AREAS[key].colour, borderRadius: 1, overflow: "hidden" }}>
                 <CardHeader
                     title={tags[key].label}
                     sx={{
-                        backgroundColor: tags[key].colour,
+                        backgroundColor: AREAS[key].colour,
                         py: 1,
                         px: 2,
                         "& .MuiCardHeader-title": {
@@ -83,7 +85,7 @@ export default function EducationPartsPaper({ title, type, data }) {
                         {value.map((module, index) => (
                             <ListItem key={index} disableGutters sx={{ py: 0 }}>
                                 <ListItemIcon sx={{ minWidth: 20 }}>
-                                    <ChevronRightRoundedIcon sx={{ fontSize: 18, color: tags[key].colour }} />
+                                    <ChevronRightRoundedIcon sx={{ fontSize: 18, color: AREAS[key].colour }} />
                                 </ListItemIcon>
 
                                 <ListItemText

@@ -1,8 +1,5 @@
 {
-  "header": "Blue Finjan Butscher",
-  "footer": "© 2026 - Blue Finjan Butscher",
-  "licenses": "Open Source Licenses",
-  "licensesLink": "/licenses.txt",
+  "licences": "Open Source Licences",
   "hero": {
     "keys": {
       "about": {
@@ -20,11 +17,14 @@
       },
       "languages": {
         "title": "Languages"
+      },
+      "navigation": {
+        "title": "On this page"
       }
     },
     "values": {
       "about": {
-        "body": "Cybersecurity MSc graduate\nawarded the NCR Atleos Prize for Best Student of the Programme.\n\nFocused on Digital Forensics, Security Engineering and Secure Software Development.\n\nBridging offensive security and defensive engineering, from penetration testing to secure system architecture.\n\nSecurity and privacy are part of the process from the very beginning.",
+        "body": "Cybersecurity MSc graduate awarded the NCR Atleos Prize for Best Student of the Programme.\n\nFocused on Digital Forensics, Security Engineering and Secure Software Development.\n\nBridging offensive security and defensive engineering, from penetration testing to secure system architecture.\n\nSecurity and privacy are part of the process from the very beginning.",
         "remark": "Currently available for freelance engagements and open to employment opportunities."
       },
       "languages": [
@@ -34,75 +34,76 @@
         "Russian (A1 - A2)",
         "Dutch (A1)"
       ],
-      "contact": {
-        "email1": "blue.butscher",
-        "email2": "proton.me",
-        "linkedin": "https://linkedin.com/in/blue-butscher",
-        "github": "https://github.com/bluefinx"
-      },
       "navigation": {
-        "home": "Home",
-        "home_sub": "About Me",
-        "projects": "Projects",
-        "projects_sub": "Selected Work",
-        "experience": "Experience",
-        "experience_sub": "Professional Journey",
-        "education": "Education",
-        "education_sub": "Academic Background",
-        "achievements": "Achievements",
-        "achievements_sub": "Selected Milestones",
-        "references": "References",
-        "references_sub": "Professional Testimonials"
+        "home": {
+          "title": "Home",
+          "subtitle": "About Me"
+        },
+        "projects": {
+          "title": "Projects",
+          "subtitle": "Selected Work"
+        },
+        "experience": {
+          "title": "Experience",
+          "subtitle": "Professional Journey"
+        },
+        "education": {
+          "title": "Education",
+          "subtitle": "Academic Background"
+        },
+        "achievements": {
+          "title": "Achievements",
+          "subtitle": "Selected Milestones"
+        },
+        "references": {
+          "title": "References",
+          "subtitle": "Professional Testimonials"
+        }
       }
     }
   },
   "areas": {
     "ALL": {
-      "label": "All",
-      "colour": "primary.main"
+      "label": "All"
     },
     "DF": {
-      "label": "Digital Forensics",
-      "colour": "area1.main"
+      "label": "Digital Forensics"
     },
     "CP": {
-      "label": "Data Privacy & Compliance",
-      "colour": "area2.main"
+      "label": "Data Privacy & Compliance"
     },
     "PT": {
-      "label": "Pentesting",
-      "colour": "area3.main"
+      "label": "Pentesting"
     },
     "SD": {
-      "label": "Software Engineering & Development",
-      "colour": "area4.main"
+      "label": "Software Engineering & Development"
     },
     "VM": {
-      "label": "Vulnerability Management",
-      "colour": "area5.main"
+      "label": "Vulnerability Management"
     },
     "SA": {
-      "label": "System Administration",
-      "colour": "area6.main"
+      "label": "System Administration"
     },
     "CG": {
-      "label": "Cryptography",
-      "colour": "area7.main"
+      "label": "Cryptography"
     },
     "GI": {
-      "label": "General IT & AI",
-      "colour": "area8.main"
+      "label": "General IT & AI"
     },
     "CR": {
-      "label": "Current / Active",
-      "colour": "secondary.main"
+      "label": "Current / Active"
     }
   },
-  "new_projects": {
+  "projects": {
     "keys": {
       "title": "Projects",
       "subtitle": "Selected Work & Case Studies",
-      "navigation": ["Overview", "Problem & Scope", "What I did", "Results & Learnings"],
+      "navigation": [
+        "Overview",
+        "Problem & Scope",
+        "What I did",
+        "Results & Learnings"
+      ],
       "skills": "Skills & Tools",
       "filter": "Filter by"
     },
@@ -111,93 +112,230 @@
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "project-2": {
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "project-3": {
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "project-4": {
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "project-5": {
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "project-6": {
         "title": "Mobile & Computer Forensics Case Studies",
         "type": "Academic Labs",
         "date": "2020 & 2025",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       }
     }
   },
-  "new_experiences": {
+  "experiences": {
     "keys": {
       "title": "Experience",
       "subtitle": "Professional Journey",
-      "navigation": ["Overview", "Problem & Scope", "What I did", "Results & Learnings"],
+      "navigation": [
+        "Overview",
+        "Problem & Scope",
+        "What I did",
+        "Results & Learnings"
+      ],
       "skills": "Skills & Tools",
       "filter": "Filter by"
     },
@@ -206,72 +344,176 @@
         "title": "Cybersecurity Student Assistant (Part-Time)",
         "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
         "date": "May 2022 - Feb 2023",
-        "highlights": [["56+", "Extraction files"], ["5 GB", "Disk image"], ["17", "Devices"]],
+        "highlights": [
+          [
+            "56+",
+            "Extraction files"
+          ],
+          [
+            "5 GB",
+            "Disk image"
+          ],
+          [
+            "17",
+            "Devices"
+          ]
+        ],
         "parts": [
           {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Investigative Scope",
-            "takeaways": ["Evidence triage & artifact analysis", "Event reconstruction & cross-source correlation"]
+            "takeaways": [
+              "Evidence triage & artifact analysis",
+              "Event reconstruction & cross-source correlation"
+            ]
           }
         ],
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       }
     }
   },
-  "new_education": {
+  "education": {
     "keys": {
       "title": "Education",
       "subtitle": "Academic Background",
-      "navigation": ["Academic Focus", "Modules"],
+      "navigation": [
+        "Academic Focus",
+        "Modules"
+      ],
       "skills": "Skills & Tools",
       "filter": "Filter by"
     },
     "values": {
       "education-1": {
-        "title": "Master of Science in Ethical Hacking & Cybersecurity",
+        "title": "Master of Science\nin Ethical Hacking & Cybersecurity",
         "type": "Abertay University, Dundee, UK",
         "date": "Sep 2024 - Aug 2025",
-        "highlights": [["Distinction", "Graduation"], ["4.07/4.5", "Average Grade"], ["Best Student", "Award Winner"]],
+        "highlights": [
+          [
+            "Distinction",
+            "Graduation"
+          ],
+          [
+            "4.07/4.5",
+            "Average Grade"
+          ],
+          [
+            "Best Student",
+            "Award Winner"
+          ]
+        ],
         "parts": {
           "focus": {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Master Thesis",
-            "thesis": ["CAMAVITO: Digital Forensics Case & Evidence Management Tool", "see Projects (Forensic Case Management Framework & Tool Architecture)"]
+            "thesis": [
+              "CAMAVITO: Digital Forensics Case & Evidence Management Tool",
+              "see Projects (Forensic Case Management Framework & Tool Architecture)"
+            ]
           },
           "modules": {
-            "DF": ["Computer Forensics Case Study", "Malware Analysis (basic)"],
-            "CP": ["UK Data Privacy & Computer Law"],
-            "PT": ["Systems & Web Application Pentesting"],
-            "GI": ["Introductory Machine Learning"],
-            "SD": ["Python Scripting", "Secure & Resilient Systems"],
-            "VM": ["Incident Response & Risk Management (basic)", "Information Security (Theoretical Foundations)"],
-            "SA": ["Network Security & System Hardening"]
+            "DF": [
+              "Computer Forensics Case Study",
+              "Malware Analysis (basic)"
+            ],
+            "CP": [
+              "UK Data Privacy & Computer Law"
+            ],
+            "PT": [
+              "Systems & Web Application Pentesting"
+            ],
+            "GI": [
+              "Introductory Machine Learning"
+            ],
+            "SD": [
+              "Python Scripting",
+              "Secure & Resilient Systems"
+            ],
+            "VM": [
+              "Incident Response & Risk Management (basic)",
+              "Information Security (Theoretical Foundations)"
+            ],
+            "SA": [
+              "Network Security & System Hardening"
+            ]
           }
         },
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       },
       "education-2": {
-        "title": "Bachelor of Science in Applied Computer Science",
+        "title": "Bachelor of Science\nin Applied Computer Science",
         "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
         "date": "Oct 2017 - Aug 2023",
-        "highlights": [["1.7", "Final Grade"], ["2:1", "UK Honours Equivalent"], ["Cybersecurity", "Specialisation"]],
+        "highlights": [
+          [
+            "1.7",
+            "Final Grade"
+          ],
+          [
+            "2:1",
+            "UK Honours Equivalent"
+          ],
+          [
+            "Cybersecurity",
+            "Specialisation"
+          ]
+        ],
         "parts": {
           "focus": {
             "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
             "sublabel": "Bachelor Thesis",
-            "thesis": ["Cryptanalysis of Swissphone's DiCal-IDEA implementation", "see Projects"]
+            "thesis": [
+              "Cryptanalysis of Swissphone's DiCal-IDEA implementation",
+              "see Projects"
+            ]
           },
           "modules": {
-            "DF": ["Mobile Forensics Case Study"],
-            "CP": ["European Data Privacy Law & Ethics"],
-            "PT": ["Manual Open-Source Web App Security Assessment"],
-            "VM": ["Data & System Security"],
-            "SD": ["System Programming (Java, C)", "App & Web Development", "UI Design & Development", "Software Engineering"],
-            "SA": ["Networking & Internet", "OS & System Administration"],
-            "GI": ["Artificial Intelligence"]
+            "DF": [
+              "Mobile Forensics Case Study"
+            ],
+            "CP": [
+              "European Data Privacy Law & Ethics"
+            ],
+            "PT": [
+              "Manual Open-Source Web App Security Assessment"
+            ],
+            "VM": [
+              "Data & System Security"
+            ],
+            "SD": [
+              "System Programming (Java, C)",
+              "App & Web Development",
+              "UI Design & Development",
+              "Software Engineering"
+            ],
+            "SA": [
+              "Networking & Internet",
+              "OS & System Administration"
+            ],
+            "GI": [
+              "Artificial Intelligence"
+            ]
           }
         },
-        "skills": ["Autopsy", "Mobile Forensics", "Disk Imaging", "Artifact Analysis", "Timeline Analysis"]
+        "skills": [
+          "Autopsy",
+          "Mobile Forensics",
+          "Disk Imaging",
+          "Artifact Analysis",
+          "Timeline Analysis"
+        ]
       }
     }
   },
@@ -281,19 +523,13 @@
       "subtitle": "Selected Milestones",
       "categories": {
         "RE": {
-          "label": "Research",
-          "colour": "category1.main",
-          "icon": "Science"
+          "label": "Research"
         },
         "AW": {
-          "label": "Award",
-          "colour": "category2.main",
-          "icon": "EmojiEvents"
+          "label": "Award"
         },
         "CE": {
-          "label": "Certification",
-          "colour": "category3.main",
-          "icon": "Verified"
+          "label": "Certification"
         }
       }
     },
@@ -350,7 +586,6 @@
   },
   "privacy": {
     "keys": {
-      "link": "/privacy.html",
       "title": "Privacy Statement",
       "website": "Website",
       "hosting": "Hosting",
@@ -360,717 +595,9 @@
       "subtitle": "This page explains if, how and by whom personal data is processed.",
       "website": "This website does not collect, store or process any personal data of visitors. This website does not use cookies or any form of tracking (incl. Google Analytics).\n\nThis website may contain links to third-party services such as LinkedIn or GitHub. When visiting those external websites, personal data and technical information, such as IP addresses, browser information or request data, may be automatically processed by the respective providers.\n\nPlease refer to their respective privacy policies for more details.",
       "hosting": "This website is hosted through GitHub Pages by\n\nGitHub Inc.\n88 Colin P Kelly Jr St\nSan Francisco, CA 94107\nUnited States.\n\nAs part of the hosting service, GitHub may process technical information such as IP addresses, browser type, request information and access times in server log files. This processing is necessary to ensure the availability, security and integrity of the website and is based on legitimate interests under Article 6(1)(f) UK GDPR.\n\nMore information, including your rights and how to exercise them, can be found in the",
-      "link": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
       "description": "GitHub Privacy Statement",
       "international": "Data may be transferred to servers located in the United States. According to GitHub, such transfers are based on the European Commission’s Standard Contractual Clauses (SCCs) and GitHub’s certification under the EU-U.S. Data Privacy Framework (including the UK Extension).",
       "updated": "Last updated: 13 May 2026"
-    }
-  },
-
-  "tags": {
-    "DF": {
-      "label": "Digital Forensics",
-      "colour": "primary.main"
-    },
-    "IR": {
-      "label": "Incident Response",
-      "colour": "primary.main"
-    },
-    "SE": {
-      "label": "Security Engineering",
-      "colour": "secondary.main"
-    },
-    "SD": {
-      "label": "Software Development",
-      "colour": "primary.main"
-    },
-    "PT": {
-      "label": "Pentesting",
-      "colour": "primary.main"
-    },
-    "IT": {
-      "label": "General IT",
-      "colour": "primary.main"
-    },
-    "DP": {
-      "label": "Data Privacy",
-      "colour": "primary.main"
-    },
-    "CP": {
-      "label": "Compliance",
-      "colour": "primary.main"
-    }
-  },
-  "projects": {
-    "keys": {
-      "title": "Projects",
-      "general-title": "What I did",
-      "specific-labels": {
-        "DF": "Digital Forensics Learnings",
-        "IR": "Incident Response Learnings",
-        "DR": "DFIR Learnings",
-        "SE": "Security Engineering Learnings",
-        "SD": "Software Development Learnings",
-        "PT": "Pentesting Learnings",
-        "IT": "IT Learnings",
-        "DP": "Data Privacy Learnings"
-      }
-    },
-    "values": {
-      "project-1": {
-        "title": "Mobile & Computer Forensics Case Studies (Academic Lab)",
-        "summary": "Conducted two structured digital forensic investigations involving 56 mobile and cloud extraction files across multiple devices and online accounts, as well as a 5 GB disk image. Performed evidence triage, artifact analysis, event reconstruction and cross-source correlation to produce expert witness-style forensic reports containing evidence inventories, timeline visualisations and evidence-supported investigative findings.",
-        "general": [
-          "Conducted forensic examinations across 56 extraction files derived from mobile devices, SIM cards, tablets and cloud-based accounts, including social media, email and cloud storage data.",
-          "Performed artifact analysis across messaging applications, documents, images, browser activity, device configurations, system artifacts and user-generated content.",
-          "Analysed a 5 GB disk image through operating system auditing, deleted partition recovery, keyword searching, malware scanning and registry examination.",
-          "Correlated evidence from mobile, cloud and endpoint sources to reconstruct user activities, establish event sequences and resolve timestamp discrepancies across multiple time zones.",
-          "Produced expert witness-style forensic reports including evidence inventories, examination methodology, visualised timelines, event reconstruction and evidence-supported hypotheses."
-        ],
-        "specific": [
-          [
-            "Analysed evidence from 17 physical devices and 12 cloud/social media accounts (overall 56+ forensic extraction files), consolidating findings into a unified investigative assessment.",
-            "Reconstructed user activity and event timelines through correlation of messaging, browser, cloud, registry and file system artifacts across multiple evidence sources.",
-            "Delivered two comprehensive forensic reports containing evidence inventories, timeline visualisations, examination procedures and evidence-supported conclusions suitable for formal investigative review."
-          ],
-          [
-            "Identified and prioritised high-value forensic artifacts from diverse evidence sources, enabling efficient investigation and response decision-making.",
-            "Supported incident scoping and post-incident analysis through event reconstruction, deleted data recovery, malware assessment and user activity analysis.",
-            "Provided actionable findings and evidence-based hypotheses that inform containment, remediation planning and follow-up investigative activities."
-          ]
-        ]
-      },
-      "project-2": {
-        "title": "Digital Forensics Case Management Framework & Reference Architecture (Master Thesis)",
-        "summary": "Researched digital forensics case management through an analysis of 20 academic papers and 5 additional industry sources, deriving an 8-module requirements framework for forensic case management systems. Based on a comparative assessment of 6 existing solutions, designed and prototyped a security-by-design digital forensics case management platform addressing 20 forensic and security properties, with a focus on evidence integrity, chain of custody, auditability and investigator workflows.",
-        "remark": "Currently being written up as a paper.",
-        "general": [
-          "Conducted a structured literature review of 20 academic publications and 5 industry sources to identify digital forensics case management requirements and best practices.",
-          "Developed an 8-module requirements framework covering forensic workflows, evidence management, chain of custody, security & risk controls and case lifecycle tracking.",
-          "Evaluated 6 forensic case management solutions against the framework and performed a gap analysis to identify usability, security and capability deficiencies.",
-          "Designed a microservices-based architecture consisting of 16 services with defined trust boundaries, RBAC, audit logging, integrity validation and security-by-design principles.",
-          "Developed a proof-of-concept implementation using FastAPI, React, PostgreSQL, Redis, Docker Compose and Keycloak to validate architecture and usability."
-        ],
-        "specific": [
-          [
-            "Established an 8-module forensic case management framework derived from 25 research and industry sources, translating forensic best practices into actionable system requirements.",
-            "Identified capability, workflow and security gaps across 6 existing forensic case management solutions and incorporated findings into the target architecture.",
-            "Designed a system addressing 20 forensic and security properties, including evidence integrity, chain of custody, auditability, access control and investigation traceability."
-          ],
-          [
-            "Designed a 16-microservice architecture and implemented a proof-of-concept consisting of 5 partially implemented services, including an API Gateway, Keycloak integration and supporting backend services with Redis integration.",
-            "Developed a React/MUI frontend comprising 12 pages and 25 reusable components, supported by 2 REST APIs and WebSocket integration.",
-            "Implemented a PostgreSQL data layer with 5 database models, SQLAlchemy ORM mappings and Pydantic schemas, fully containerised using Docker Compose."
-          ]
-        ]
-      },
-      "project-3": {
-        "title": "Forensic Artifact Processing Automation Tool (Open Source)",
-        "summary": "Designed and developed a cross-platform forensic artifact processing and reporting tool in Python that partially automates the analysis of recovered files. The Docker-based solution parses Foremost file carving outputs, extracts and normalises metadata using ExifTool, detects duplicate files, stores results in PostgreSQL and generates structured JSON reports, reducing manual triage effort and improving investigation efficiency.",
-        "remark": "Open-source beta release available on GitHub.",
-        "link": "https://github.com/bluefinx/foremost-parser",
-        "linkText": "GitHub",
-        "general": [
-          "Designed and developed a platform-independent Python CLI application for automated forensic artifact processing and reporting.",
-          "Implemented parsing functionality for Foremost file-carving outputs to transform recovered files into structured data.",
-          "Integrated ExifTool to extract and normalise 30+ metadata fields from disk images and individual recovered files.",
-          "Developed duplicate detection logic to identify redundant artifacts and improve evidence review efficiency.",
-          "Built a Docker-based solution with PostgreSQL storage, JSON report generation, input validation, error handling and cross-platform startup scripts using Bash and PowerShell."
-          ],
-        "specific": [
-          [
-            "Applied forensic file processing workflows including file carving analysis, metadata extraction and automated triage using a test dataset of nearly 10,000 files.",
-            "Developed practical understanding of how metadata normalisation and duplicate detection support evidence correlation, filtering and efficient forensic investigation workflows.",
-            "Built an automated DFIR processing pipeline that transforms raw forensic outputs into structured investigation data and reports, reducing repetitive manual analysis steps."
-          ],
-          [
-            "Applied the software development lifecycle by performing requirements analysis, solution design, implementation, testing and deployment for a forensic automation tool.",
-            "Designed and implemented a 7-stage processing pipeline covering ingestion, parsing, metadata extraction, duplicate detection, database storage, report generation and cleanup.",
-            "Developed a maintainable cross-platform application architecture using Python, Docker and PostgreSQL with 3 database models and automated execution through Bash and PowerShell startup scripts."
-          ]
-        ]
-      },
-      "project-4": {
-        "title": "Manual Open-Source Web Application Security Assessment (Real-World)",
-        "summary": "Conducted a 6-month manual security assessment of a zero-knowledge open-source web application as part of a university project. Set up a local VM environment, performed manual code review, browser-based testing and HTTP traffic analysis and identified 13+ validated security findings across 18 attack categories, including multiple high-severity vulnerabilities affecting authentication, session management, business logic and client trust.",
-        "general": [
-          "Configured a local VM environment to deploy and assess a zero-knowledge open-source web application.",
-          "Performed manual code review and browser-based security testing to analyse application behaviour and identify vulnerabilities.",
-          "Used Burp Suite to intercept, manipulate and replay HTTP requests for vulnerability discovery and exploit validation.",
-          "Assessed 18 attack categories, including authentication, session management, XSS, CSRF, file handling, business logic flaws, access control and social engineering scenarios using manual penetration testing techniques.",
-          "Documented 13+ validated findings, assigned risk ratings and developed proof-of-concept exploits with remediation recommendations."
-        ],
-        "specific": [
-          [
-            "Identified 13+ validated vulnerabilities, including 6 high-severity, 5 medium-severity and 2 low-severity findings through entirely manual testing.",
-            "Discovered vulnerabilities affecting stored XSS, session management, file upload, business logic, access control, data integrity and client-side trust mechanisms.",
-            "Validated exploitability through manual proof-of-concept testing using Burp Suite, browser developer tools and HTTP request manipulation."
-          ],
-          [
-            "Analysed root causes across 18 security domains, including authentication, authorisation, input validation, session management and client-server trust boundaries.",
-            "Produced remediation recommendations for secure input validation, session handling, authorisation checks and client-side trust assumptions.",
-            "Applied secure design principles to classify vulnerabilities, assess risk and map findings to practical mitigation strategies."
-          ]
-        ]
-      },
-      "project-5": {
-        "title": "Windows Domain Security Assessment (Academic Lab)",
-        "summary": "Performed a hands-on penetration test against a Windows Active Directory lab environment simulating common enterprise weaknesses. Identified and exploited misconfigurations leading to credential compromise, privilege escalation and system-level access.",
-        "general": [
-          "Performed network and service enumeration with Nmap across SMB, DNS, SMTP, FTP, RDP and SSH",
-          "Used Nessus and manual validation to identify vulnerabilities and exposed services",
-          "Analysed Active Directory users, authentication mechanisms, password policies and service configurations",
-          "Exploited misconfigurations for credential harvesting, password cracking, privilege escalation and admin account compromise",
-          "Gained system-level access on a target server and documented attack paths and remediation recommendations"
-        ],
-        "specific": [
-          [
-            "Improved practical Active Directory pentesting skills from enumeration to full system compromise",
-            "Gained hands-on experience with Nmap, Nessus, credential attacks and privilege escalation techniques",
-            "Learned how multiple small weaknesses can be chained into realistic enterprise attack paths"
-          ],
-          [
-            "Developed a stronger understanding of common Windows AD misconfigurations and hardening practices",
-            "Learned how weak authentication, permissions and exposed services increase enterprise attack surface",
-            "Improved technical reporting, root cause analysis and remediation recommendation skills"
-          ]
-        ]
-      },
-      "project-6": {
-        "title": "OWASP-based Web Application Pentest (Academic Lab)",
-        "summary": "Performed a methodology-driven web application penetration test based on the OWASP Testing Guide, combining automated scanning with manual validation and exploitation. Identified and demonstrated vulnerabilities including SQL injection, XSS, broken authentication, session hijacking and business logic flaws in a realistic attack scenario.",
-        "general": [
-          "Conducted reconnaissance and attack surface mapping against the target web application",
-          "Tested authentication, authorisation, session management, input validation and business logic",
-          "Used OWASP ZAP, Wapiti, and Nessus to identify vulnerabilities and manually validate findings",
-          "Exploited SQL injection for database access using manual techniques and sqlmap, leveraged XSS with BeEF hook for client-side control, used Weevely for post-exploitation activities and demonstrated admin session replay attacks",
-          "Documented confirmed findings, exploitation evidence, attack paths and mitigation recommendations in a structured report"
-        ],
-        "specific": [
-          "Improved practical web application pentesting skills using the OWASP Testing Guide as a structured methodology",
-          "Gained hands-on experience exploiting SQLi, XSS, broken authentication, session hijacking and business logic vulnerabilities",
-          "Learned how to validate automated scan results manually and chain vulnerabilities into realistic attack scenarios"
-        ]
-      },
-      "project-7": {
-        "title": "Linux Home Server",
-        "summary": "Deployed and maintained a self-hosted Raspberry Pi Linux server for 3+ years, providing remote file access and backup services through Nextcloud, SMB and OpenVPN. Secured and administered the environment entirely through CLI-based Linux system administration, hardening and monitoring practices.",
-        "general": [
-          "Deployed and configured Nextcloud, SMB and OpenVPN services on a Raspberry Pi-based Linux server.",
-          "Applied system hardening measures, such as iptables and fail2ban configurations, SSH security best practices and user management and least privilege access control.",
-          "Performed 30+ monthly maintenance cycles including updates and upgrades, troubleshooting, log review and basic network traffic review.",
-          "Managed the environment through CLI/Bash administration, including shell scripts for automatic updates and service monitoring.",
-          "Created comprehensive technical documentation of setup and configuration steps for reproducibility and faster issue resolution."
-        ],
-        "specific": [
-          [
-            "Gained hands-on experience hardening Linux systems across different system areas and reducing attack surface in a self-hosted environment.",
-            "Learned secure remote-access practices and VPN configuration with OpenVPN.",
-            "Improved operational security skills through continuous monitoring, troubleshooting and log analysis."
-          ],
-          [
-            "Strengthened Linux administration and command-line skills through 3+ years of hands-on system management.",
-            "Gained experience deploying and maintaining infrastructure services for file sharing, backups and remote access.",
-            "Developed structured troubleshooting and technical documentation practices for reliable system operation and reproducible setups."
-          ]
-        ]
-      },
-      "project-8": {
-        "title": "Cryptanalysis of DiCal-IDEA implementation (Bachelor Thesis)",
-        "summary": "Conducted a structured cryptographic security assessment of the proprietary DiCal-IDEA encryption used in the POCSAG protocol for BOS paging systems. Evaluated 236 ciphertext samples with associated timestamp metadata using ciphertext-only analysis, protocol correlation and hypothesis-driven cryptanalysis to assess message structures, encryption mechanisms, IV handling and replay protection under limited implementation knowledge, followed by threat modelling of potential attack vectors.",
-        "general": [
-          "Researched publicly available cryptographic literature, protocol specifications and existing analyses related to the IDEA cipher and proprietary DiCal-IDEA implementations.",
-          "Evaluated 236 ciphertext samples with associated timestamp metadata and conducted protocol correlation across multiple metadata sources to identify recurring protocol characteristics and transmission patterns.",
-          "Developed and validated 4 independent cryptographic hypotheses using exclusion-based cryptanalysis, covering message structure, cipher mode of operation, IV generation, timestamp integration and replay protection.",
-          "Applied ciphertext-only analysis and systematic elimination techniques to identify technically plausible implementation scenarios despite the absence of plaintext or full implementation documentation.",
-          "Performed threat modelling covering encryption implementation, IV handling and replay protection, assessing potential weaknesses and attack vectors."
-        ],
-        "specific": [
-          [
-            "Identified multiple plausible attack vectors against proprietary cryptographic implementation through protocol analysis and threat modelling.",
-            "Evaluated exploitation feasibility under ciphertext-only conditions without access to source code, plaintext or implementation details.",
-            "Produced evidence-based security assessments supporting the evaluation of cryptographic robustness and potential exploitation scenarios."
-          ],
-          [
-            "Correlated encrypted communications using timestamps and protocol metadata to support structured analysis of encrypted traffic.",
-            "Produced evidence-based technical findings from encrypted datasets without plaintext availability using reproducible analytical methodologies.",
-            "Delivered structured technical reporting documenting protocol artifacts, analytical evidence and validated investigative findings."
-          ]
-        ]
-      }
-    }
-  },
-  "experiences": {
-    "keys": {
-      "title": "Experience",
-      "general-title": "What I did",
-      "specific-labels": {
-        "DF": "Digital Forensics Skills",
-        "IR": "Incident Response Skills",
-        "DR": "DFIR Skills",
-        "SE": "Security Engineering Skills",
-        "SD": "Software Development Skills",
-        "PT": "Pentesting Skills",
-        "IT": "IT Skills",
-        "DP": "Data Privacy Skills"
-      }
-    },
-    "values": {
-      "experience-1": {
-        "title": "Cybersecurity Student Assistant (Part-Time)",
-        "summary": "Designed and secured a penetration testing training environment featuring realistic attack scenarios, hands-on exercises and controlled responsible disclosure workflows. Developed supporting documentation, operational procedures and security controls to enable a structured and secure training platform.",
-        "company": "Hochschule Ravensburg-Weingarten",
-        "time": "May 2022 - February 2023",
-        "location": "Weingarten, GER",
-        "general": [
-          "Designed a penetration testing lab architecture with realistic attack scenarios and offensive security exercises.",
-          "Developed structured training documentation and methodology-based exercise materials.",
-          "Defined security controls including firewall (iptables) rules, user management, access control restrictions and SSH security best practices for the training environment.",
-          "Designed a responsible disclosure process and documented disclosure policies for controlled security testing activities.",
-          "Created comprehensive technical documentation of the server setup to enable ongoing maintenance and expansion."
-        ],
-        "specific": [
-          [
-            "Developed a structured framework for realistic penetration testing exercises and attack simulations.",
-            "Designed training scenarios aligned with common penetration testing methodologies and offensive security workflows.",
-            "Expanded understanding of attack path design, adversary simulation and practical training environment development."
-          ],
-          [
-            "Defined security architecture concepts including access control, system boundaries and permission management.",
-            "Applied security engineering principles to balance usability and risk reduction.",
-            "Strengthened knowledge of trust boundaries, operational security controls and secure environment design."
-          ]
-        ]
-      },
-      "experience-2": {
-        "title": "Data Privacy & Security Intern (Full-time)",
-        "summary": "Supported GDPR compliance and web application security initiatives within a university environment by analysing data processing activities, assessing PII-related risks, conducting scoped vulnerability assessments and collaborating with administrators to strengthen data protection controls and security posture.",
-        "company": "Hochschule Ravensburg-Weingarten",
-        "time": "September 2021 - January 2022",
-        "location": "Weingarten, GER",
-        "general": [
-          "Conducted comprehensive research on GDPR requirements, European data privacy regulations and relevant legal case law to support compliance assessments.",
-          "Analysed institutional data flows and mapped personal data processing activities to identify compliance obligations and privacy risks.",
-          "Created and maintained Records of Processing Activities (RoPA) documentation and supported GDPR governance processes.",
-          "Assessed university web applications to identify PII collection, processing and storage points, evaluating associated privacy and security risks.",
-          "Performed scoped web application vulnerability assessments, triaged findings based on risk and impact, and collaborated with system administrators to support remediation efforts."
-        ],
-        "specific": [
-          [
-            "Assessed personal data processing activities across 11 functional areas of a university web application, identifying PII processing points and associated privacy risks.",
-            "Analysed institutional data flows and supported GDPR compliance efforts through the creation of RoPA documentation and data processing assessments.",
-            "Improved visibility into personal data handling practices by mapping data processing activities and evaluating compliance of GDPR principles."
-          ],
-          [
-            "Conducted scoped security assessments across 2 university web applications, identifying vulnerabilities and security weaknesses affecting web-facing services.",
-            "Reported 5 validated security findings through a structured responsible disclosure process, enabling risk-based remediation by system administrators.",
-            "Performed vulnerability triage and impact assessment to prioritise remediation efforts and reduce exposure to identified application security risks."
-          ]
-        ]
-      },
-      "experience-3": {
-        "title": "Software Developer - Forensic Lab Equipment (Part-time)",
-        "summary": "Independently refactored and extended a legacy C# desktop application used for forensic lab equipment log processing. Improved code structure, redesigned GUI-based data visualisation and rebuilt documentation while collaborating with hardware and sales stakeholders.",
-        "company": "Attestor Forensics GmbH ",
-        "time": "May 2021 - August 2021",
-        "location": "Bad Wurzach, GER",
-        "general": [
-          "Independently refactored and extended a legacy C# Windows desktop application used for forensic log processing.",
-          "Restructured existing code and applied design patterns to improve maintainability, readability and data handling.",
-          "Redesigned the GUI-based log visualisation to make data easier to analyse and report.",
-          "Rebuilt technical documentation to reflect the updated system architecture and workflows.",
-          "Collaborated with hardware and sales stakeholders to ensure accurate data representation and user-friendly output while managing version control with SVN."
-        ],
-        "specific": [
-          "Gained hands-on experience working with and improving a legacy C# codebase independently.",
-          "Strengthened understanding of refactoring, software architecture and design patterns in a real production environment.",
-          "Improved communication skills by translating technical requirements into practical features and clear user-facing functionality."
-        ]
-      }
-    }
-  },
-  "skills": {
-    "keys": {
-      "topSkills": "Top Skills",
-      "technical": "Technical Skills",
-      "transferable": "Transferable Skills",
-      "tools": "Tools & Platforms",
-      "languages": "Languages & Scripting"
-    },
-    "values": {
-      "DF": {
-        "topSkills": [
-          "Timeline Reconstruction",
-          "Cross-Source Correlation",
-          "Evidence Triage",
-          "Forensic Workflow Design",
-          "Investigation Reporting"
-        ],
-        "allSkills": {
-          "technical": [
-            "Disk Image Analysis",
-            "Mobile Device Data Analysis",
-            "Cryptographic Protocol Analysis",
-            "File System Analysis",
-            "Registry Artifact Analysis",
-            "Keyword Search",
-            "File Carving",
-            "Evidence Triage",
-            "Timeline Reconstruction",
-            "Artifact Correlation",
-            "Metadata Extraction",
-            "Chain of Custody",
-            "Forensic Workflow Design",
-            "Forensic Case Management",
-            "Investigation Reporting"
-          ],
-          "transferable": [
-            "Hypothesis-Driven Investigation",
-            "Cross-Source Correlation",
-            "Evidence-Based Reasoning",
-            "Pattern Recognition",
-            "Workflow Coordination",
-            "Information Organisation",
-            "Technical Requirement Analysis",
-            "Priority Management",
-            "Investigation Planning",
-            "Decision Support"
-          ],
-          "tools": [
-            "Autopsy",
-            "Plaso",
-            "Foremost",
-            "TestDisk",
-            "ExifTool"
-          ]
-        }
-      },
-      "SE": {
-        "topSkills": [
-          "Identity & Access Management",
-          "Secure System Architecture",
-          "Linux Server Hardening",
-          "Windows Security Configuration",
-          "Attack Surface Reduction"
-        ],
-        "allSkills": {
-          "technical": [
-            "Linux Server Hardening",
-            "Windows Security Configuration",
-            "Identity & Access Management",
-            "Authentication Configuration",
-            "Active Directory Hardening",
-            "Remote Access Configuration",
-            "Firewall Configuration",
-            "Security Baseline Implementation",
-            "Audit Trail & Security Logging Design",
-            "Secure System Architecture",
-            "Attack Surface Reduction"
-          ],
-          "transferable": [
-            "Security Risk Analysis",
-            "Root Cause Analysis",
-            "Technical Communication",
-            "Security Documentation",
-            "Stakeholder Collaboration",
-            "Security-Focused Problem Solving",
-            "Security Workflow Design"
-          ],
-          "tools": [
-            "Wireshark",
-            "Netcat",
-            "VMware"
-          ]
-        }
-      },
-      "SD": {
-        "topSkills": [
-          "Secure Software Development",
-          "Full-Stack Application Development",
-          "Microservices Architecture",
-          "API Design & Integration",
-          "Database Design & Data Modelling"
-        ],
-        "allSkills": {
-          "technical": [
-            "Full-Stack Application Development",
-            "API Design & Integration",
-            "Microservices Architecture",
-            "Database Design & Data Modelling",
-            "Secure Software Development",
-            "Legacy System Refactoring",
-            "Modular Architecture Design",
-            "GUI Development",
-            "Design & Architecture Patterns",
-            "Audit Logging & Traceability",
-            "Data Integrity & Validation",
-            "CLI Tool Development",
-            "Structured Data Processing"
-          ],
-          "transferable": [
-            "Requirements Analysis",
-            "Technical Research",
-            "Usability & User-Centred Thinking",
-            "Independent Project Ownership",
-            "Analytical Thinking",
-            "Cross-Functional Collaboration",
-            "Problem Solving",
-            "Workflow Design"
-          ],
-          "tools": [
-            "Git",
-            "Docker",
-            "Docker Compose",
-            "FastAPI",
-            "React",
-            "Vue",
-            "PostgreSQL",
-            "MariaDB",
-            "SQLAlchemy",
-            "Keycloak"
-          ],
-          "languages": [
-            "Python",
-            "C#",
-            "Java",
-            "POSIX C",
-            "SQL",
-            "Bash",
-            "PowerShell"
-          ]
-        }
-      },
-      "PT": {
-        "topSkills": [
-          "Vulnerability Assessment",
-          "Business Logic Analysis",
-          "Information Gathering",
-          "Active Directory Enumeration",
-          "Structured Reporting"
-        ],
-        "allSkills": {
-          "technical": [
-            "OWASP Testing",
-            "Vulnerability Assessment",
-            "Findings Validation",
-            "Business Logic Analysis",
-            "Authentication & Authorisation Review",
-            "Session Management Security",
-            "Input Validation Testing",
-            "Information Gathering",
-            "Service Enumeration",
-            "Active Directory Enumeration",
-            "Privilege Escalation",
-            "Credential Harvesting",
-            "Security Misconfiguration Analysis",
-            "Structured Reporting"
-          ],
-          "transferable": [
-            "Analytical Thinking",
-            "Attention to Detail",
-            "Methodical Testing Approach",
-            "Responsible Disclosure Practices",
-            "Communication of Technical Findings",
-            "Critical Evaluation",
-            "Scenario Planning",
-            "Independent Research"
-          ],
-          "tools": [
-            "Burp Suite",
-            "OWASP ZAP",
-            "Wapiti",
-            "Metasploit",
-            "BeEF",
-            "Kali Linux",
-            "Nmap",
-            "Nessus",
-            "sqlmap",
-            "Weevely"
-          ]
-        }
-      },
-      "IT": {
-        "topSkills": [
-          "Server Administration",
-          "Service Deployment",
-          "Network Configuration",
-          "Network Troubleshooting",
-          "Command Line Administration"
-        ],
-        "allSkills": {
-          "technical": [
-            "Server Administration",
-            "System Maintenance",
-            "Network Configuration",
-            "Network Troubleshooting",
-            "Routing & Switching",
-            "Subnetting",
-            "VLAN Configuration",
-            "VPN Configuration",
-            "Service Deployment",
-            "Connectivity Diagnostics",
-            "System Monitoring",
-            "Infrastructure Documentation",
-            "Log Review",
-            "Command Line Administration",
-            "VM Setup & Management"
-          ],
-          "transferable": [
-            "Systematic Troubleshooting",
-            "Reproducible Configuration Documentation",
-            "Self-Directed Problem Solving",
-            "Infrastructure Planning",
-            "Process Organisation",
-            "Technical Problem Analysis",
-            "Workflow Documentation"
-          ],
-          "tools": [
-            "Cisco CLI",
-            "Packet Tracer"
-          ]
-        }
-      },
-      "DP": {
-        "topSkills": [
-          "GDPR Compliance",
-          "Data Flow Mapping",
-          "Risk Assessment",
-          "Threat Modelling",
-          "Privacy-by-Design Thinking"
-        ],
-        "allSkills": {
-          "technical": [
-            "GDPR Compliance",
-            "RoPA Documentation",
-            "Data Flow Mapping",
-            "PII Classification",
-            "PII Risk Analysis",
-            "Privacy Gap Identification",
-            "Processing Activity Documentation",
-            "Asset Inventory",
-            "Risk Assessment",
-            "Threat Modelling",
-            "Compliance & Security Awareness"
-          ],
-          "transferable": [
-            "Analytical Thinking",
-            "Statutory & Legal Reasoning",
-            "Privacy-by-Design Thinking",
-            "Research & Information Analysis",
-            "Risk-Based Decision Making",
-            "Cross-Functional Collaboration",
-            "Stakeholder Communication",
-            "Organisational & Planning Skills",
-            "Prioritisation & Process Coordination"
-          ]
-        }
-      }
-    }
-  },
-  "education": {
-    "keys": {
-      "title": "Education"
-    },
-    "values": {
-      "education-1": {
-        "title": "Master of Science in Ethical Hacking & Cybersecurity",
-        "institution": "Abertay University",
-        "time": "September 2024 - August 2025",
-        "location": "Dundee, UK",
-        "grades": "Graduated with Distinction (avg: 4.07/4.5)",
-        "prize": "NCR Atleos Prize for Best Student of the Programme",
-        "summary": "Completed a Master's degree covering advanced cybersecurity topics including digital forensics, penetration testing, network security, basic malware analysis and incident response, basic information security governance and data privacy law.",
-        "thesis": "The master's thesis focused on designing a Digital Forensics Case Management Framework and Tool Prototype, optimising workflows, evidence handling and usability.",
-        "modules": {
-          "DF": [
-            "Computer Forensics Case Study",
-            "Malware Analysis (basic)",
-            "Incident Response & Risk Management (basic)"
-          ],
-          "SE": [
-            "Network Security & System Hardening",
-            "Secure & Resilient Development & Systems"
-          ],
-          "SD": [
-            "Python Scripting"
-          ],
-          "PT": [
-            "System & Web Application Penetration Testing"
-          ],
-          "IT": [
-            "Introductory Machine Learning"
-          ],
-          "DP": [
-            "UK Data Privacy & Computer Law",
-            "Information Security (Theoretical Foundations)"
-          ]
-        }
-      },
-      "education-2": {
-        "title": "Bachelor of Science in Applied Computer Science",
-        "institution": "Hochschule Ravensburg-Weingarten",
-        "time": "October 2017 - August 2023",
-        "location": "Weingarten, GER",
-        "grades": "Graduated 1.7 - Equivalent to UK Upper Second Class Honours (2:1)",
-        "summary": "Completed a Bachelor's degree building a broad foundation across software development, networking, system administration, databases, with lectures on AI, mobile forensics and European data privacy law.",
-        "thesis": "The bachelor's thesis involved a cryptographic analysis of a proprietary IDEA implementation.",
-        "modules": {
-          "DF": [
-            "Mobile Forensics Case Study"
-          ],
-          "SE": [
-            "Data & System Security"
-          ],
-          "SD": [
-            "System Programming (Java, C)",
-            "App & Web Development",
-            "UI Design & Development",
-            "Software Engineering"
-          ],
-          "PT": [
-            "Manual Open-Source Web Application Security Assessment"
-          ],
-          "IT": [
-            "Networking & Internet",
-            "OS & System Administration",
-            "Artificial Intelligence"
-          ],
-          "DP": [
-            "European Data Privacy Law & Ethics"
-          ]
-        }
-      }
-    }
-  },
-  "certificates": {
-    "keys": {
-      "title": "Certificates",
-      "general-title": "What I did",
-      "specific-labels": {
-        "IT": "IT Skills"
-      }
-    },
-    "values": {
-      "certificate-1": {
-        "title": "CCNA Routing and Switching: Introduction to Networks",
-        "awarder": "Cisco Networking Academy",
-        "institution": "Hochschule Ravensburg-Weingarten",
-        "date": "September 2020",
-        "location": "Weingarten, GER",
-        "summary": "Completed the Cisco CCNA Routing & Switching: Introduction to Networks course through hands-on networking labs using Cisco hardware and Packet Tracer. Configured, tested and troubleshot network environments while applying networking fundamentals including TCP/IP, subnetting, switching, routing, VLANs and WAN technologies.",
-        "general": [
-          "Applied TCP/IP, OSI model, subnetting, VLANs, switching and routing concepts to design and configure network environments.",
-          "Configured Cisco routers and switches via CLI, including IP addressing, device setup and basic network administration.",
-          "Built and validated small-to-medium network topologies using Cisco hardware, Windows endpoints and Packet Tracer simulations.",
-          "Implemented routing, WAN connectivity and wireless networking scenarios while analysing hardware-level data transmission.",
-          "Diagnosed and resolved network connectivity issues through structured troubleshooting and connectivity testing."
-        ],
-        "specific": [
-          "Successfully built and validated 10+ small-to-medium network topologies in lab and simulation environments.",
-          "Strengthened analytical problem-solving skills through systematic network fault identification and resolution.",
-          "Demonstrated networking proficiency by successfully deploying and resolving connectivity issues across multiple multi-subnet environments."
-        ]
-      }
     }
   }
 }

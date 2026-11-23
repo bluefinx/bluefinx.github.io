@@ -62,13 +62,23 @@ theme = createTheme(theme, {
         fontFamily: `'Roboto', 'Open-Sans', 'Helvetica', 'Arial', sans-serif`,
         pageTitle: {
             fontWeight: 'bold',
-            fontSize: 30,
+            fontSize: 26,
             '@media (min-width:600px)': {
                 fontSize: 34,
             },
             '@media (min-width:900px)': {
                 fontSize: 38,
             },
+        },
+        pageSubtitle: {
+            fontSize: 16,
+            '@media (min-width:600px)': {
+                fontSize: 22,
+            },
+            '@media (min-width:900px)': {
+                fontSize: 24,
+            },
+            color: theme.palette.text.faded
         },
         sectionTitle: {
             fontSize: 30,
@@ -96,11 +106,12 @@ theme = createTheme(theme, {
                 fontSize: 20,
             },
             '@media (min-width:900px)': {
-                fontSize: 22,
+                fontSize: 20,
             },
         },
         paperSection: {
-            fontSize: 14,
+            fontWeight: 'bold',
+            fontSize: 16,
             '@media (min-width:600px)': {
                 fontSize: 16,
             },
@@ -110,7 +121,7 @@ theme = createTheme(theme, {
         },
         paperHighlight: {
             fontWeight: 'bold',
-            fontSize: 28,
+            fontSize: 24,
             '@media (min-width:600px)': {
                 fontSize: 30,
             },
@@ -120,7 +131,7 @@ theme = createTheme(theme, {
         },
         paperHighlight2: {
             fontWeight: 'bold',
-            fontSize: 18,
+            fontSize: 13,
             '@media (min-width:600px)': {
                 fontSize: 22,
             },
@@ -129,16 +140,16 @@ theme = createTheme(theme, {
             },
         },
         paperBody: {
-            fontSize: 11,
+            fontSize: 14,
             '@media (min-width:600px)': {
-                fontSize: 13,
+                fontSize: 14,
             },
             '@media (min-width:900px)': {
                 fontSize: 15,
             }
         },
         paperLabel: {
-            fontSize: 11,
+            fontSize: 12,
             '@media (min-width:600px)': {
                 fontSize: 13,
             },
@@ -177,9 +188,9 @@ theme = createTheme(theme, {
             },
         },
         achievementTag: {
-            fontSize: 10,
+            fontSize: 13,
             '@media (min-width:600px)': {
-                fontSize: 11,
+                fontSize: 14,
             },
             '@media (min-width:900px)': {
                 fontSize: 14,
@@ -191,9 +202,9 @@ theme = createTheme(theme, {
             color: theme.palette.background.default
         },
         achievementFooter: {
-            fontSize: 10,
+            fontSize: 13,
             '@media (min-width:600px)': {
-                fontSize: 11,
+                fontSize: 14,
             },
             '@media (min-width:900px)': {
                 fontSize: 14,
@@ -205,7 +216,7 @@ theme = createTheme(theme, {
             color: theme.palette.background.default
         },
         achievementTitle: {
-            fontSize: 14,
+            fontSize: 16,
             '@media (min-width:600px)': {
                 fontSize: 18,
             },
@@ -215,8 +226,7 @@ theme = createTheme(theme, {
             fontWeight: 700,
         },
         footerCaption: {
-            fontStyle: 'italic',
-            fontSize: 12,
+            fontSize: 13,
             '@media (min-width:600px)': {
                 fontSize: 14,
             },

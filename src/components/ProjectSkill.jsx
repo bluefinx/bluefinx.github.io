@@ -8,13 +8,7 @@ export default function Tag({ label }) {
             sx={{
                 backgroundColor: "primary.main",
                 color: "text.primary",
-                fontSize: 11,
-                    '@media (min-width:600px)': {
-                    fontSize: 13,
-                },
-                    '@media (min-width:900px)': {
-                    fontSize: 15,
-                },
+                fontSize: {xs: 11, sm: 13, md: 15},
                 borderRadius: 1
         }} />
     );
