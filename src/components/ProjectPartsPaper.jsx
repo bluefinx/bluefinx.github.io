@@ -12,7 +12,7 @@ export default function ProjectPartsPaper({ title, content, sublabel, takeaways 
                 </Typography>
 
                 {/* Content */}
-                <Typography variant="paperBody" sx={{ flex: 1 }}>
+                <Typography variant="paperBody" sx={{ flex: 1, whiteSpace: 'pre-line' }}>
                     {content}
                 </Typography>
 

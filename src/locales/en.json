@@ -469,7 +469,7 @@
         ],
         "parts": [
           {
-            "content": "",
+            "content": "Modernisation and functional extension of a legacy C# Windows desktop application (Windows Forms) for forensic hardware log analysis. The application processes hardware diagnostic and event logs containing operational measurements and environmental data, including parameters such as temperature and humidity relevant to forensic operations. The project focused on restructuring the legacy codebase, introducing a modular software architecture, extending log processing capabilities, implementing data transformation and localisation features and redesigning GUI components to improve data visualisation, interpretation and reporting.",
             "sublabel": "",
             "takeaways": [
               "",
@@ -477,7 +477,7 @@
             ]
           },
           {
-            "content": "",
+            "content": "The existing application lacked a defined software architecture, modular structure and technical documentation. Application logic, GUI functionality and data processing were combined within a small number of files, resulting in redundant code and limited maintainability. The application also required functional extensions to process additional log fields, correctly interpret measurement values and present operational data through the GUI. The scope covered codebase restructuring, separation of presentation and business logic, implementation of new processing and visualisation features, internationalisation and comprehensive technical documentation.",
             "sublabel": "",
             "takeaways": [
               "",
@@ -485,7 +485,7 @@
             ]
           },
           {
-            "content": "",
+            "content": "Analysed and restructured the legacy C# application by establishing a modular directory and file structure and separating GUI components from business logic. Rebuilt classes and functions according to their respective responsibilities, removed redundant code and implemented new application functionality. Extended log processing to read additional data fields from hardware diagnostic and event logs, integrated the extracted values into GUI components and tested their correct interpretation and presentation. Implemented value conversion functions, including temperature unit conversion, based on hardware engineering specifications. \n\nRedesigned GUI layouts, integrated graphical data representations, filters and custom views and implemented multilingual support using localisation. Translated functional and usability requirements from hardware engineering and sales teams into application features. Created comprehensive technical documentation for individual classes and methods and managed source code through SVN.",
             "sublabel": "",
             "takeaways": [
               "",
@@ -493,7 +493,7 @@
             ]
           },
           {
-            "content": "",
+            "content": "Transformed an unstructured legacy codebase into a modular application with clearly separated presentation and business logic. Extended the application's log processing capabilities to support additional operational data fields, implemented measurement conversions and improved the visual presentation of processed data. Introduced multilingual functionality and redesigned GUI workflows to accommodate additional user requirements and international markets. Established comprehensive technical documentation where none previously existed. Gained practical experience in legacy software modernisation, modular application architecture, forensic log processing, data transformation, GUI development and translating cross-functional engineering requirements into software implementations.",
             "sublabel": "",
             "takeaways": [
               "",
