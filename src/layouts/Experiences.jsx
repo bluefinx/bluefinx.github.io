@@ -37,8 +37,8 @@ export default function Experiences() {
 
     /* Defines tags for experiences (e.g. "Digital Forensics") */
     const experienceTags = {
-        "experience-1": ["PT", "SD"],
-        "experience-2": ["CP"],
+        "experience-1": ["SA", "PT"],
+        "experience-2": ["CP", "VM"],
         "experience-3": ["SD"]
     };
 

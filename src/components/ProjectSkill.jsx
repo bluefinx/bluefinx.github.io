@@ -8,8 +8,14 @@ export default function Tag({ label }) {
             sx={{
                 backgroundColor: "primary.main",
                 color: "text.primary",
-                fontSize: {xs: 11, sm: 13, md: 15},
-                borderRadius: 1
+                fontSize: {xs: 11, sm: 12, md: 13},
+                fontWeight: 700,
+                borderRadius: 1,
+                textTransform: "uppercase",
+                height: "auto",
+                "& .MuiChip-label": {
+                    py: 0.5,
+                },
         }} />
     );
 }

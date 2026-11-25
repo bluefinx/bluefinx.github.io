@@ -29,7 +29,7 @@ export default function EducationPartsPaper({ title, type, data }) {
                 </Typography>
 
                 {/* Content */}
-                <Typography variant="paperBody" sx={{ flex: 1 }}>
+                <Typography variant="paperBody" sx={{ flex: 1, whiteSpace: 'pre-line' }}>
                     {data?.content}
                 </Typography>
 

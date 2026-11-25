@@ -333,7 +333,7 @@
       "navigation": [
         "Overview",
         "Problem & Scope",
-        "What I did",
+        "What I Did",
         "Results & Learnings"
       ],
       "skills": "Skills & Tools",
@@ -346,35 +346,162 @@
         "date": "May 2022 - Feb 2023",
         "highlights": [
           [
-            "56+",
-            "Extraction files"
+            "3-Tier",
+            "Architecture"
           ],
           [
-            "5 GB",
-            "Disk image"
+            "Top 10",
+            "OWASP"
           ],
           [
-            "17",
-            "Devices"
+            "Linux",
+            "Hardening"
           ]
         ],
         "parts": [
           {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
+            "content": "Designed and secured the foundation of a three-tier, Linux-based cybersecurity training server for university students. Participants first discover the exposed services, then work through guided exercises, and finally attack real, live applications to find genuine vulnerabilities. Architecture, hardening, operating policies and documentation were completed, and development of the first exercises began. The project was discontinued when its academic supervisor left the university and no successor took over.",
+            "sublabel": "Project Design",
             "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
+              "Designed a three-tier Linux training server for university students.",
+              "Planned guided exercises and real, live applications for students to attack."
+            ]
+          },
+          {
+            "content": "The project aimed to give students a controlled environment for practicing web application and infrastructure attacks, with only the intended ports reachable, a hardened host and a clear process for reporting findings. Live applications always ran the latest version to ensure students discovered new vulnerabilities. Findings had to be reported to a dedicated server email account, with only the first finder eligible to submit a report, preventing duplicates.",
+            "sublabel": "Security Constraints",
+            "takeaways": [
+              "Restricted the attack surface to the intended ports on a hardened host.",
+              "Defined a first-finder reporting process via a dedicated mail account."
+            ]
+          },
+          {
+            "content": "Secured the server with iptables, closing all non-essential ports and verifying student-visible scans using Nmap. Implemented port knocking with iptables and tested it using Nmap and netcat. Hardened SSH according to best practices, enforced secure passwords and reviewed password policies. Minimised root access through privilege separation and a dedicated admin account. Wrote technical documentation covering server structure, setup and operating policies. Designed OWASP-based exercises with information texts and explanations, unlocking user accounts, passwords and hints for subsequent tiers. Developed exercises covering SQL injection, phishing via a dedicated mail account, password cracking, port knocking and injection and logic flaws using Burp Suite.",
+            "sublabel": "Security Measures & Exercises",
+            "takeaways": [
+              "Hardened Linux access, firewall rules, SSH and user privileges.",
+              "Built OWASP exercises covering SQL injection, phishing and password cracking."
+            ]
+          },
+          {
+            "content": "Delivered a secured and documented foundation for a university training lab encompassing server architecture, setup, operating policies and a responsible disclosure process, using a dedicated GitHub repository. The exercises were only started and the lab was never deployed. The project provided practical experience in Linux server hardening, network security and the design of controlled environments for hands-on cybersecurity training.",
+            "sublabel": "Deliverables & Experience",
+            "takeaways": [
+              "Delivered documented server architecture, security policies and setup.",
+              "Gained practical experience in Linux hardening and network security."
             ]
           }
         ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
+        "skills": ["Linux", "Network Security", "Server Hardening", "iptables", "Nmap", "Burp Suite",
+        "OWASP Top 10", "SSH Hardening", "Technical Documentation", "Responsible Disclosure"]
+      },
+      "experience-2": {
+        "title": "Data Privacy & Security Intern (Full-Time)",
+        "type": "Hochschule Ravensburg-Weingarten, Weingarten, GER",
+        "date": "Sep 2021 - Jan 2022",
+        "highlights": [
+          [
+            "11",
+            "Functional Areas"
+          ],
+          [
+            "2",
+            "Web Applications"
+          ],
+          [
+            "GDPR",
+            "Legal Research"
+          ]
+        ],
+        "parts": [
+          {
+            "content": "Supported GDPR compliance and web application security initiatives within a university environment, combining independent research into European and German data protection legislation with practical privacy assessments and collaborative security testing. Applied regulatory knowledge to assess personal data processing activities, identify compliance gaps and strengthen application security.",
+            "sublabel": "Research & Assessments",
+            "takeaways": [
+              "Researched European and German data protection legislation.",
+              "Applied findings through privacy assessments and collaborative security testing."
+            ]
+          },
+          {
+            "content": "The university required greater visibility into personal data processing activities, potential GDPR compliance gaps and web application security risks. The scope combined independent study of the GDPR, BDSG, relevant legal terminology and additional European and national data protection legislation with an in-depth assessment of one university web application and an initial assessment of a second application.",
+            "sublabel": "Objectives & Activities",
+            "takeaways": [
+              "Addressed limited transparency in university data processing.",
+              "Conducted security & privacy assessment of two web applications."
+            ]
+          },
+          {
+            "content": "Independently researched data protection legislation and applied regulatory requirements to practical GDPR assessments, including data-flow mapping, PII identification, privacy risk evaluation and RoPA (Record of Processing Activities) documentation. Collaborated with a system administrator on scoped vulnerability assessments, jointly investigating, validating and reporting security findings, coordinating remediation efforts and regularly updating the supervising Data Protection Officer (DPO) on findings and progress.",
+            "sublabel": "Execution & Coordination",
+            "takeaways": [
+              "Mapped data flows, identified PII and documented privacy risks.",
+              "Conducted collaborative vulnerability assessments and coordinated with stakeholders."
+            ]
+          },
+          {
+            "content": "Assessed personal data processing across 11 functional areas and supported GDPR compliance through structured data-flow analysis and RoPA documentation. Collaboratively assessed two university web applications, identifying and responsibly reporting five validated vulnerabilities and coordinating risk-based remediation. Strengthened expertise in data protection legislation, privacy risk assessment and application security while developing practical skills in independent research, technical investigation, cross-functional collaboration, stakeholder communication and remediation coordination.",
+            "sublabel": "Outcomes & Competencies",
+            "takeaways": [
+              "Assessed 11 functional areas (5 vulnerabilities) and documented GDPR compliance.",
+              "Developed expertise in privacy risks, security and stakeholder coordination."
+            ]
+          }
+        ],
+        "skills": ["GDPR", "PII Identification", "Risk Assessment", "Legal Research", "Data Flow Mapping", "Web Application Security", "Burp Suite", "XSS", "CSRF", "Remediation Coordination", "Independent Learning", "Cross-Functional Collaboration", "Stakeholder Communication"]
+      },
+      "experience-3": {
+        "title": "Software Developer – Forensic Lab Equipment (Part-Time) ",
+        "type": "Attestor Forensics GmbH, Bad Wurzach, GER",
+        "date": "May 2021 - Aug 2022",
+        "highlights": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ]
+        ],
+        "parts": [
+          {
+            "content": "",
+            "sublabel": "",
+            "takeaways": [
+              "",
+              ""
+            ]
+          },
+          {
+            "content": "",
+            "sublabel": "",
+            "takeaways": [
+              "",
+              ""
+            ]
+          },
+          {
+            "content": "",
+            "sublabel": "",
+            "takeaways": [
+              "",
+              ""
+            ]
+          },
+          {
+            "content": "",
+            "sublabel": "",
+            "takeaways": [
+              "",
+              ""
+            ]
+          }
+        ],
+        "skills": []
       }
     }
   },
@@ -410,7 +537,7 @@
         ],
         "parts": {
           "focus": {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "content": "Broad academic focus on cybersecurity and information security, with a particular specialisation in digital forensics and security assessments. Developed practical expertise in forensic investigations and expert witness reporting and gained hands-on experience conducting end-to-end systems and web application penetration tests. \n\nAdditional focus on vulnerability management, risk assessment, incident response fundamentals and malware analysis. Complementary knowledge of information security governance, risk management and established security frameworks, alongside academic and practical exposure to secure system design, secure software development, software testing and automation.",
             "sublabel": "Master Thesis",
             "thesis": [
               "CAMAVITO: Digital Forensics Case & Evidence Management Tool",
@@ -444,13 +571,7 @@
             ]
           }
         },
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
+        "skills": []
       },
       "education-2": {
         "title": "Bachelor of Science\nin Applied Computer Science",
@@ -472,7 +593,7 @@
         ],
         "parts": {
           "focus": {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
+            "content": "Broad-based IT education covering software and systems development, networking, operating systems and core computing concepts, with a focus on cybersecurity, digital forensics and data privacy. Developed competencies in software development (Java, C, Python), web and mobile development, system administration, networking and database design, alongside exposure to embedded systems, robotics and artificial intelligence.\n\nParticular emphasis on cybersecurity, including mobile forensics investigations and expert witness reporting, manual penetration testing and data and system security. Further specialisation through Cisco CCNA networking coursework and European data protection law, privacy and technology ethics.",
             "sublabel": "Bachelor Thesis",
             "thesis": [
               "Cryptanalysis of Swissphone's DiCal-IDEA implementation",
@@ -507,13 +628,7 @@
             ]
           }
         },
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
+        "skills": []
       }
     }
   },
