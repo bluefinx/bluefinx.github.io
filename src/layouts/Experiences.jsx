@@ -117,6 +117,7 @@ export default function Experiences() {
                                 date={experience?.date}
                                 tags={mapTags(key)}
                                 highlights={experience?.highlights}
+                                sublabel={experiences?.keys?.sublabel}
                                 parts={experience?.parts}
                                 navigation={experiences?.keys?.navigation}
                                 skillsTitle={experiences?.keys?.skills}
@@ -140,6 +141,7 @@ export default function Experiences() {
                                 date={experience?.date}
                                 tags={mapTags(key)}
                                 highlights={experience?.highlights}
+                                sublabel={experiences?.keys?.sublabel}
                                 parts={experience?.parts}
                                 navigation={experiences?.keys?.navigation}
                                 skillsTitle={experiences?.keys?.skills}

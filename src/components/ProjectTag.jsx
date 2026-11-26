@@ -12,7 +12,7 @@ export default function ProjectTag({ label, colour, sx }) {
                 height: '24px',
                 fontWeight: 500,
                 border: '1px solid transparent',
-                fontSize: { xs: 11, sm: 13, md: 15,},
+                fontSize: { xs: 10, sm: 13, md: 15,},
                 ...sx
             }}
         />

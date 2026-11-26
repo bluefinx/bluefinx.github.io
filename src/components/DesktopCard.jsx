@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Divider, Card, Stack, Typography, Tabs, Tab, Box } from "@mui/material";
 
 import ProjectTag from "./ProjectTag.jsx";
-import ProjectHighlights from "./ProjectHighlights.jsx";
+import DesktopProjectHighlights from "./DesktopProjectHighlights.jsx";
 import ProjectPartsPaper from "./ProjectPartsPaper.jsx";
 import ProjectSkill from "./ProjectSkill.jsx";
 import EducationPartsPaper from "./EducationPartsPaper.jsx";
 
 /* Builds a generic desktop card layout */
-export default function DesktopCard({ title, type, date, tags, highlights, parts, navigation, skillsTitle, skills, isEducation }) {
+export default function DesktopCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation }) {
 
     /*************************** Navigation ***********************************/
 
@@ -64,8 +64,8 @@ export default function DesktopCard({ title, type, date, tags, highlights, parts
                     </Stack>
                 )}
 
-                {/* ProjectHighlights */}
-                <ProjectHighlights highlights={highlights} isEducation={isEducation} />
+                {/* DesktopProjectHighlights */}
+                <DesktopProjectHighlights highlights={highlights} isEducation={isEducation} />
 
                 <Divider sx={{ borderColor: "divider"}}/>
 
@@ -128,7 +128,7 @@ export default function DesktopCard({ title, type, date, tags, highlights, parts
                             <ProjectPartsPaper
                                 title={navigation[selectedIndex]}
                                 content={selectedPart.content}
-                                sublabel={selectedPart.sublabel}
+                                sublabel={sublabel}
                                 takeaways={selectedPart.takeaways}
                             />
                         )

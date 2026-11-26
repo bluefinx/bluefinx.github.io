@@ -4,7 +4,7 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 export default function ProjectPartsPaper({ title, content, sublabel, takeaways }) {
     return (
         <Paper elevation={1} sx={{ p: 3, height: "100%" }}>
-            <Stack spacing={2} height="100%">
+            <Stack spacing={2} sx={{ height: "100%" }}>
 
                 {/* Title */}
                 <Typography variant="paperSection">
@@ -19,12 +19,12 @@ export default function ProjectPartsPaper({ title, content, sublabel, takeaways 
                 <Stack spacing={1}>
                     <Divider />
                     {/* Sublabel */}
-                    <Typography variant="paperLabel">
+                    <Typography variant="paperLabel" sx={{pb: 1 }}>
                         {sublabel}
                     </Typography>
 
                     {/* Takeaways */}
-                    <Stack spacing={0}>
+                    <Stack spacing={0} sx={{ mt: "auto !important", gap: { xs: 1, sm: 0 }, }}>
                         {takeaways.map((takeaway, index) => (
                             <Stack key={index} direction="row" spacing={1} sx={{ alignItems: "center" }}>
                                 <TaskAltIcon fontSize="small" sx={{ color: "secondary.main"}} />

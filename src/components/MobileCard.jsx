@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Divider, Card, Stack, Typography, Tabs, Tab, Box } from "@mui/material";
 
 import ProjectTag from "./ProjectTag.jsx";
-import ProjectHighlights from "./ProjectHighlights.jsx";
+import MobileProjectHighlights from "./MobileProjectHighlights.jsx";
 import ProjectPartsPaper from "./ProjectPartsPaper.jsx";
 import EducationPartsPaper from "./EducationPartsPaper.jsx";
 import SkillsPartsPaper from "./SkillsPartsPaper.jsx";
@@ -14,7 +14,7 @@ import TrendingUpOutlined from "@mui/icons-material/TrendingUpOutlined";
 import BuildOutlined from "@mui/icons-material/BuildOutlined";
 
 /* Builds a generic mobile card layout */
-export default function MobileCard({ title, type, date, tags, highlights, parts, navigation, skillsTitle, skills, isEducation }) {
+export default function MobileCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation }) {
 
     /*************************** Navigation ***********************************/
 
@@ -90,8 +90,8 @@ export default function MobileCard({ title, type, date, tags, highlights, parts,
                     </Stack>
                 )}
 
-                {/* ProjectHighlights */}
-                <ProjectHighlights highlights={highlights} isEducation={isEducation} />
+                {/* Highlights */}
+                <MobileProjectHighlights highlights={highlights} isEducation={isEducation} />
 
                 <Divider sx={{ borderColor: "divider"}}/>
 
@@ -181,7 +181,7 @@ export default function MobileCard({ title, type, date, tags, highlights, parts,
                             <ProjectPartsPaper
                                 title={navigation[selectedIndex]}
                                 content={selectedPart.content}
-                                sublabel={selectedPart.sublabel}
+                                sublabel={sublabel}
                                 takeaways={selectedPart.takeaways}
                             />
                         ))

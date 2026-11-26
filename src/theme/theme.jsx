@@ -121,12 +121,12 @@ theme = createTheme(theme, {
         },
         paperHighlight: {
             fontWeight: 'bold',
-            fontSize: 24,
+            fontSize: 21,
             '@media (min-width:600px)': {
-                fontSize: 30,
+                fontSize: 25,
             },
             '@media (min-width:900px)': {
-                fontSize: 34,
+                fontSize: 27,
             },
         },
         paperHighlight2: {

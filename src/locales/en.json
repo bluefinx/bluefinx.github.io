@@ -109,220 +109,54 @@
     },
     "values": {
       "project-1": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
+        "title": "Forensic Case Management Framework & Tool Architecture",
+        "type": "Master Thesis & Paper (Under Review)",
+        "date": "2025 - 2026",
         "highlights": [
           [
-            "56+",
-            "Extraction files"
+            "8 Module",
+            "Framework"
           ],
           [
-            "5 GB",
-            "Disk image"
+            "16",
+            "Microservices"
           ],
           [
-            "17",
-            "Devices"
+            "Full-Stack",
+            "Partial Prototype"
           ]
         ],
         "parts": [
           {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
+            "content": "Developed a digital forensics requirements framework and open-source case and evidence management tool architecture, addressing a market dominated by proprietary tools. Combined a comprehensive literature review and comparative tool analysis to design a secure-by-design microservice reference architecture that ensures chain-of-custody integrity and separates forensically sensitive evidence from operational data. Implemented a partial proof-of-concept prototype for limited usability testing.",
             "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
+              "Conducted requirements analysis of open-source digital forensics case management.",
+              "Designed a theoretical requirements framework and practical forensic tool architecture."
             ]
-          }
-        ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
-      },
-      "project-2": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
-        "highlights": [
-          [
-            "56+",
-            "Extraction files"
-          ],
-          [
-            "5 GB",
-            "Disk image"
-          ],
-          [
-            "17",
-            "Devices"
-          ]
-        ],
-        "parts": [
+          },
           {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
+            "content": "Identified a gap in open-source tooling for DF case and evidence management. The few existing tools are mostly proprietary and limited in accessibility and the topic is under-researched despite growing challenges for practitioners. Conducted a comprehensive literature review, derived a requirements framework and compared six existing tools against the framework. Subsequently, designed a modular microservice-based reference architecture and implemented a partial proof-of-concept prototype to enable limited usability testing.",
             "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
+              "Addressed a gap in accessible open-source forensic case management tools.",
+              "Performed a lit review, gap analysis, requirements analysis and tool engineering."
             ]
-          }
-        ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
-      },
-      "project-3": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
-        "highlights": [
-          [
-            "56+",
-            "Extraction files"
-          ],
-          [
-            "5 GB",
-            "Disk image"
-          ],
-          [
-            "17",
-            "Devices"
-          ]
-        ],
-        "parts": [
+          },
           {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
+            "content": "Analysed 22 academic sources and derived theoretical functional, operational and usability requirements, resulting in a DF case management reference framework with 8 modules. Compared 6 existing tools against the framework in a gap analysis and identified their gaps. Designed an open source, secure-by-design reference architecture that addresses these gaps and implements the framework in practice, with 16 microservices and 20 forensic and security properties covering chain of custody, trust boundaries, data isolation and audit logging. Built a partial proof-of-concept prototype with FastAPI, React, PostgreSQL (five database models), JavaScript, Python, REST APIs and WebSockets, fully containerised with Docker Compose, to evaluate technical feasibility and run limited usability testing. Documented the framework, architecture and evaluation in a journal paper (under review).",
             "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
+              "Derived an 8-module requirements framework, followed by a gap analysis of 6 tools.",
+              "Designed an architecture with 16 microservices and 20 forensic & security properties."
             ]
-          }
-        ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
-      },
-      "project-4": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
-        "highlights": [
-          [
-            "56+",
-            "Extraction files"
-          ],
-          [
-            "5 GB",
-            "Disk image"
-          ],
-          [
-            "17",
-            "Devices"
-          ]
-        ],
-        "parts": [
+          },
           {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
+            "content": "Delivered a DF case management requirements framework designed as a component checklist and gap identifier for tools. Designed a secure-by-design open source reference architecture as a blueprint for open-source tool implementations, featuring comprehensive forensic and security properties necessary for forensic soundness. Implemented a working prototype using a modern stack to validate its technical feasibility and usability. Gained hands-on experience in turning research-derived requirements into a microservice architecture and a full-stack implementation. Gained an understanding of forensic investigation workflows and forensic integrity techniques, including chain of custody, data isolation and audit logging. Contributed the work to the research community through a journal paper currently under review.",
             "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
+              "Delivered a comparable requirements framework and open-source blueprint.",
+              "Learned about evidence handling, forensic soundness and investigation workflows."
             ]
           }
         ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
-      },
-      "project-5": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
-        "highlights": [
-          [
-            "56+",
-            "Extraction files"
-          ],
-          [
-            "5 GB",
-            "Disk image"
-          ],
-          [
-            "17",
-            "Devices"
-          ]
-        ],
-        "parts": [
-          {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
-            "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
-            ]
-          }
-        ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
-      },
-      "project-6": {
-        "title": "Mobile & Computer Forensics Case Studies",
-        "type": "Academic Labs",
-        "date": "2020 & 2025",
-        "highlights": [
-          [
-            "56+",
-            "Extraction files"
-          ],
-          [
-            "5 GB",
-            "Disk image"
-          ],
-          [
-            "17",
-            "Devices"
-          ]
-        ],
-        "parts": [
-          {
-            "content": "Conducted two structured digital forensic investigations involving 56 extraction files across multiple devices and online accounts, alongside a 5 GB disk image.",
-            "sublabel": "Investigative Scope",
-            "takeaways": [
-              "Evidence triage & artifact analysis",
-              "Event reconstruction & cross-source correlation"
-            ]
-          }
-        ],
-        "skills": [
-          "Autopsy",
-          "Mobile Forensics",
-          "Disk Imaging",
-          "Artifact Analysis",
-          "Timeline Analysis"
-        ]
+        "skills": ["Digital Forensics", "Case Management", "Forensic Soundness", "Evidence Integrity", "Chain of Custody", "Security Architecture", "Secure-by-Design", "Microservices", "Python", "FastAPI", "React", "JavaScript", "PostgreSQL", "SQL", "Docker", "REST APIs", "WebSockets", "Requirements Engineering", "Gap Analysis", "Audit Logging"]
       }
     }
   },
@@ -336,6 +170,7 @@
         "What I Did",
         "Results & Learnings"
       ],
+      "sublabel": "Key Takeaways",
       "skills": "Skills & Tools",
       "filter": "Filter by"
     },
@@ -360,27 +195,24 @@
         ],
         "parts": [
           {
-            "content": "Designed and secured the foundation of a three-tier, Linux-based cybersecurity training server for university students. Participants first discover the exposed services, then work through guided exercises, and finally attack real, live applications to find genuine vulnerabilities. Architecture, hardening, operating policies and documentation were completed, and development of the first exercises began. The project was discontinued when its academic supervisor left the university and no successor took over.",
-            "sublabel": "Project Design",
+            "content": "Designed and secured the foundation of a three-tier, Linux-based cybersecurity training server for university students. Participants first discover the exposed services, then work through guided exercises and finally attack real, live applications to find genuine vulnerabilities. Architecture, hardening, operating policies and documentation were completed and development of the first exercises began. The project was discontinued when its academic supervisor left the university and no successor took over.",
             "takeaways": [
               "Designed a three-tier Linux training server for university students.",
-              "Planned guided exercises and real, live applications for students to attack."
+              "Hardened server with discoverable ports, guided exercises and live applications."
             ]
           },
           {
-            "content": "The project aimed to give students a controlled environment for practicing web application and infrastructure attacks, with only the intended ports reachable, a hardened host and a clear process for reporting findings. Live applications always ran the latest version to ensure students discovered new vulnerabilities. Findings had to be reported to a dedicated server email account, with only the first finder eligible to submit a report, preventing duplicates.",
-            "sublabel": "Security Constraints",
+            "content": "The project aimed to provide students with a controlled environment to gain hands-on experience with real-world web application and infrastructure vulnerabilities while helping selected live applications identify and address security weaknesses. A hardened host with restricted access and isolated training environments was provided for network scanning, practising common vulnerabilities and attack techniques, featuring a defined process for responsibly disclosing findings.",
             "takeaways": [
-              "Restricted the attack surface to the intended ports on a hardened host.",
-              "Defined a first-finder reporting process via a dedicated mail account."
+              "Students lacked secure environments for practicing web and infrastructure attacks.",
+              "Provided restricted host, isolated labs, vulnerability testing and responsible disclosure."
             ]
           },
           {
-            "content": "Secured the server with iptables, closing all non-essential ports and verifying student-visible scans using Nmap. Implemented port knocking with iptables and tested it using Nmap and netcat. Hardened SSH according to best practices, enforced secure passwords and reviewed password policies. Minimised root access through privilege separation and a dedicated admin account. Wrote technical documentation covering server structure, setup and operating policies. Designed OWASP-based exercises with information texts and explanations, unlocking user accounts, passwords and hints for subsequent tiers. Developed exercises covering SQL injection, phishing via a dedicated mail account, password cracking, port knocking and injection and logic flaws using Burp Suite.",
-            "sublabel": "Security Measures & Exercises",
+            "content": "Configured iptables to secure the server, closed non-essential ports and hardened SSH according to best practices. Implemented port knocking and tested access controls with Nmap and netcat. Enforced secure password policies, restricted root access and established a dedicated admin account for privilege separation. Created technical documentation covering server architecture, setup and operational procedures. Designed learning exercises based on OWASP Top 10 with instructional texts, explanations, featuring user accounts, passwords and hints for live applications. Developed practical challenges covering SQL injection, phishing via a dedicated email account, password cracking and injection and logic flaws using Burp Suite. Created policies to maintain live applications on their latest versions to expose students to new vulnerabilities and established a reporting process via a dedicated server email account, allowing only the first student to report each finding to prevent duplicate submissions.",
             "takeaways": [
-              "Hardened Linux access, firewall rules, SSH and user privileges.",
-              "Built OWASP exercises covering SQL injection, phishing and password cracking."
+              "Hardened Linux server with firewall and access restrictions and verified with Nmap.",
+              "Designed OWASP-based exercises (SQL injection, phishing) and a reporting process."
             ]
           },
           {
@@ -406,7 +238,7 @@
           ],
           [
             "2",
-            "Web Applications"
+            "Web Apps"
           ],
           [
             "GDPR",
@@ -416,23 +248,20 @@
         "parts": [
           {
             "content": "Supported GDPR compliance and web application security initiatives within a university environment, combining independent research into European and German data protection legislation with practical privacy assessments and collaborative security testing. Applied regulatory knowledge to assess personal data processing activities, identify compliance gaps and strengthen application security.",
-            "sublabel": "Research & Assessments",
             "takeaways": [
               "Researched European and German data protection legislation.",
               "Applied findings through privacy assessments and collaborative security testing."
             ]
           },
           {
-            "content": "The university required greater visibility into personal data processing activities, potential GDPR compliance gaps and web application security risks. The scope combined independent study of the GDPR, BDSG, relevant legal terminology and additional European and national data protection legislation with an in-depth assessment of one university web application and an initial assessment of a second application.",
-            "sublabel": "Objectives & Activities",
+            "content": "The university required greater visibility into personal data processing activities, potential GDPR compliance gaps and web application security risks. The scope encompassed an in-depth assessment of one university web application, including comprehensive documentation of PII data flows and processing activities, as well as a basic vulnerability assessment to identify potential security weaknesses and improve the application's overall data protection and security posture. In addition, an initial assessment of a second university web application was conducted.",
             "takeaways": [
               "Addressed limited transparency in university data processing.",
               "Conducted security & privacy assessment of two web applications."
             ]
           },
           {
-            "content": "Independently researched data protection legislation and applied regulatory requirements to practical GDPR assessments, including data-flow mapping, PII identification, privacy risk evaluation and RoPA (Record of Processing Activities) documentation. Collaborated with a system administrator on scoped vulnerability assessments, jointly investigating, validating and reporting security findings, coordinating remediation efforts and regularly updating the supervising Data Protection Officer (DPO) on findings and progress.",
-            "sublabel": "Execution & Coordination",
+            "content": "Independently researched the GDPR, BDSG, relevant legal terminology and additional European and national data protection legislation. Applied regulatory requirements to practical GDPR assessments, including data-flow mapping, PII identification, privacy risk evaluation and RoPA (Record of Processing Activities) documentation. Collaborated with a system administrator on scoped vulnerability assessments, jointly investigating, validating and reporting security findings, coordinating remediation efforts and regularly updating the supervising Data Protection Officer (DPO) on findings and progress.",
             "takeaways": [
               "Mapped data flows, identified PII and documented privacy risks.",
               "Conducted collaborative vulnerability assessments and coordinated with stakeholders."
@@ -440,7 +269,6 @@
           },
           {
             "content": "Assessed personal data processing across 11 functional areas and supported GDPR compliance through structured data-flow analysis and RoPA documentation. Collaboratively assessed two university web applications, identifying and responsibly reporting five validated vulnerabilities and coordinating risk-based remediation. Strengthened expertise in data protection legislation, privacy risk assessment and application security while developing practical skills in independent research, technical investigation, cross-functional collaboration, stakeholder communication and remediation coordination.",
-            "sublabel": "Outcomes & Competencies",
             "takeaways": [
               "Assessed 11 functional areas (5 vulnerabilities) and documented GDPR compliance.",
               "Developed expertise in privacy risks, security and stakeholder coordination."
@@ -455,53 +283,49 @@
         "date": "May 2021 - Aug 2022",
         "highlights": [
           [
-            "",
-            ""
+            "C#",
+            "Legacy Modernisation"
           ],
           [
-            "",
-            ""
+            "Extended",
+            "Processing & Visuals"
           ],
           [
-            "",
-            ""
+            "Requirements",
+            "Coordination"
           ]
         ],
         "parts": [
           {
             "content": "Modernisation and functional extension of a legacy C# Windows desktop application (Windows Forms) for forensic hardware log analysis. The application processes hardware diagnostic and event logs containing operational measurements and environmental data, including parameters such as temperature and humidity relevant to forensic operations. The project focused on restructuring the legacy codebase, introducing a modular software architecture, extending log processing capabilities, implementing data transformation and localisation features and redesigning GUI components to improve data visualisation, interpretation and reporting.",
-            "sublabel": "",
             "takeaways": [
-              "",
-              ""
+              "Modernised a legacy C# Windows Forms app for forensic log analysis.",
+              "Added modular architecture, extended functionality and improved GUI visualisation."
             ]
           },
           {
             "content": "The existing application lacked a defined software architecture, modular structure and technical documentation. Application logic, GUI functionality and data processing were combined within a small number of files, resulting in redundant code and limited maintainability. The application also required functional extensions to process additional log fields, correctly interpret measurement values and present operational data through the GUI. The scope covered codebase restructuring, separation of presentation and business logic, implementation of new processing and visualisation features, internationalisation and comprehensive technical documentation.",
-            "sublabel": "",
             "takeaways": [
-              "",
-              ""
+              "The application lacked a clear architecture, modularity and maintainability.",
+              "Remodelled codebase and added features, visualisation and technical documentation."
             ]
           },
           {
-            "content": "Analysed and restructured the legacy C# application by establishing a modular directory and file structure and separating GUI components from business logic. Rebuilt classes and functions according to their respective responsibilities, removed redundant code and implemented new application functionality. Extended log processing to read additional data fields from hardware diagnostic and event logs, integrated the extracted values into GUI components and tested their correct interpretation and presentation. Implemented value conversion functions, including temperature unit conversion, based on hardware engineering specifications. \n\nRedesigned GUI layouts, integrated graphical data representations, filters and custom views and implemented multilingual support using localisation. Translated functional and usability requirements from hardware engineering and sales teams into application features. Created comprehensive technical documentation for individual classes and methods and managed source code through SVN.",
-            "sublabel": "",
+            "content": "Analysed the legacy C# application and restructured it by creating a modular directory hierarchy, reorganising classes and functions by responsibility and separating GUI components from business logic. Removed redundant code and added new application functionality. Extended log processing to extract additional fields from hardware diagnostic and event logs, integrated the values into the GUI and tested their correct interpretation and display. Implemented measurement conversion functions, including temperature units, based on hardware engineering specifications. Redesigned GUI layouts and integrated diagrams, filters and custom data views according to sales requirements. Added multilingual support for international markets. Rebuilt the technical documentation from scratch, documenting individual classes and methods in an API-style format. Managed all source code changes with SVN.",
             "takeaways": [
-              "",
-              ""
+              "Introduced modularity, advanced log parsing and functional conversion features.",
+              "Improved GUI with visual elements and added new languages for enhanced usability."
             ]
           },
           {
-            "content": "Transformed an unstructured legacy codebase into a modular application with clearly separated presentation and business logic. Extended the application's log processing capabilities to support additional operational data fields, implemented measurement conversions and improved the visual presentation of processed data. Introduced multilingual functionality and redesigned GUI workflows to accommodate additional user requirements and international markets. Established comprehensive technical documentation where none previously existed. Gained practical experience in legacy software modernisation, modular application architecture, forensic log processing, data transformation, GUI development and translating cross-functional engineering requirements into software implementations.",
-            "sublabel": "",
+            "content": "Transformed the unstructured legacy codebase into a modular C# application with separated GUI and business logic, making it maintainable and extensible. Extended log processing with additional diagnostic and event data, added measurement conversions, improved data visualisation through redesigned diagrams, filters and views and delivered multilingual support for international markets. Established the first technical documentation for classes and methods. Collaborated cross-functionally with hardware engineering and sales, consolidated their differing requirements, defined the final requirements and implemented them as application features. Strengthened skills in requirements engineering, stakeholder communication, independent prioritisation, legacy system modernisation, software architecture and forensic log processing.",
             "takeaways": [
-              "",
-              ""
+              "Modernised the codebase and enhanced features, visualisation and documentation.",
+              "Strengthened requirements engineering and cross-functional communication skills."
             ]
           }
         ],
-        "skills": []
+        "skills": ["C#", ".NET Framework", "Windows Forms (WinForms)", "Visual Studio", "Legacy System Modernisation", "Modular Software Architecture", "Forensic Log Parsing", "Data Transformation", "Data Visualisation", "Requirements Engineering", "Stakeholder Management", "Cross-functional Collaboration", "Technical Documentation"]
       }
     }
   },

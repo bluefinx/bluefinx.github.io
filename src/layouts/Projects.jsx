@@ -39,7 +39,7 @@ export default function Projects() {
 
     /* Defines tags for projects (e.g. "Digital Forensics") */
     const projectsTags = {
-        "project-1": ["DF", "CP"],
+        "project-1": ["DF", "SD"],
     };
 
     /* Maps tag keys to their corresponding objects (tag key + (title & colour)) */
@@ -166,6 +166,7 @@ export default function Projects() {
                                 date={project?.date}
                                 tags={mapTags(key)}
                                 highlights={project?.highlights}
+                                sublabel={projects?.keys?.sublabel}
                                 parts={project?.parts}
                                 navigation={projects?.keys?.navigation}
                                 skillsTitle={projects?.keys?.skills}
@@ -189,6 +190,7 @@ export default function Projects() {
                                 date={project?.date}
                                 tags={mapTags(key)}
                                 highlights={project?.highlights}
+                                sublabel={projects?.keys?.sublabel}
                                 parts={project?.parts}
                                 navigation={projects?.keys?.navigation}
                                 skillsTitle={projects?.keys?.skills}
