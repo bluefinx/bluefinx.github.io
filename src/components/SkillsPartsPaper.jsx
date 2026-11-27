@@ -12,8 +12,8 @@ export default function SkillsPartsPaper({ title, skills }) {
             </Typography>
             {skills && skills.length > 0 && (
                 <Stack direction="row" sx={{ pt: 2, flexWrap: "wrap", gap: 1 }}>
-                    {skills.map((skill) => (
-                        <ProjectSkill key={skill} label={skill} />
+                    {skills.map((skill, index) => (
+                        <ProjectSkill key={index} label={skill} />
                     ))}
                 </Stack>
             )}

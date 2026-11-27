@@ -8,7 +8,7 @@ import ProjectSkill from "./ProjectSkill.jsx";
 import EducationPartsPaper from "./EducationPartsPaper.jsx";
 
 /* Builds a generic desktop card layout */
-export default function DesktopCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation }) {
+export default function DesktopCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation, link }) {
 
     /*************************** Navigation ***********************************/
 
@@ -130,6 +130,7 @@ export default function DesktopCard({ title, type, date, tags, highlights, subla
                                 content={selectedPart.content}
                                 sublabel={sublabel}
                                 takeaways={selectedPart.takeaways}
+                                link={link}
                             />
                         )
                     )}
@@ -142,8 +143,8 @@ export default function DesktopCard({ title, type, date, tags, highlights, subla
                     </Typography>
                     {skills && skills.length > 0 && (
                         <Stack direction="row" sx={{ pt: 2, flexWrap: "wrap", gap: 1 }}>
-                            {skills.map((skill) => (
-                                <ProjectSkill key={skill} label={skill} />
+                            {skills.map((skill, index) => (
+                                <ProjectSkill key={index} label={skill} />
                             ))}
                         </Stack>
                     )}

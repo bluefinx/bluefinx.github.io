@@ -1,7 +1,12 @@
-import { Paper, Typography, Divider, Stack } from "@mui/material";
-import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import { Paper, Typography, Divider, Stack, Button } from "@mui/material";
 
-export default function ProjectPartsPaper({ title, content, sublabel, takeaways }) {
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+import {contactButtons} from "../theme/styles.jsx";
+import {linkedInLink} from "../config.jsx";
+
+export default function ProjectPartsPaper({ title, content, sublabel, takeaways, link }) {
     return (
         <Paper elevation={1} sx={{ p: 3, height: "100%" }}>
             <Stack spacing={2} sx={{ height: "100%" }}>
@@ -17,6 +22,21 @@ export default function ProjectPartsPaper({ title, content, sublabel, takeaways 
                 </Typography>
 
                 <Stack spacing={1}>
+                    {link && (
+                        <Button
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={linkedInLink}
+                            variant="contained"
+                            sx={{...contactButtons, alignSelf: "flex-end", width: "fit-content", minWidth: 0, height: 32 }}
+                            startIcon={<GitHubIcon />}>
+                            <Typography variant="paperBody">
+                                {link.label}
+                            </Typography>
+                        </Button>
+                    )}
+
                     <Divider />
                     {/* Sublabel */}
                     <Typography variant="paperLabel" sx={{pb: 1 }}>

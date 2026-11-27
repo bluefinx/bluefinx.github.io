@@ -8,7 +8,7 @@ import MobileCard from "../components/MobileCard.jsx";
 import FilterTag from "../components/FilterTag.jsx";
 import {useMobileNavigation} from "../hooks/useSwipeNavigation.jsx";
 
-import { AREAS} from "../config.jsx";
+import { AREAS, parserLink} from "../config.jsx";
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -40,6 +40,10 @@ export default function Projects() {
     /* Defines tags for projects (e.g. "Digital Forensics") */
     const projectsTags = {
         "project-1": ["DF", "SD"],
+        "project-2": ["DF", "SD"],
+        "project-3": ["PT", "VM"],
+        "project-4": ["DF"],
+        "project-5": ["CG"],
     };
 
     /* Maps tag keys to their corresponding objects (tag key + (title & colour)) */
@@ -172,6 +176,14 @@ export default function Projects() {
                                 skillsTitle={projects?.keys?.skills}
                                 skills={project?.skills}
                                 isEducation={false}
+                                link={
+                                    project?.link
+                                        ? {
+                                            label: project?.link,
+                                            url: parserLink
+                                        }
+                                        : null
+                                }
                             />
                         </Box>
                     );
@@ -196,6 +208,14 @@ export default function Projects() {
                                 skillsTitle={projects?.keys?.skills}
                                 skills={project?.skills}
                                 isEducation={false}
+                                link={
+                                    project?.link
+                                        ? {
+                                            label: project?.link,
+                                            url: parserLink
+                                        }
+                                        : null
+                                }
                             />
                         </Box>
                     ))}

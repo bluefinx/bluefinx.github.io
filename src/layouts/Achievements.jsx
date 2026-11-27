@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import AchievementCard from "../components/AchievementCard.jsx";
 import {useMobileNavigation} from "../hooks/useSwipeNavigation.jsx";
 
-import { CATEGORIES} from "../config.jsx";
+import { CATEGORIES } from "../config.jsx";
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";

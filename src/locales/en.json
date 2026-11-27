@@ -104,6 +104,7 @@
         "What I did",
         "Results & Learnings"
       ],
+      "sublabel": "Key Takeaways",
       "skills": "Skills & Tools",
       "filter": "Filter by"
     },
@@ -157,6 +158,207 @@
           }
         ],
         "skills": ["Digital Forensics", "Case Management", "Forensic Soundness", "Evidence Integrity", "Chain of Custody", "Security Architecture", "Secure-by-Design", "Microservices", "Python", "FastAPI", "React", "JavaScript", "PostgreSQL", "SQL", "Docker", "REST APIs", "WebSockets", "Requirements Engineering", "Gap Analysis", "Audit Logging"]
+      },
+      "project-2": {
+        "title": "Automated Forensic Parser Tool",
+        "type": "Open-Source Tool (Beta Version)",
+        "date": "2025",
+        "link": "GitHub Repository",
+        "highlights": [
+          [
+            "7-Stage",
+            "Pipeline"
+          ],
+          [
+            "30+",
+            "Metadata Fields"
+          ],
+          [
+            "Python",
+            "Cross-Platform"
+          ]
+        ],
+        "parts": [
+          {
+            "content": "Developed a cross-platform Python tool that partially automates the analysis of files recovered with foremost, a file carving tool. Implemented automated duplicate detection and performance improving strategies, reducing manual review effort and time. Packaged the solution in a reproducible Docker setup and added Bash and PowerShell startup scripts to ensure consistent runs across platforms.",
+            "takeaways": [
+              "Developed a cross-platform Python tool to partially automate recovered file analysis.",
+              "Improved performance and added startup scripts for a more convenient execution."
+            ]
+          },
+          {
+            "content": "Faced a time-consuming and error-prone workflow when manually examining and sorting the large number of files extracted by foremost. Identified the need for a tool that reduces manual triage effort. Designed a CLI tool that bridges the gap between file carving and file analysis. The tool reads foremost scan information, runs ExifTool on all extracted files, detects duplicates and generates a comprehensive JSON report with statistics on the full dataset and each individual file. ",
+            "takeaways": [
+              "Reduced manual triage effort sorting through files extracted by foremost.",
+              "Designed CLI tool to bridge gap between file carving and file analysis."
+            ]
+          },
+          {
+            "content": "Built a cross-platform Python tool with Docker and PostgreSQL, structured as a 7-stage automated pipeline with 3 database models. Parsed the foremost audit file and stored its data in the database. Grouped extracted files by extension and processed them in batches to improve performance. Extracted metadata with ExifTool, using a Python-based fallback and normalised over 30 metadata fields into structured records. Computed SHA-256 hashes for every file, identified duplicates and organised them into duplicate groups for faster detection. Exported image files for future web views and generated a JSON report from all database records. Added Bash and PowerShell startup scripts, input validation and error handling. Tested the tool with a dataset of 10,000 extracted files.",
+            "takeaways": [
+              "Designed a 7-stage automated pipeline, parsing the audit file and individual files.",
+              "Normalised over 30 metadata fields and included JSON reports with stats on files."
+            ]
+          },
+          {
+            "content": "Delivered a working forensic automation tool that significantly reduces manual triage effort. Applied the full software development lifecycle, including requirements analysis, solution design, implementation, testing and deployment. Gained hands-on experience in building containerised, cross-platform tools and designing efficient batch-processing pipelines for large datasets.",
+            "takeaways": [
+              "Applied full software development cycle including requirements analysis and testing.",
+              "Gained experience with automated pipeline processing for large datasets."
+            ]
+          }
+        ],
+        "skills": ["Python", "Docker", "Shell Scripting", "Data Transformation", "Process Automation", "Performance Optimisation", "Foremost", "ExifTool", "Data Modeling", "Docker", "Input Validation", "Error Handling"]
+      },
+      "project-3": {
+        "title": "Manual Open-Source Web App Security Assessment",
+        "type": "Academic Project",
+        "date": "2020 - 2021",
+        "highlights": [
+          [
+            "6-month",
+            "Pentest"
+          ],
+          [
+            "13",
+            "Vulnerabilities"
+          ],
+          [
+            "18",
+            "Attack Categories"
+          ]
+        ],
+        "parts": [
+          {
+            "content": "Conducted a 6-month manual vulnerability assessment of a zero-knowledge, open-source, privacy-focused web application as part of university studies. Tested the application during active development with new releases every two weeks. Covered server side, network and client side without automated scanning tools, using Burp Suite for manual request analysis. Documented findings in a final report with remediation recommendations and responsibly disclosed them to the developers.",
+            "takeaways": [
+              "Conducted a 6-month manual vulnerability assessment of a web application.",
+              "Covered server, network and client side and documented findings in a final report."
+            ]
+          },
+          {
+            "content": "Assessed the security of a privacy-focused web application with no automated scanning tools. Installed the application on a local VM and tested all functionalities, pages, network traffic and parameters. Reviewed the main code files and used Burp Suite exclusively for manual request interception. Excluded the encryption module, which was removed from the test instance, and limited server-side testing to the local instance. Adapted the testing to a 6-month period with biweekly releases.",
+            "takeaways": [
+              "Assessed security of a zero-knowledge web application without automated scanning.",
+              "Installed the app on a local VM and tested all functionalities, pages and network traffic."
+            ]
+          },
+          {
+            "content": "Developed an own testing methodology while working through a web application hacking book. Mapped all functionalities and pages and divided the application into server side, network and client side. Tested every input field and HTTP request manipulation option against the OWASP Top 10. Combined manual code review, browser-based testing and HTTP traffic analysis in Burp Suite to find and validate vulnerabilities in authentication, session management, business logic, access control, client-side trust, XSS, CSRF, file handling and social engineering scenarios. Built proof-of-concept exploits, assigned risk ratings and disclosed findings responsibly. Wrote a final report with remediation recommendations based on root cause analysis and secure design principles.",
+            "takeaways": [
+              "Developed own testing methodology and tested all input and manipulation options.",
+              "Tested against OWASP Top 10 and validated with proof-of-concept exploits."
+            ]
+          },
+          {
+            "content": "Identified and validated 13 vulnerabilities across 18 attack categories (6 high, 5 medium and 2 low severity). Delivered proof-of-concept exploits, risk ratings and remediation recommendations. Strengthened manual assessment skills and developed a structured, self-designed testing methodology. Learned that zero-knowledge architectures reduce entry points but do not guarantee security. Gained particular insight into social engineering opportunities in web applications that store very little personal user information.",
+            "takeaways": [
+              "Validated 13 vulnerabilities including risk ratings and remediation recommendations.",
+              "Gained insights into manual assessments and zero-knowledge social engineering."
+            ]
+          }
+        ],
+        "skills": ["Manual assessment", "zero-knowledge", "burp suite", "web application security", "remediation recommendations", "risk rating", "OWASP Top 10", "manual code review", "social engineering", "HTTP manipulation", "XSS", "CSRF", "client-side trust", "responsible disclosure"]
+      },
+      "project-4": {
+        "title": "Digital Forensic Investigations: Mobile & Computer",
+        "type": "Academic Projects",
+        "date": "2020 & 2025",
+        "highlights": [
+          [
+            "56",
+            "Extraction Files"
+          ],
+          [
+            "Complete",
+            "Forensic Investigations"
+          ],
+          [
+            "Reporting",
+            "Expert Witness"
+          ]
+        ],
+        "parts": [
+          {
+            "content": "Conducted two end-to-end digital forensic investigations as part of university studies, one in mobile forensics and one in computer forensics. Worked once as part of an analyst team and once as a single examiner. Examined pre-acquired forensic images and verified them against provided hash values. Covered the full workflow from evidence triage to expert reporting, documenting each case in an expert witness report, one in Australian and one in UK court style.",
+            "takeaways": [
+              "Conducted two full digital forensic investigations (mobile & computer).",
+              "Covered the full investigation workflow, concluding with 2 expert witness reports."
+            ]
+          },
+          {
+            "content": "Investigated two cases with different structures. In the mobile case, focused on one legal question or hypothesis within an analyst team and triaged the evidence to select the relevant data from 56 extractions across 17 devices and 12 cloud and social media accounts. In the computer case, examined a 5 GB disk image in full as the sole examiner. Worked exclusively with finished images and provided hash values, so acquisition and device handling were out of scope. Reported the findings of each case in a court-style expert witness report.",
+            "takeaways": [
+              "Worked within analyst team, triaging evidence from 56 extractions across 17 devices.",
+              "Worked as a single examiner, comprehensively examining a 5 GB disk image."
+            ]
+          },
+          {
+            "content": "Triaged and examined 56 extraction files from mobile devices, SIM cards, tablets and cloud accounts, including social media, email and cloud storage data. Analysed the 5 GB disk image through operating system auditing, deleted partition recovery, keyword searching, malware scanning and registry examination. Performed artifact analysis across messaging applications, documents, images, browser and email activity, device configurations and system artifacts. Correlated evidence from mobile, cloud and endpoint sources to reconstruct user activity, establish event sequences and resolve timestamp inconsistencies across multiple time zones. Authored two expert witness reports with evidence inventories, event timelines and visualisations, hypotheses and evidence-based conclusions.",
+            "takeaways": [
+              "Correlated evidence from a broad range of sources to reconstruct user activity.",
+              "Provided evidence inventories, timelines and evidence-based conclusions."
+            ]
+          },
+          {
+            "content": "Identified and prioritised high-value forensic artifacts from diverse evidence sources, enabling efficient investigation and decision-making. Delivered two expert witness reports that followed Australian and UK court style guidelines. Gained hands-on experience in triaging large evidence sets, correlating artifacts across devices and cloud sources and presenting forensic findings in a structured, defensible way.",
+            "takeaways": [
+              "Conducted efficient investigations through prioritising artifacts from diverse sources.",
+              "Gained experience in end-to-end forensic investigations with larger datasets."
+            ]
+          }
+        ],
+        "skills": ["Expert witness reporting", "image verification", "evidence triage", "legal hypotheses", "cross-source correlation", "keyword search", "partition recovery", "registry examination", "event timelines", "user activity artifacts", "event reconstruction", "evidence inventory", "evidence integrity"]
+      },
+      "project-5": {
+        "title": "Cryptanalysis of DiCal-IDEA Implementation",
+        "type": "Bachelor Thesis",
+        "date": "2023",
+        "highlights": [
+          [
+            "236",
+            "Ciphertext Samples"
+          ],
+          [
+            "4",
+            "Hypotheses"
+          ],
+          [
+            "Cryptanalysis",
+            "Exclusion-Based"
+          ]
+        ],
+        "parts": [
+          {
+            "content": "Conducted a structured cryptographic security assessment of Swissphone's proprietary DiCal-IDEA encryption, used in POCSAG paging systems for German emergency services (BOS). Analysed the non-public algorithm using ciphertext samples and publicly available information, working in a ciphertext-only scenario. Tested hypotheses on the cipher's structure and behaviour through exclusion-based cryptanalysis and presented the most probable implementation as the final result.",
+            "takeaways": [
+              "Conducted a structured cryptographic security assessment of proprietary encryption.",
+              "Worked in cipher text-only scenario, testing different hypotheses through exclusion."
+            ]
+          },
+          {
+            "content": "Analysed Swissphone's proprietary DiCal-IDEA implementation with the goal of uncovering as much as possible about its undisclosed algorithm. Worked in a ciphertext-only scenario with timestamps for each message. Collected all available information, analysed the ciphertexts, formulated hypotheses and tested them as far as possible. Presented the most likely solution based on the evidence.",
+            "takeaways": [
+              "Aimed to uncover as much as possible about the undisclosed algorithm.",
+              "Collected information, analysed ciphertexts and presented most likely hypothesis."
+            ]
+          },
+          {
+            "content": "Researched public cryptographic literature, protocol specifications and existing analyses of IDEA and DiCal-IDEA. Analysed 236 ciphertext samples with timestamp metadata, using ciphertext-only analysis and protocol correlation to identify message structures, recurring protocol characteristics and transmission patterns. Developed and tested 4 independent hypotheses through exclusion-based cryptanalysis, covering message structure, cipher mode of operation, IV generation, timestamp integration and replay protection. Narrowed down plausible implementation scenarios by systematic elimination despite limited implementation knowledge. Performed threat modelling of the encryption implementation, IV handling and replay protection to assess potential weaknesses and attack vectors.",
+            "takeaways": [
+              "Correlated available information with 236 provided ciphertext samples and timestamps.",
+              "Tested 4 independent hypotheses and performed threat modelling for attack vectors."
+            ]
+          },
+          {
+            "content": "Identified multiple plausible attack vectors against the proprietary implementation through protocol analysis and threat modelling. Assessed exploitation feasibility under strict ciphertext-only conditions without access to source code, usable plaintext or implementation details. Derived evidence-based findings from encrypted data using reproducible analytical methods. Gained experience in hypothesis-driven cryptanalysis and in evaluating proprietary cryptography under limited information.",
+            "takeaways": [
+              "Identified the most plausible implementation and multiple potential attack vectors.",
+              "Derived evidence-based findings from limited information using reproducible methods."
+            ]
+          }
+        ],
+        "skills": ["Ciphertext-only analysis", "threat modelling", "information gathering", "cryptanalysis", "protocol analysis", "vulnerability assessment", "technical research", "pattern recognition", "symmetric encryption", "block ciphers"]
       }
     }
   },

@@ -14,7 +14,7 @@ import TrendingUpOutlined from "@mui/icons-material/TrendingUpOutlined";
 import BuildOutlined from "@mui/icons-material/BuildOutlined";
 
 /* Builds a generic mobile card layout */
-export default function MobileCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation }) {
+export default function MobileCard({ title, type, date, tags, highlights, sublabel, parts, navigation, skillsTitle, skills, isEducation, link }) {
 
     /*************************** Navigation ***********************************/
 
@@ -183,6 +183,7 @@ export default function MobileCard({ title, type, date, tags, highlights, sublab
                                 content={selectedPart.content}
                                 sublabel={sublabel}
                                 takeaways={selectedPart.takeaways}
+                                link={link}
                             />
                         ))
                     )}

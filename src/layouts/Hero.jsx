@@ -8,7 +8,8 @@ import GitHub from "../assets/GitHub.png";
 
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import CheckIcon from '@mui/icons-material/Check';
-import {email1, email2, gitHubLink, linkedInLink, NAVIGATION} from "../config.jsx";
+import { email1, email2, gitHubLink, linkedInLink, NAVIGATION } from "../config.jsx";
+import { contactButtons, logoStyle } from "../theme/styles.jsx";
 
 /* Builds the Hero section layout */
 export default function Hero() {
@@ -128,31 +129,6 @@ export default function Hero() {
             </Paper>
         );
     }
-
-    /* Defines the layout for the contact buttons */
-    const contactButtons = {
-        textTransform: "none",
-        backgroundColor: "primary.main",
-        color: "text.default",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        minWidth: 0,
-        height: 48,
-        width: "100%",
-        fontSize: 15
-    };
-
-    /* Defines the layout for the logos in the buttons */
-    const logoStyle = {
-        maxHeight: 22,
-        maxWidth: "80%",
-        width: "auto",
-        height: "auto",
-        objectFit: "contain",
-        display: "block",
-    };
 
     /* Builds the Contact paper */
     function createContact() {
